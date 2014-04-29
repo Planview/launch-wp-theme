@@ -1,0 +1,25 @@
+{
+    "name": "planview/launch-wp-theme",
+    "description": "Wordpress Theme for Planview Product Launch Event Website",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Steve Crockett",
+            "email": "crockett95@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "require": {
+        "wpackagist-plugin/advanced-custom-fields": "*"
+    }
+}

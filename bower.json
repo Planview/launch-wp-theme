@@ -1,0 +1,26 @@
+{
+  "name": "launch-wp-theme",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Crockett <crockett95@gmail.com>"
+  ],
+  "description": "Wordpress Theme for Planview Product Launch Event Website",
+  "main": "functions.php",
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/Planview/launch-wp-theme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.1",
+    "respond": "~1.4.2",
+    "modernizr": "~2.7.2",
+    "webshim": "~1.12.5",
+    "background-size-polyfill": "~0.2.0"
+  }
+}

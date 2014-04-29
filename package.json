@@ -1,0 +1,22 @@
+{
+  "name": "launch-wp-theme",
+  "version": "0.0.0",
+  "description": "Wordpress Theme for Planview Product Launch Event Website",
+  "main": "functions.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Planview/launch-wp-theme.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": "Steve Crockett",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/Planview/launch-wp-theme/issues"
+  }
+}
