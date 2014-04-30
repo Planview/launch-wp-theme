@@ -11,11 +11,25 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'launch' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'launch' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'launch' ), 'Planview Product Launch', '<a href="https://github.com/Planview" rel="designer">Planview WCS</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="footer-inner">
+			<?php    /**
+				* Displays a navigation menu
+				* @param array $args Arguments
+				*/
+				$launch_footer_menu_args = array(
+					'theme_location' => 'footer',
+					'container' => 'div',
+					'container_class' => 'menu-footer-container',
+					'menu_class' => 'menu-footer-list',
+					'fallback_cb' => false,
+					'depth' => 1,
+				);
+			
+				wp_nav_menu( $launch_footer_menu_args ); ?>
+			<div class="site-info">
+				<p>Coming Soon</p>
+			</div><!-- .site-info -->
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

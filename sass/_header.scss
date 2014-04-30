@@ -24,6 +24,10 @@
 	@include make-sm-column-offset(6);
 	@include text-hide();
 	padding-top: 19%;
+	margin: {
+		left: $grid-gutter-width;
+		right: $grid-gutter-width;
+	}
 	background: {
 		image: url('../img/header-tagline-logo.png');
 		size: contain;
@@ -35,4 +39,16 @@
 }
 .site-description {
 	@extend .sr-only;
+}
+
+.site-footer {
+	color: white;
+	background-color: $brand-info;
+}
+.footer-inner {
+	@extend .container;
+	padding: {
+		top: 20px;
+		bottom: 20px;
+	}
 }
