@@ -1,0 +1,15 @@
+.main-navigation {
+	@include make-row();
+	.menu {
+		@include make-sm-column(6);
+		@include make-sm-column-offset(6);
+		margin-bottom: 10px;
+	}
+}
+.main-navigation-list {
+	@extend .nav, .nav-pills;
+}
+
+.nav-pills {
+	background-color: 
+}

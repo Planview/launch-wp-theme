@@ -12,6 +12,17 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+if ( ! function_exists( 'launch_theme_info') ) :
+/**
+ * Sets a global variable with the theme info
+ */
+function launch_theme_info() {
+	global $launch_theme_info;
+	$launch_theme_info = wp_get_theme();
+}
+add_action( 'init', 'launch_theme_info' );
+endif;
+
 if ( ! function_exists( 'launch_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -38,21 +49,13 @@ function launch_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'launch' ),
+		'footer' => __( 'Footer Menu', 'launch' ),
 	) );
-
-	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-	// Setup the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'launch_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array(
@@ -87,9 +90,18 @@ add_action( 'widgets_init', 'launch_widgets_init' );
  * Enqueue scripts and styles.
  */
 function launch_scripts() {
-	wp_enqueue_style( 'launch-style', get_stylesheet_uri() );
+	global $launch_theme_info;
 
-	wp_enqueue_script( 'launch-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	$launch_version = $launch_theme_info->get( 'Version' );
+
+	if ( is_admin() )
+		wp_enqueue_style( 'launch-style', get_stylesheet_uri() );
+
+	if ( ! is_admin() ) {
+		wp_enqueue_style( 'launch-style', get_template_directory_uri() . '/css/style.css', array(), $launch_version );
+	}
+
+	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/min/modernizr.min.js', array(), '2.7.2', false );
 
 	wp_enqueue_script( 'launch-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
