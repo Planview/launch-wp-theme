@@ -34,10 +34,90 @@
 	color: $text-color;
 }
 
-.menu-footer-list {
+.menu-footer-list, .footer-legal-menu, .footer-follow-menu {
 	@extend .list-inline;
-	text-align: center;
 	a {
 		color: white;
+	}
+}
+.menu-footer-list {
+	text-align: center;
+}
+.footer-legal-menu {
+	@media screen and (min-width: $screen-sm-min) {
+		display: inline-block;
+	}
+	margin-top: 10px;
+}
+.footer-follow-menu {
+	margin-top: 10px;
+	@media screen and (max-width: $screen-xs-max) {
+		display: inline-block;
+		margin: {
+			left: auto;
+			right: auto;
+		}
+	}
+	@media screen and (min-width: $screen-sm-min) {
+		float: right;
+	}
+	a {
+		@include text-hide();
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		vertical-align: top;
+		background: {
+			image: url('../img/follow.png');
+		}
+	}
+	li {
+		height: 20px;
+		&:last-child {
+			padding-left: 8px;
+			border: {
+				left: 1px solid white;
+			}
+		}
+		&:first-child {
+			border: 0;
+		}
+		&.linkedin a {
+			background-position: 0px top;
+			&:hover, &:active {
+				background-position: 0px bottom;
+			}
+		}
+		&.youtube a {
+			background-position: 191px top;
+			&:hover, &:active {
+				background-position: 191px bottom;
+			}
+		}
+		&.twitter a {
+			background-position: 171px top;
+			&:hover, &:active {
+				background-position: 171px bottom;
+			}
+		}
+		&.xing a {
+			background-position: 151px top;
+			&:hover, &:active {
+				background-position: 151px bottom;
+			}
+		}
+		&.facebook a {
+			background-position: 131px top;
+			&:hover, &:active {
+				background-position: 131px bottom;
+			}
+		}
+		&.contact a {
+			width: 96px;
+			background-position: right top;
+			&:hover, &:active {
+				background-position: right bottom;
+			}
+		}
 	}
 }

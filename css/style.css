@@ -1142,7 +1142,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1238,7 +1238,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.1;
   color: inherit;
 }
@@ -1474,15 +1474,15 @@ ol ol {
   margin-bottom: 0;
 }
 
-.list-unstyled, .list-inline, .menu-footer-list {
+.list-unstyled, .list-inline, .menu-footer-list, .footer-legal-menu, .footer-follow-menu {
   padding-left: 0;
   list-style: none;
 }
 
-.list-inline, .menu-footer-list {
+.list-inline, .menu-footer-list, .footer-legal-menu, .footer-follow-menu {
   margin-left: -5px;
 }
-.list-inline > li, .menu-footer-list > li {
+.list-inline > li, .menu-footer-list > li, .footer-legal-menu > li, .footer-follow-menu > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -1651,31 +1651,31 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .header-inner, .footer-inner {
+.container, .header-inner, .footer-inner, .site-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.container:before, .header-inner:before, .footer-inner:before, .container:after, .header-inner:after, .footer-inner:after {
+.container:before, .header-inner:before, .footer-inner:before, .site-content:before, .container:after, .header-inner:after, .footer-inner:after, .site-content:after {
   content: " ";
   display: table;
 }
-.container:after, .header-inner:after, .footer-inner:after {
+.container:after, .header-inner:after, .footer-inner:after, .site-content:after {
   clear: both;
 }
 @media (min-width: 768px) {
-  .container, .header-inner, .footer-inner {
+  .container, .header-inner, .footer-inner, .site-content {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container, .header-inner, .footer-inner {
+  .container, .header-inner, .footer-inner, .site-content {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .header-inner, .footer-inner {
+  .container, .header-inner, .footer-inner, .site-content {
     width: 1170px;
   }
 }
@@ -4247,20 +4247,22 @@ tbody.collapse.in {
   }
 }
 
-.container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header,
+.container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header, .site-content > .navbar-header,
 .container > .navbar-collapse,
 .header-inner > .navbar-collapse,
 .footer-inner > .navbar-collapse,
+.site-content > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header,
+  .container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header, .site-content > .navbar-header,
   .container > .navbar-collapse,
   .header-inner > .navbar-collapse,
   .footer-inner > .navbar-collapse,
+  .site-content > .navbar-collapse,
   .container-fluid > .navbar-header,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
@@ -4314,7 +4316,7 @@ tbody.collapse.in {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > .header-inner .navbar-brand, .navbar > .footer-inner .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > .header-inner .navbar-brand, .navbar > .footer-inner .navbar-brand, .navbar > .site-content .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -4922,10 +4924,10 @@ a.badge:hover, a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron {
+.container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron, .site-content .jumbotron {
   border-radius: 6px;
 }
-.jumbotron .container, .jumbotron .header-inner, .jumbotron .footer-inner {
+.jumbotron .container, .jumbotron .header-inner, .jumbotron .footer-inner, .jumbotron .site-content {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -4933,7 +4935,7 @@ a.badge:hover, a.badge:focus {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron {
+  .container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron, .site-content .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -6577,6 +6579,14 @@ button.close {
     display: none !important;
   }
 }
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+b, em {
+  font-weight: 600;
+}
+
 .site-header {
   width: 100%;
   background-color: white;
@@ -6589,6 +6599,11 @@ button.close {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: bottom left;
+  }
+}
+@media print {
+  .site-header {
+    display: none;
   }
 }
 
@@ -6642,10 +6657,56 @@ button.close {
   color: white;
   background-color: #157ab3;
 }
+@media print {
+  .site-footer {
+    display: none;
+  }
+}
 
 .footer-inner {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.footer-branding {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-bottom {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.footer-bottom:before, .footer-bottom:after {
+  content: " ";
+  display: table;
+}
+.footer-bottom:after {
+  clear: both;
+}
+
+.footer-legal, .footer-follow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-legal, .footer-follow {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-legal, .footer-follow {
+    text-align: inherit;
+  }
+}
+
+.copyright {
+  margin-right: 20px;
 }
 
 .main-navigation {
@@ -6705,9 +6766,94 @@ button.close {
   color: #333333;
 }
 
+.menu-footer-list a, .footer-legal-menu a, .footer-follow-menu a {
+  color: white;
+}
+
 .menu-footer-list {
   text-align: center;
 }
-.menu-footer-list a {
-  color: white;
+
+.footer-legal-menu {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .footer-legal-menu {
+    display: inline-block;
+  }
+}
+
+.footer-follow-menu {
+  margin-top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .footer-follow-menu {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-follow-menu {
+    float: right;
+  }
+}
+.footer-follow-menu a {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+  background-image: url("../img/follow.png");
+}
+.footer-follow-menu li {
+  height: 20px;
+}
+.footer-follow-menu li:last-child {
+  padding-left: 8px;
+  border-left: 1px solid white;
+}
+.footer-follow-menu li:first-child {
+  border: 0;
+}
+.footer-follow-menu li.linkedin a {
+  background-position: 0px top;
+}
+.footer-follow-menu li.linkedin a:hover, .footer-follow-menu li.linkedin a:active {
+  background-position: 0px bottom;
+}
+.footer-follow-menu li.youtube a {
+  background-position: 191px top;
+}
+.footer-follow-menu li.youtube a:hover, .footer-follow-menu li.youtube a:active {
+  background-position: 191px bottom;
+}
+.footer-follow-menu li.twitter a {
+  background-position: 171px top;
+}
+.footer-follow-menu li.twitter a:hover, .footer-follow-menu li.twitter a:active {
+  background-position: 171px bottom;
+}
+.footer-follow-menu li.xing a {
+  background-position: 151px top;
+}
+.footer-follow-menu li.xing a:hover, .footer-follow-menu li.xing a:active {
+  background-position: 151px bottom;
+}
+.footer-follow-menu li.facebook a {
+  background-position: 131px top;
+}
+.footer-follow-menu li.facebook a:hover, .footer-follow-menu li.facebook a:active {
+  background-position: 131px bottom;
+}
+.footer-follow-menu li.contact a {
+  width: 96px;
+  background-position: right top;
+}
+.footer-follow-menu li.contact a:hover, .footer-follow-menu li.contact a:active {
+  background-position: right bottom;
 }

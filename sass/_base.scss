@@ -1,3 +1,10 @@
 .screen-reader-text {
 	@extend .sr-only;
 }
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+b, em {
+	font-weight: 600;
+}

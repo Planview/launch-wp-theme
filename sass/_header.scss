@@ -12,6 +12,9 @@
 			position: bottom left;
 		}
 	}
+	@media print {
+		display: none;
+	}
 }
 .header-inner {
 	@extend .container;
@@ -44,6 +47,9 @@
 .site-footer {
 	color: white;
 	background-color: $brand-info;
+	@media print {
+		display: none;
+	}
 }
 .footer-inner {
 	@extend .container;
@@ -51,4 +57,24 @@
 		top: 20px;
 		bottom: 20px;
 	}
+}
+.footer-branding {
+	text-align: center;
+	padding: {
+		top: 10px;
+		bottom: 10px;
+	}
+}
+.footer-bottom {
+	@include make-row();
+}
+.footer-legal, .footer-follow {
+	@include make-sm-column(6);
+	text-align: center;
+	@media screen and (min-width: $screen-sm-min) {
+		text-align: inherit;
+	}
+}
+.copyright {
+	margin-right: 20px;
 }
