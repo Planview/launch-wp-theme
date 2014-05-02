@@ -148,3 +148,8 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load the nav walkers
  */
 require get_template_directory() . '/inc/bootstrap-nav-menu-walker.php';
+
+/**
+ * Load the custom fields
+ */
+require get_template_directory() . '/inc/custom-fields.php';

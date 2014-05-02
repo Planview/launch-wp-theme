@@ -6857,3 +6857,12 @@ b, em {
 .footer-follow-menu li.contact a:hover, .footer-follow-menu li.contact a:active {
   background-position: right bottom;
 }
+
+.launch-jumbotron, .launch-front-content, .launch-front-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.launch-front-content {
+  background-color: white;
+}

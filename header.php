@@ -45,4 +45,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="<?php echo ( is_front_page() ? 'front-content' : 'site-content' ); ?>">
