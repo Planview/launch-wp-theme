@@ -131,3 +131,14 @@ function launch_category_transient_flusher() {
 }
 add_action( 'edit_category', 'launch_category_transient_flusher' );
 add_action( 'save_post',     'launch_category_transient_flusher' );
+
+
+/**
+ * Conditional Tag for gt IE8 on our style
+ */
+function launch_ie_style_conditional($output, $handle) {
+    if ( $handle != 'launch-style' ) return $output;
+
+    return "<!--[if gt IE 8]><!-->\n" . $output . "<!--<![endif]-->\n";
+}
+add_filter( 'style_loader_tag', 'launch_ie_style_conditional', 10, 2 );
