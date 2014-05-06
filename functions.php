@@ -153,3 +153,8 @@ require get_template_directory() . '/inc/bootstrap-nav-menu-walker.php';
  * Load the custom fields
  */
 require get_template_directory() . '/inc/custom-fields.php';
+
+/**
+ * Load custom TinyMCE settings
+ */
+require get_template_directory() . '/inc/editor.php';
