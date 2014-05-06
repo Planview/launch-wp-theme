@@ -1,8 +1,10 @@
 @import "variables";
 @import	"../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "../vendor/fontawesome/scss/font-awesome";
 
 @import "base";
 @import "header";
 @import "navs";
 @import "body";
+@import "forms";
 @import "front";

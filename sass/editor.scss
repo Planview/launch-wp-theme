@@ -1,0 +1,11 @@
+/* Bootstrap Default */
+$icon-font-path: "../vendor/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+@import "../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+/* Font Awesome */
+$fa-font-path: "../vendor/fontawesome/fonts";
+@import "../vendor/fontawesome/scss/font-awesome";
+
+body {
+  padding: 10px;
+}

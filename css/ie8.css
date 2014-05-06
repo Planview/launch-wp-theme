@@ -2844,7 +2844,7 @@ input[type="range"] {
   width: 100%;
 }
 
-select[multiple], .gfield:not(.captcha) select[multiple], .gfield:not(.captcha) select[size],
+select[multiple], .gfield select[multiple], .gfield select[size],
 select[size] {
   height: auto;
 }
@@ -2865,7 +2865,7 @@ output {
   color: #555555;
 }
 
-.form-control, .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea, .gfield:not(.captcha) select {
+.form-control, .gfield input[type="text"], .gfield input[type="password"], .gfield input[type="datetime"], .gfield input[type="datetime-local"], .gfield input[type="date"], .gfield input[type="month"], .gfield input[type="time"], .gfield input[type="week"], .gfield input[type="number"], .gfield input[type="email"], .gfield input[type="url"], .gfield input[type="search"], .gfield input[type="tel"], .gfield input[type="color"], .gfield textarea, .gfield select {
   display: block;
   width: 100%;
   height: 34px;
@@ -2883,29 +2883,29 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:focus, .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) select:focus {
+.form-control:focus, .gfield input[type="text"]:focus, .gfield input[type="password"]:focus, .gfield input[type="datetime"]:focus, .gfield input[type="datetime-local"]:focus, .gfield input[type="date"]:focus, .gfield input[type="month"]:focus, .gfield input[type="time"]:focus, .gfield input[type="week"]:focus, .gfield input[type="number"]:focus, .gfield input[type="email"]:focus, .gfield input[type="url"]:focus, .gfield input[type="search"]:focus, .gfield input[type="tel"]:focus, .gfield input[type="color"]:focus, .gfield textarea:focus, .gfield select:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.form-control::-moz-placeholder, .gfield:not(.captcha) input:not([type=radio]):not([type=checkbox])::-moz-placeholder, .gfield:not(.captcha) textarea::-moz-placeholder, .gfield:not(.captcha) select::-moz-placeholder {
+.form-control::-moz-placeholder, .gfield input[type="text"]::-moz-placeholder, .gfield input[type="password"]::-moz-placeholder, .gfield input[type="datetime"]::-moz-placeholder, .gfield input[type="datetime-local"]::-moz-placeholder, .gfield input[type="date"]::-moz-placeholder, .gfield input[type="month"]::-moz-placeholder, .gfield input[type="time"]::-moz-placeholder, .gfield input[type="week"]::-moz-placeholder, .gfield input[type="number"]::-moz-placeholder, .gfield input[type="email"]::-moz-placeholder, .gfield input[type="url"]::-moz-placeholder, .gfield input[type="search"]::-moz-placeholder, .gfield input[type="tel"]::-moz-placeholder, .gfield input[type="color"]::-moz-placeholder, .gfield textarea::-moz-placeholder, .gfield select::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, .gfield:not(.captcha) input:-ms-input-placeholder:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea:-ms-input-placeholder, .gfield:not(.captcha) select:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .gfield input[type="text"]:-ms-input-placeholder, .gfield input[type="password"]:-ms-input-placeholder, .gfield input[type="datetime"]:-ms-input-placeholder, .gfield input[type="datetime-local"]:-ms-input-placeholder, .gfield input[type="date"]:-ms-input-placeholder, .gfield input[type="month"]:-ms-input-placeholder, .gfield input[type="time"]:-ms-input-placeholder, .gfield input[type="week"]:-ms-input-placeholder, .gfield input[type="number"]:-ms-input-placeholder, .gfield input[type="email"]:-ms-input-placeholder, .gfield input[type="url"]:-ms-input-placeholder, .gfield input[type="search"]:-ms-input-placeholder, .gfield input[type="tel"]:-ms-input-placeholder, .gfield input[type="color"]:-ms-input-placeholder, .gfield textarea:-ms-input-placeholder, .gfield select:-ms-input-placeholder {
   color: #999999;
 }
-.form-control::-webkit-input-placeholder, .gfield:not(.captcha) input:not([type=radio]):not([type=checkbox])::-webkit-input-placeholder, .gfield:not(.captcha) textarea::-webkit-input-placeholder, .gfield:not(.captcha) select::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, .gfield input[type="text"]::-webkit-input-placeholder, .gfield input[type="password"]::-webkit-input-placeholder, .gfield input[type="datetime"]::-webkit-input-placeholder, .gfield input[type="datetime-local"]::-webkit-input-placeholder, .gfield input[type="date"]::-webkit-input-placeholder, .gfield input[type="month"]::-webkit-input-placeholder, .gfield input[type="time"]::-webkit-input-placeholder, .gfield input[type="week"]::-webkit-input-placeholder, .gfield input[type="number"]::-webkit-input-placeholder, .gfield input[type="email"]::-webkit-input-placeholder, .gfield input[type="url"]::-webkit-input-placeholder, .gfield input[type="search"]::-webkit-input-placeholder, .gfield input[type="tel"]::-webkit-input-placeholder, .gfield input[type="color"]::-webkit-input-placeholder, .gfield textarea::-webkit-input-placeholder, .gfield select::-webkit-input-placeholder {
   color: #999999;
 }
-.form-control[disabled], .gfield:not(.captcha) input[disabled]:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea[disabled], .gfield:not(.captcha) select[disabled], .form-control[readonly], .gfield:not(.captcha) input[readonly]:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea[readonly], .gfield:not(.captcha) select[readonly], fieldset[disabled] .form-control, fieldset[disabled] .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) fieldset[disabled] input:not([type=checkbox]):not([type=radio]), fieldset[disabled] .gfield:not(.captcha) textarea, .gfield:not(.captcha) fieldset[disabled] textarea, fieldset[disabled] .gfield:not(.captcha) select, .gfield:not(.captcha) fieldset[disabled] select {
+.form-control[disabled], .gfield input[disabled][type="text"], .gfield input[disabled][type="password"], .gfield input[disabled][type="datetime"], .gfield input[disabled][type="datetime-local"], .gfield input[disabled][type="date"], .gfield input[disabled][type="month"], .gfield input[disabled][type="time"], .gfield input[disabled][type="week"], .gfield input[disabled][type="number"], .gfield input[disabled][type="email"], .gfield input[disabled][type="url"], .gfield input[disabled][type="search"], .gfield input[disabled][type="tel"], .gfield input[disabled][type="color"], .gfield textarea[disabled], .gfield select[disabled], .form-control[readonly], .gfield input[readonly][type="text"], .gfield input[readonly][type="password"], .gfield input[readonly][type="datetime"], .gfield input[readonly][type="datetime-local"], .gfield input[readonly][type="date"], .gfield input[readonly][type="month"], .gfield input[readonly][type="time"], .gfield input[readonly][type="week"], .gfield input[readonly][type="number"], .gfield input[readonly][type="email"], .gfield input[readonly][type="url"], .gfield input[readonly][type="search"], .gfield input[readonly][type="tel"], .gfield input[readonly][type="color"], .gfield textarea[readonly], .gfield select[readonly], fieldset[disabled] .form-control, fieldset[disabled] .gfield input[type="text"], .gfield fieldset[disabled] input[type="text"], fieldset[disabled] .gfield input[type="password"], .gfield fieldset[disabled] input[type="password"], fieldset[disabled] .gfield input[type="datetime"], .gfield fieldset[disabled] input[type="datetime"], fieldset[disabled] .gfield input[type="datetime-local"], .gfield fieldset[disabled] input[type="datetime-local"], fieldset[disabled] .gfield input[type="date"], .gfield fieldset[disabled] input[type="date"], fieldset[disabled] .gfield input[type="month"], .gfield fieldset[disabled] input[type="month"], fieldset[disabled] .gfield input[type="time"], .gfield fieldset[disabled] input[type="time"], fieldset[disabled] .gfield input[type="week"], .gfield fieldset[disabled] input[type="week"], fieldset[disabled] .gfield input[type="number"], .gfield fieldset[disabled] input[type="number"], fieldset[disabled] .gfield input[type="email"], .gfield fieldset[disabled] input[type="email"], fieldset[disabled] .gfield input[type="url"], .gfield fieldset[disabled] input[type="url"], fieldset[disabled] .gfield input[type="search"], .gfield fieldset[disabled] input[type="search"], fieldset[disabled] .gfield input[type="tel"], .gfield fieldset[disabled] input[type="tel"], fieldset[disabled] .gfield input[type="color"], .gfield fieldset[disabled] input[type="color"], fieldset[disabled] .gfield textarea, .gfield fieldset[disabled] textarea, fieldset[disabled] .gfield select, .gfield fieldset[disabled] select {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 
-textarea.form-control, .gfield:not(.captcha) textarea {
+textarea.form-control, .gfield textarea {
   height: auto;
 }
 
@@ -2920,7 +2920,7 @@ input[type="month"] {
   line-height: 34px;
   line-height: 1.42857 \0;
 }
-input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .gfield:not(.captcha) .input-group-sm > input[type="date"]:not([type=checkbox]):not([type=radio]),
+input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .gfield .input-group-sm > input[type="date"],
 .input-group-sm > input[type="date"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="date"].btn,
 .input-group-sm > .input-group-btn > input[type="date"].gform_next_button,
@@ -2928,7 +2928,7 @@ input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, 
 .input-group-sm > .input-group-btn > input[type="date"].gform_button,
 input[type="time"].input-sm,
 .input-group-sm > input[type="time"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="time"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-sm > input[type="time"],
 .input-group-sm > input[type="time"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="time"].btn,
 .input-group-sm > .input-group-btn > input[type="time"].gform_next_button,
@@ -2936,7 +2936,7 @@ input[type="time"].input-sm,
 .input-group-sm > .input-group-btn > input[type="time"].gform_button,
 input[type="datetime-local"].input-sm,
 .input-group-sm > input[type="datetime-local"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="datetime-local"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-sm > input[type="datetime-local"],
 .input-group-sm > input[type="datetime-local"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].gform_next_button,
@@ -2944,7 +2944,7 @@ input[type="datetime-local"].input-sm,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button,
 input[type="month"].input-sm,
 .input-group-sm > input[type="month"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="month"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-sm > input[type="month"],
 .input-group-sm > input[type="month"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="month"].btn,
 .input-group-sm > .input-group-btn > input[type="month"].gform_next_button,
@@ -2952,7 +2952,7 @@ input[type="month"].input-sm,
 .input-group-sm > .input-group-btn > input[type="month"].gform_button {
   line-height: 30px;
 }
-input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .gfield:not(.captcha) .input-group-lg > input[type="date"]:not([type=checkbox]):not([type=radio]),
+input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .gfield .input-group-lg > input[type="date"],
 .input-group-lg > input[type="date"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="date"].btn,
 .input-group-lg > .input-group-btn > input[type="date"].gform_next_button,
@@ -2960,7 +2960,7 @@ input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, 
 .input-group-lg > .input-group-btn > input[type="date"].gform_button,
 input[type="time"].input-lg,
 .input-group-lg > input[type="time"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="time"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-lg > input[type="time"],
 .input-group-lg > input[type="time"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="time"].btn,
 .input-group-lg > .input-group-btn > input[type="time"].gform_next_button,
@@ -2968,7 +2968,7 @@ input[type="time"].input-lg,
 .input-group-lg > .input-group-btn > input[type="time"].gform_button,
 input[type="datetime-local"].input-lg,
 .input-group-lg > input[type="datetime-local"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="datetime-local"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-lg > input[type="datetime-local"],
 .input-group-lg > input[type="datetime-local"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].gform_next_button,
@@ -2976,7 +2976,7 @@ input[type="datetime-local"].input-lg,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button,
 input[type="month"].input-lg,
 .input-group-lg > input[type="month"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="month"]:not([type=checkbox]):not([type=radio]),
+.gfield .input-group-lg > input[type="month"],
 .input-group-lg > input[type="month"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="month"].btn,
 .input-group-lg > .input-group-btn > input[type="month"].gform_next_button,
@@ -2985,7 +2985,7 @@ input[type="month"].input-lg,
   line-height: 46px;
 }
 
-.form-group, .gfield:not(.captcha) {
+.form-group, .gfield {
   margin-bottom: 15px;
 }
 
@@ -3047,7 +3047,7 @@ input[type="checkbox"],
   cursor: not-allowed;
 }
 
-.input-sm, .input-group-sm > .form-control, .gfield:not(.captcha) .input-group-sm > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-sm > textarea, .gfield:not(.captcha) .input-group-sm > select,
+.input-sm, .input-group-sm > .form-control, .gfield .input-group-sm > input[type="text"], .gfield .input-group-sm > input[type="password"], .gfield .input-group-sm > input[type="datetime"], .gfield .input-group-sm > input[type="datetime-local"], .gfield .input-group-sm > input[type="date"], .gfield .input-group-sm > input[type="month"], .gfield .input-group-sm > input[type="time"], .gfield .input-group-sm > input[type="week"], .gfield .input-group-sm > input[type="number"], .gfield .input-group-sm > input[type="email"], .gfield .input-group-sm > input[type="url"], .gfield .input-group-sm > input[type="search"], .gfield .input-group-sm > input[type="tel"], .gfield .input-group-sm > input[type="color"], .gfield .input-group-sm > textarea, .gfield .input-group-sm > select,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .input-group-sm > .input-group-btn > .gform_next_button,
@@ -3060,7 +3060,7 @@ input[type="checkbox"],
   border-radius: 3px;
 }
 
-select.input-sm, .input-group-sm > select.form-control, .gfield:not(.captcha) .input-group-sm > select,
+select.input-sm, .input-group-sm > select.form-control, .gfield .input-group-sm > select,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
 .input-group-sm > .input-group-btn > select.gform_next_button,
@@ -3070,7 +3070,7 @@ select.input-sm, .input-group-sm > select.form-control, .gfield:not(.captcha) .i
   line-height: 30px;
 }
 
-textarea.input-sm, .input-group-sm > textarea.form-control, .gfield:not(.captcha) .input-group-sm > textarea,
+textarea.input-sm, .input-group-sm > textarea.form-control, .gfield .input-group-sm > textarea,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
 .input-group-sm > .input-group-btn > textarea.gform_next_button,
@@ -3078,19 +3078,18 @@ textarea.input-sm, .input-group-sm > textarea.form-control, .gfield:not(.captcha
 .input-group-sm > .input-group-btn > textarea.gform_button,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
-.gfield:not(.captcha) .input-group-sm > select[multiple],
-.gfield:not(.captcha) .input-group-sm > select[size],
+.gfield .input-group-sm > select[multiple],
+.gfield .input-group-sm > select[size],
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn,
 .input-group-sm > .input-group-btn > select[multiple].gform_next_button,
 .input-group-sm > .input-group-btn > select[multiple].gform_previous_button,
 .input-group-sm > .input-group-btn > select[multiple].gform_button,
-.gfield:not(.captcha) select.input-sm[multiple],
-.gfield:not(.captcha) select.input-sm[size] {
+.gfield select.input-sm[size] {
   height: auto;
 }
 
-.input-lg, .input-group-lg > .form-control, .gfield:not(.captcha) .input-group-lg > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-lg > textarea, .gfield:not(.captcha) .input-group-lg > select,
+.input-lg, .input-group-lg > .form-control, .gfield .input-group-lg > input[type="text"], .gfield .input-group-lg > input[type="password"], .gfield .input-group-lg > input[type="datetime"], .gfield .input-group-lg > input[type="datetime-local"], .gfield .input-group-lg > input[type="date"], .gfield .input-group-lg > input[type="month"], .gfield .input-group-lg > input[type="time"], .gfield .input-group-lg > input[type="week"], .gfield .input-group-lg > input[type="number"], .gfield .input-group-lg > input[type="email"], .gfield .input-group-lg > input[type="url"], .gfield .input-group-lg > input[type="search"], .gfield .input-group-lg > input[type="tel"], .gfield .input-group-lg > input[type="color"], .gfield .input-group-lg > textarea, .gfield .input-group-lg > select,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .input-group-lg > .input-group-btn > .gform_next_button,
@@ -3103,7 +3102,7 @@ select[multiple].input-sm,
   border-radius: 6px;
 }
 
-select.input-lg, .input-group-lg > select.form-control, .gfield:not(.captcha) .input-group-lg > select,
+select.input-lg, .input-group-lg > select.form-control, .gfield .input-group-lg > select,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
 .input-group-lg > .input-group-btn > select.gform_next_button,
@@ -3113,7 +3112,7 @@ select.input-lg, .input-group-lg > select.form-control, .gfield:not(.captcha) .i
   line-height: 46px;
 }
 
-textarea.input-lg, .input-group-lg > textarea.form-control, .gfield:not(.captcha) .input-group-lg > textarea,
+textarea.input-lg, .input-group-lg > textarea.form-control, .gfield .input-group-lg > textarea,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
 .input-group-lg > .input-group-btn > textarea.gform_next_button,
@@ -3121,22 +3120,21 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .gfield:not(.captcha
 .input-group-lg > .input-group-btn > textarea.gform_button,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
-.gfield:not(.captcha) .input-group-lg > select[multiple],
-.gfield:not(.captcha) .input-group-lg > select[size],
+.gfield .input-group-lg > select[multiple],
+.gfield .input-group-lg > select[size],
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn,
 .input-group-lg > .input-group-btn > select[multiple].gform_next_button,
 .input-group-lg > .input-group-btn > select[multiple].gform_previous_button,
 .input-group-lg > .input-group-btn > select[multiple].gform_button,
-.gfield:not(.captcha) select.input-lg[multiple],
-.gfield:not(.captcha) select.input-lg[size] {
+.gfield select.input-lg[size] {
   height: auto;
 }
 
 .has-feedback {
   position: relative;
 }
-.has-feedback .form-control, .has-feedback .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-feedback input:not([type=checkbox]):not([type=radio]), .has-feedback .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-feedback textarea, .has-feedback .gfield:not(.captcha) select, .gfield:not(.captcha) .has-feedback select {
+.has-feedback .form-control, .has-feedback .gfield input[type="text"], .gfield .has-feedback input[type="text"], .has-feedback .gfield input[type="password"], .gfield .has-feedback input[type="password"], .has-feedback .gfield input[type="datetime"], .gfield .has-feedback input[type="datetime"], .has-feedback .gfield input[type="datetime-local"], .gfield .has-feedback input[type="datetime-local"], .has-feedback .gfield input[type="date"], .gfield .has-feedback input[type="date"], .has-feedback .gfield input[type="month"], .gfield .has-feedback input[type="month"], .has-feedback .gfield input[type="time"], .gfield .has-feedback input[type="time"], .has-feedback .gfield input[type="week"], .gfield .has-feedback input[type="week"], .has-feedback .gfield input[type="number"], .gfield .has-feedback input[type="number"], .has-feedback .gfield input[type="email"], .gfield .has-feedback input[type="email"], .has-feedback .gfield input[type="url"], .gfield .has-feedback input[type="url"], .has-feedback .gfield input[type="search"], .gfield .has-feedback input[type="search"], .has-feedback .gfield input[type="tel"], .gfield .has-feedback input[type="tel"], .has-feedback .gfield input[type="color"], .gfield .has-feedback input[type="color"], .has-feedback .gfield textarea, .gfield .has-feedback textarea, .has-feedback .gfield select, .gfield .has-feedback select {
   padding-right: 42.5px;
 }
 
@@ -3152,7 +3150,7 @@ select[multiple].input-lg,
   text-align: center;
 }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > input:not([type=checkbox]):not([type=radio]) + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > textarea + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > select + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .gfield .input-group-lg > input[type="text"] + .form-control-feedback, .gfield .input-group-lg > input[type="password"] + .form-control-feedback, .gfield .input-group-lg > input[type="datetime"] + .form-control-feedback, .gfield .input-group-lg > input[type="datetime-local"] + .form-control-feedback, .gfield .input-group-lg > input[type="date"] + .form-control-feedback, .gfield .input-group-lg > input[type="month"] + .form-control-feedback, .gfield .input-group-lg > input[type="time"] + .form-control-feedback, .gfield .input-group-lg > input[type="week"] + .form-control-feedback, .gfield .input-group-lg > input[type="number"] + .form-control-feedback, .gfield .input-group-lg > input[type="email"] + .form-control-feedback, .gfield .input-group-lg > input[type="url"] + .form-control-feedback, .gfield .input-group-lg > input[type="search"] + .form-control-feedback, .gfield .input-group-lg > input[type="tel"] + .form-control-feedback, .gfield .input-group-lg > input[type="color"] + .form-control-feedback, .gfield .input-group-lg > textarea + .form-control-feedback, .gfield .input-group-lg > select + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg > .input-group-btn > .gform_next_button + .form-control-feedback,
@@ -3163,7 +3161,7 @@ select[multiple].input-lg,
   line-height: 46px;
 }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > input:not([type=checkbox]):not([type=radio]) + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > textarea + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > select + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .gfield .input-group-sm > input[type="text"] + .form-control-feedback, .gfield .input-group-sm > input[type="password"] + .form-control-feedback, .gfield .input-group-sm > input[type="datetime"] + .form-control-feedback, .gfield .input-group-sm > input[type="datetime-local"] + .form-control-feedback, .gfield .input-group-sm > input[type="date"] + .form-control-feedback, .gfield .input-group-sm > input[type="month"] + .form-control-feedback, .gfield .input-group-sm > input[type="time"] + .form-control-feedback, .gfield .input-group-sm > input[type="week"] + .form-control-feedback, .gfield .input-group-sm > input[type="number"] + .form-control-feedback, .gfield .input-group-sm > input[type="email"] + .form-control-feedback, .gfield .input-group-sm > input[type="url"] + .form-control-feedback, .gfield .input-group-sm > input[type="search"] + .form-control-feedback, .gfield .input-group-sm > input[type="tel"] + .form-control-feedback, .gfield .input-group-sm > input[type="color"] + .form-control-feedback, .gfield .input-group-sm > textarea + .form-control-feedback, .gfield .input-group-sm > select + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm > .input-group-btn > .gform_next_button + .form-control-feedback,
@@ -3176,20 +3174,20 @@ select[multiple].input-lg,
 
 .has-success .help-block,
 .has-success .control-label,
-.has-success .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-success .gfield_label,
+.has-success .gfield .gfield_label,
+.gfield .has-success .gfield_label,
 .has-success .radio,
 .has-success .checkbox,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
   color: #3c763d;
 }
-.has-success .form-control, .has-success .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-success input:not([type=checkbox]):not([type=radio]), .has-success .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-success textarea, .has-success .gfield:not(.captcha) select, .gfield:not(.captcha) .has-success select {
+.has-success .form-control, .has-success .gfield input[type="text"], .gfield .has-success input[type="text"], .has-success .gfield input[type="password"], .gfield .has-success input[type="password"], .has-success .gfield input[type="datetime"], .gfield .has-success input[type="datetime"], .has-success .gfield input[type="datetime-local"], .gfield .has-success input[type="datetime-local"], .has-success .gfield input[type="date"], .gfield .has-success input[type="date"], .has-success .gfield input[type="month"], .gfield .has-success input[type="month"], .has-success .gfield input[type="time"], .gfield .has-success input[type="time"], .has-success .gfield input[type="week"], .gfield .has-success input[type="week"], .has-success .gfield input[type="number"], .gfield .has-success input[type="number"], .has-success .gfield input[type="email"], .gfield .has-success input[type="email"], .has-success .gfield input[type="url"], .gfield .has-success input[type="url"], .has-success .gfield input[type="search"], .gfield .has-success input[type="search"], .has-success .gfield input[type="tel"], .gfield .has-success input[type="tel"], .has-success .gfield input[type="color"], .gfield .has-success input[type="color"], .has-success .gfield textarea, .gfield .has-success textarea, .has-success .gfield select, .gfield .has-success select {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-success .form-control:focus, .has-success .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-success input:focus:not([type=checkbox]):not([type=radio]), .has-success .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-success textarea:focus, .has-success .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-success select:focus {
+.has-success .form-control:focus, .has-success .gfield input[type="text"]:focus, .gfield .has-success input[type="text"]:focus, .has-success .gfield input[type="password"]:focus, .gfield .has-success input[type="password"]:focus, .has-success .gfield input[type="datetime"]:focus, .gfield .has-success input[type="datetime"]:focus, .has-success .gfield input[type="datetime-local"]:focus, .gfield .has-success input[type="datetime-local"]:focus, .has-success .gfield input[type="date"]:focus, .gfield .has-success input[type="date"]:focus, .has-success .gfield input[type="month"]:focus, .gfield .has-success input[type="month"]:focus, .has-success .gfield input[type="time"]:focus, .gfield .has-success input[type="time"]:focus, .has-success .gfield input[type="week"]:focus, .gfield .has-success input[type="week"]:focus, .has-success .gfield input[type="number"]:focus, .gfield .has-success input[type="number"]:focus, .has-success .gfield input[type="email"]:focus, .gfield .has-success input[type="email"]:focus, .has-success .gfield input[type="url"]:focus, .gfield .has-success input[type="url"]:focus, .has-success .gfield input[type="search"]:focus, .gfield .has-success input[type="search"]:focus, .has-success .gfield input[type="tel"]:focus, .gfield .has-success input[type="tel"]:focus, .has-success .gfield input[type="color"]:focus, .gfield .has-success input[type="color"]:focus, .has-success .gfield textarea:focus, .gfield .has-success textarea:focus, .has-success .gfield select:focus, .gfield .has-success select:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -3205,20 +3203,20 @@ select[multiple].input-lg,
 
 .has-warning .help-block,
 .has-warning .control-label,
-.has-warning .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-warning .gfield_label,
+.has-warning .gfield .gfield_label,
+.gfield .has-warning .gfield_label,
 .has-warning .radio,
 .has-warning .checkbox,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline {
   color: #8a6d3b;
 }
-.has-warning .form-control, .has-warning .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-warning input:not([type=checkbox]):not([type=radio]), .has-warning .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-warning textarea, .has-warning .gfield:not(.captcha) select, .gfield:not(.captcha) .has-warning select {
+.has-warning .form-control, .has-warning .gfield input[type="text"], .gfield .has-warning input[type="text"], .has-warning .gfield input[type="password"], .gfield .has-warning input[type="password"], .has-warning .gfield input[type="datetime"], .gfield .has-warning input[type="datetime"], .has-warning .gfield input[type="datetime-local"], .gfield .has-warning input[type="datetime-local"], .has-warning .gfield input[type="date"], .gfield .has-warning input[type="date"], .has-warning .gfield input[type="month"], .gfield .has-warning input[type="month"], .has-warning .gfield input[type="time"], .gfield .has-warning input[type="time"], .has-warning .gfield input[type="week"], .gfield .has-warning input[type="week"], .has-warning .gfield input[type="number"], .gfield .has-warning input[type="number"], .has-warning .gfield input[type="email"], .gfield .has-warning input[type="email"], .has-warning .gfield input[type="url"], .gfield .has-warning input[type="url"], .has-warning .gfield input[type="search"], .gfield .has-warning input[type="search"], .has-warning .gfield input[type="tel"], .gfield .has-warning input[type="tel"], .has-warning .gfield input[type="color"], .gfield .has-warning input[type="color"], .has-warning .gfield textarea, .gfield .has-warning textarea, .has-warning .gfield select, .gfield .has-warning select {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-warning .form-control:focus, .has-warning .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-warning input:focus:not([type=checkbox]):not([type=radio]), .has-warning .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-warning textarea:focus, .has-warning .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-warning select:focus {
+.has-warning .form-control:focus, .has-warning .gfield input[type="text"]:focus, .gfield .has-warning input[type="text"]:focus, .has-warning .gfield input[type="password"]:focus, .gfield .has-warning input[type="password"]:focus, .has-warning .gfield input[type="datetime"]:focus, .gfield .has-warning input[type="datetime"]:focus, .has-warning .gfield input[type="datetime-local"]:focus, .gfield .has-warning input[type="datetime-local"]:focus, .has-warning .gfield input[type="date"]:focus, .gfield .has-warning input[type="date"]:focus, .has-warning .gfield input[type="month"]:focus, .gfield .has-warning input[type="month"]:focus, .has-warning .gfield input[type="time"]:focus, .gfield .has-warning input[type="time"]:focus, .has-warning .gfield input[type="week"]:focus, .gfield .has-warning input[type="week"]:focus, .has-warning .gfield input[type="number"]:focus, .gfield .has-warning input[type="number"]:focus, .has-warning .gfield input[type="email"]:focus, .gfield .has-warning input[type="email"]:focus, .has-warning .gfield input[type="url"]:focus, .gfield .has-warning input[type="url"]:focus, .has-warning .gfield input[type="search"]:focus, .gfield .has-warning input[type="search"]:focus, .has-warning .gfield input[type="tel"]:focus, .gfield .has-warning input[type="tel"]:focus, .has-warning .gfield input[type="color"]:focus, .gfield .has-warning input[type="color"]:focus, .has-warning .gfield textarea:focus, .gfield .has-warning textarea:focus, .has-warning .gfield select:focus, .gfield .has-warning select:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -3232,38 +3230,38 @@ select[multiple].input-lg,
   color: #8a6d3b;
 }
 
-.has-error .help-block, .gfield.gfield_error:not(.captcha) .help-block,
+.has-error .help-block, .gfield.gfield_error .help-block,
 .has-error .control-label,
-.gfield.gfield_error:not(.captcha) .control-label,
-.has-error .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-error .gfield_label,
-.gfield.gfield_error:not(.captcha) .gfield_label,
+.gfield.gfield_error .control-label,
+.has-error .gfield .gfield_label,
+.gfield .has-error .gfield_label,
+.gfield.gfield_error .gfield_label,
 .has-error .radio,
-.gfield.gfield_error:not(.captcha) .radio,
+.gfield.gfield_error .radio,
 .has-error .checkbox,
-.gfield.gfield_error:not(.captcha) .checkbox,
+.gfield.gfield_error .checkbox,
 .has-error .radio-inline,
-.gfield.gfield_error:not(.captcha) .radio-inline,
+.gfield.gfield_error .radio-inline,
 .has-error .checkbox-inline,
-.gfield.gfield_error:not(.captcha) .checkbox-inline {
+.gfield.gfield_error .checkbox-inline {
   color: #a94442;
 }
-.has-error .form-control, .gfield.gfield_error:not(.captcha) .form-control, .has-error .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-error input:not([type=checkbox]):not([type=radio]), .gfield.gfield_error:not(.captcha) input:not([type=checkbox]):not([type=radio]), .has-error .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-error textarea, .gfield.gfield_error:not(.captcha) textarea, .has-error .gfield:not(.captcha) select, .gfield:not(.captcha) .has-error select, .gfield.gfield_error:not(.captcha) select {
+.has-error .form-control, .gfield.gfield_error .form-control, .has-error .gfield input[type="text"], .gfield .has-error input[type="text"], .gfield.gfield_error input[type="text"], .has-error .gfield input[type="password"], .gfield .has-error input[type="password"], .gfield.gfield_error input[type="password"], .has-error .gfield input[type="datetime"], .gfield .has-error input[type="datetime"], .gfield.gfield_error input[type="datetime"], .has-error .gfield input[type="datetime-local"], .gfield .has-error input[type="datetime-local"], .gfield.gfield_error input[type="datetime-local"], .has-error .gfield input[type="date"], .gfield .has-error input[type="date"], .gfield.gfield_error input[type="date"], .has-error .gfield input[type="month"], .gfield .has-error input[type="month"], .gfield.gfield_error input[type="month"], .has-error .gfield input[type="time"], .gfield .has-error input[type="time"], .gfield.gfield_error input[type="time"], .has-error .gfield input[type="week"], .gfield .has-error input[type="week"], .gfield.gfield_error input[type="week"], .has-error .gfield input[type="number"], .gfield .has-error input[type="number"], .gfield.gfield_error input[type="number"], .has-error .gfield input[type="email"], .gfield .has-error input[type="email"], .gfield.gfield_error input[type="email"], .has-error .gfield input[type="url"], .gfield .has-error input[type="url"], .gfield.gfield_error input[type="url"], .has-error .gfield input[type="search"], .gfield .has-error input[type="search"], .gfield.gfield_error input[type="search"], .has-error .gfield input[type="tel"], .gfield .has-error input[type="tel"], .gfield.gfield_error input[type="tel"], .has-error .gfield input[type="color"], .gfield .has-error input[type="color"], .gfield.gfield_error input[type="color"], .has-error .gfield textarea, .gfield .has-error textarea, .gfield.gfield_error textarea, .has-error .gfield select, .gfield .has-error select, .gfield.gfield_error select {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-error .form-control:focus, .gfield.gfield_error:not(.captcha) .form-control:focus, .has-error .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-error input:focus:not([type=checkbox]):not([type=radio]), .gfield.gfield_error:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .has-error .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-error textarea:focus, .gfield.gfield_error:not(.captcha) textarea:focus, .has-error .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-error select:focus, .gfield.gfield_error:not(.captcha) select:focus {
+.has-error .form-control:focus, .gfield.gfield_error .form-control:focus, .has-error .gfield input[type="text"]:focus, .gfield .has-error input[type="text"]:focus, .gfield.gfield_error input[type="text"]:focus, .has-error .gfield input[type="password"]:focus, .gfield .has-error input[type="password"]:focus, .gfield.gfield_error input[type="password"]:focus, .has-error .gfield input[type="datetime"]:focus, .gfield .has-error input[type="datetime"]:focus, .gfield.gfield_error input[type="datetime"]:focus, .has-error .gfield input[type="datetime-local"]:focus, .gfield .has-error input[type="datetime-local"]:focus, .gfield.gfield_error input[type="datetime-local"]:focus, .has-error .gfield input[type="date"]:focus, .gfield .has-error input[type="date"]:focus, .gfield.gfield_error input[type="date"]:focus, .has-error .gfield input[type="month"]:focus, .gfield .has-error input[type="month"]:focus, .gfield.gfield_error input[type="month"]:focus, .has-error .gfield input[type="time"]:focus, .gfield .has-error input[type="time"]:focus, .gfield.gfield_error input[type="time"]:focus, .has-error .gfield input[type="week"]:focus, .gfield .has-error input[type="week"]:focus, .gfield.gfield_error input[type="week"]:focus, .has-error .gfield input[type="number"]:focus, .gfield .has-error input[type="number"]:focus, .gfield.gfield_error input[type="number"]:focus, .has-error .gfield input[type="email"]:focus, .gfield .has-error input[type="email"]:focus, .gfield.gfield_error input[type="email"]:focus, .has-error .gfield input[type="url"]:focus, .gfield .has-error input[type="url"]:focus, .gfield.gfield_error input[type="url"]:focus, .has-error .gfield input[type="search"]:focus, .gfield .has-error input[type="search"]:focus, .gfield.gfield_error input[type="search"]:focus, .has-error .gfield input[type="tel"]:focus, .gfield .has-error input[type="tel"]:focus, .gfield.gfield_error input[type="tel"]:focus, .has-error .gfield input[type="color"]:focus, .gfield .has-error input[type="color"]:focus, .gfield.gfield_error input[type="color"]:focus, .has-error .gfield textarea:focus, .gfield .has-error textarea:focus, .gfield.gfield_error textarea:focus, .has-error .gfield select:focus, .gfield .has-error select:focus, .gfield.gfield_error select:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
-.has-error .input-group-addon, .gfield.gfield_error:not(.captcha) .input-group-addon {
+.has-error .input-group-addon, .gfield.gfield_error .input-group-addon {
   color: #a94442;
   border-color: #a94442;
   background-color: #f2dede;
 }
-.has-error .form-control-feedback, .gfield.gfield_error:not(.captcha) .form-control-feedback {
+.has-error .form-control-feedback, .gfield.gfield_error .form-control-feedback {
   color: #a94442;
 }
 
@@ -3279,12 +3277,12 @@ select[multiple].input-lg,
 }
 
 @media (min-width: 768px) {
-  .form-inline .form-group, .navbar-form .form-group, .form-inline .gfield:not(.captcha), .navbar-form .gfield:not(.captcha) {
+  .form-inline .form-group, .navbar-form .form-group, .form-inline .gfield, .navbar-form .gfield {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control, .navbar-form .form-control, .form-inline .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .form-inline input:not([type=checkbox]):not([type=radio]), .navbar-form .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .navbar-form input:not([type=checkbox]):not([type=radio]), .form-inline .gfield:not(.captcha) textarea, .gfield:not(.captcha) .form-inline textarea, .navbar-form .gfield:not(.captcha) textarea, .gfield:not(.captcha) .navbar-form textarea, .form-inline .gfield:not(.captcha) select, .gfield:not(.captcha) .form-inline select, .navbar-form .gfield:not(.captcha) select, .gfield:not(.captcha) .navbar-form select {
+  .form-inline .form-control, .navbar-form .form-control, .form-inline .gfield input[type="text"], .gfield .form-inline input[type="text"], .navbar-form .gfield input[type="text"], .gfield .navbar-form input[type="text"], .form-inline .gfield input[type="password"], .gfield .form-inline input[type="password"], .navbar-form .gfield input[type="password"], .gfield .navbar-form input[type="password"], .form-inline .gfield input[type="datetime"], .gfield .form-inline input[type="datetime"], .navbar-form .gfield input[type="datetime"], .gfield .navbar-form input[type="datetime"], .form-inline .gfield input[type="datetime-local"], .gfield .form-inline input[type="datetime-local"], .navbar-form .gfield input[type="datetime-local"], .gfield .navbar-form input[type="datetime-local"], .form-inline .gfield input[type="date"], .gfield .form-inline input[type="date"], .navbar-form .gfield input[type="date"], .gfield .navbar-form input[type="date"], .form-inline .gfield input[type="month"], .gfield .form-inline input[type="month"], .navbar-form .gfield input[type="month"], .gfield .navbar-form input[type="month"], .form-inline .gfield input[type="time"], .gfield .form-inline input[type="time"], .navbar-form .gfield input[type="time"], .gfield .navbar-form input[type="time"], .form-inline .gfield input[type="week"], .gfield .form-inline input[type="week"], .navbar-form .gfield input[type="week"], .gfield .navbar-form input[type="week"], .form-inline .gfield input[type="number"], .gfield .form-inline input[type="number"], .navbar-form .gfield input[type="number"], .gfield .navbar-form input[type="number"], .form-inline .gfield input[type="email"], .gfield .form-inline input[type="email"], .navbar-form .gfield input[type="email"], .gfield .navbar-form input[type="email"], .form-inline .gfield input[type="url"], .gfield .form-inline input[type="url"], .navbar-form .gfield input[type="url"], .gfield .navbar-form input[type="url"], .form-inline .gfield input[type="search"], .gfield .form-inline input[type="search"], .navbar-form .gfield input[type="search"], .gfield .navbar-form input[type="search"], .form-inline .gfield input[type="tel"], .gfield .form-inline input[type="tel"], .navbar-form .gfield input[type="tel"], .gfield .navbar-form input[type="tel"], .form-inline .gfield input[type="color"], .gfield .form-inline input[type="color"], .navbar-form .gfield input[type="color"], .gfield .navbar-form input[type="color"], .form-inline .gfield textarea, .gfield .form-inline textarea, .navbar-form .gfield textarea, .gfield .navbar-form textarea, .form-inline .gfield select, .gfield .form-inline select, .navbar-form .gfield select, .gfield .navbar-form select {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -3298,24 +3296,76 @@ select[multiple].input-lg,
   .navbar-form .input-group .input-group-btn,
   .form-inline .input-group .form-control,
   .navbar-form .input-group .form-control,
-  .form-inline .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-  .gfield:not(.captcha) .form-inline .input-group input:not([type=checkbox]):not([type=radio]),
-  .navbar-form .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-  .gfield:not(.captcha) .navbar-form .input-group input:not([type=checkbox]):not([type=radio]),
-  .form-inline .input-group .gfield:not(.captcha) textarea,
-  .gfield:not(.captcha) .form-inline .input-group textarea,
-  .navbar-form .input-group .gfield:not(.captcha) textarea,
-  .gfield:not(.captcha) .navbar-form .input-group textarea,
-  .form-inline .input-group .gfield:not(.captcha) select,
-  .gfield:not(.captcha) .form-inline .input-group select,
-  .navbar-form .input-group .gfield:not(.captcha) select,
-  .gfield:not(.captcha) .navbar-form .input-group select {
+  .form-inline .input-group .gfield input[type="text"],
+  .gfield .form-inline .input-group input[type="text"],
+  .navbar-form .input-group .gfield input[type="text"],
+  .gfield .navbar-form .input-group input[type="text"],
+  .form-inline .input-group .gfield input[type="password"],
+  .gfield .form-inline .input-group input[type="password"],
+  .navbar-form .input-group .gfield input[type="password"],
+  .gfield .navbar-form .input-group input[type="password"],
+  .form-inline .input-group .gfield input[type="datetime"],
+  .gfield .form-inline .input-group input[type="datetime"],
+  .navbar-form .input-group .gfield input[type="datetime"],
+  .gfield .navbar-form .input-group input[type="datetime"],
+  .form-inline .input-group .gfield input[type="datetime-local"],
+  .gfield .form-inline .input-group input[type="datetime-local"],
+  .navbar-form .input-group .gfield input[type="datetime-local"],
+  .gfield .navbar-form .input-group input[type="datetime-local"],
+  .form-inline .input-group .gfield input[type="date"],
+  .gfield .form-inline .input-group input[type="date"],
+  .navbar-form .input-group .gfield input[type="date"],
+  .gfield .navbar-form .input-group input[type="date"],
+  .form-inline .input-group .gfield input[type="month"],
+  .gfield .form-inline .input-group input[type="month"],
+  .navbar-form .input-group .gfield input[type="month"],
+  .gfield .navbar-form .input-group input[type="month"],
+  .form-inline .input-group .gfield input[type="time"],
+  .gfield .form-inline .input-group input[type="time"],
+  .navbar-form .input-group .gfield input[type="time"],
+  .gfield .navbar-form .input-group input[type="time"],
+  .form-inline .input-group .gfield input[type="week"],
+  .gfield .form-inline .input-group input[type="week"],
+  .navbar-form .input-group .gfield input[type="week"],
+  .gfield .navbar-form .input-group input[type="week"],
+  .form-inline .input-group .gfield input[type="number"],
+  .gfield .form-inline .input-group input[type="number"],
+  .navbar-form .input-group .gfield input[type="number"],
+  .gfield .navbar-form .input-group input[type="number"],
+  .form-inline .input-group .gfield input[type="email"],
+  .gfield .form-inline .input-group input[type="email"],
+  .navbar-form .input-group .gfield input[type="email"],
+  .gfield .navbar-form .input-group input[type="email"],
+  .form-inline .input-group .gfield input[type="url"],
+  .gfield .form-inline .input-group input[type="url"],
+  .navbar-form .input-group .gfield input[type="url"],
+  .gfield .navbar-form .input-group input[type="url"],
+  .form-inline .input-group .gfield input[type="search"],
+  .gfield .form-inline .input-group input[type="search"],
+  .navbar-form .input-group .gfield input[type="search"],
+  .gfield .navbar-form .input-group input[type="search"],
+  .form-inline .input-group .gfield input[type="tel"],
+  .gfield .form-inline .input-group input[type="tel"],
+  .navbar-form .input-group .gfield input[type="tel"],
+  .gfield .navbar-form .input-group input[type="tel"],
+  .form-inline .input-group .gfield input[type="color"],
+  .gfield .form-inline .input-group input[type="color"],
+  .navbar-form .input-group .gfield input[type="color"],
+  .gfield .navbar-form .input-group input[type="color"],
+  .form-inline .input-group .gfield textarea,
+  .gfield .form-inline .input-group textarea,
+  .navbar-form .input-group .gfield textarea,
+  .gfield .navbar-form .input-group textarea,
+  .form-inline .input-group .gfield select,
+  .gfield .form-inline .input-group select,
+  .navbar-form .input-group .gfield select,
+  .gfield .navbar-form .input-group select {
     width: auto;
   }
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline .gfield:not(.captcha) .input-group > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .form-inline .input-group > input:not([type=checkbox]):not([type=radio]), .navbar-form .gfield:not(.captcha) .input-group > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .navbar-form .input-group > input:not([type=checkbox]):not([type=radio]), .form-inline .gfield:not(.captcha) .input-group > textarea, .gfield:not(.captcha) .form-inline .input-group > textarea, .navbar-form .gfield:not(.captcha) .input-group > textarea, .gfield:not(.captcha) .navbar-form .input-group > textarea, .form-inline .gfield:not(.captcha) .input-group > select, .gfield:not(.captcha) .form-inline .input-group > select, .navbar-form .gfield:not(.captcha) .input-group > select, .gfield:not(.captcha) .navbar-form .input-group > select {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline .gfield .input-group > input[type="text"], .gfield .form-inline .input-group > input[type="text"], .navbar-form .gfield .input-group > input[type="text"], .gfield .navbar-form .input-group > input[type="text"], .form-inline .gfield .input-group > input[type="password"], .gfield .form-inline .input-group > input[type="password"], .navbar-form .gfield .input-group > input[type="password"], .gfield .navbar-form .input-group > input[type="password"], .form-inline .gfield .input-group > input[type="datetime"], .gfield .form-inline .input-group > input[type="datetime"], .navbar-form .gfield .input-group > input[type="datetime"], .gfield .navbar-form .input-group > input[type="datetime"], .form-inline .gfield .input-group > input[type="datetime-local"], .gfield .form-inline .input-group > input[type="datetime-local"], .navbar-form .gfield .input-group > input[type="datetime-local"], .gfield .navbar-form .input-group > input[type="datetime-local"], .form-inline .gfield .input-group > input[type="date"], .gfield .form-inline .input-group > input[type="date"], .navbar-form .gfield .input-group > input[type="date"], .gfield .navbar-form .input-group > input[type="date"], .form-inline .gfield .input-group > input[type="month"], .gfield .form-inline .input-group > input[type="month"], .navbar-form .gfield .input-group > input[type="month"], .gfield .navbar-form .input-group > input[type="month"], .form-inline .gfield .input-group > input[type="time"], .gfield .form-inline .input-group > input[type="time"], .navbar-form .gfield .input-group > input[type="time"], .gfield .navbar-form .input-group > input[type="time"], .form-inline .gfield .input-group > input[type="week"], .gfield .form-inline .input-group > input[type="week"], .navbar-form .gfield .input-group > input[type="week"], .gfield .navbar-form .input-group > input[type="week"], .form-inline .gfield .input-group > input[type="number"], .gfield .form-inline .input-group > input[type="number"], .navbar-form .gfield .input-group > input[type="number"], .gfield .navbar-form .input-group > input[type="number"], .form-inline .gfield .input-group > input[type="email"], .gfield .form-inline .input-group > input[type="email"], .navbar-form .gfield .input-group > input[type="email"], .gfield .navbar-form .input-group > input[type="email"], .form-inline .gfield .input-group > input[type="url"], .gfield .form-inline .input-group > input[type="url"], .navbar-form .gfield .input-group > input[type="url"], .gfield .navbar-form .input-group > input[type="url"], .form-inline .gfield .input-group > input[type="search"], .gfield .form-inline .input-group > input[type="search"], .navbar-form .gfield .input-group > input[type="search"], .gfield .navbar-form .input-group > input[type="search"], .form-inline .gfield .input-group > input[type="tel"], .gfield .form-inline .input-group > input[type="tel"], .navbar-form .gfield .input-group > input[type="tel"], .gfield .navbar-form .input-group > input[type="tel"], .form-inline .gfield .input-group > input[type="color"], .gfield .form-inline .input-group > input[type="color"], .navbar-form .gfield .input-group > input[type="color"], .gfield .navbar-form .input-group > input[type="color"], .form-inline .gfield .input-group > textarea, .gfield .form-inline .input-group > textarea, .navbar-form .gfield .input-group > textarea, .gfield .navbar-form .input-group > textarea, .form-inline .gfield .input-group > select, .gfield .form-inline .input-group > select, .navbar-form .gfield .input-group > select, .gfield .navbar-form .input-group > select {
     width: 100%;
   }
-  .form-inline .control-label, .navbar-form .control-label, .form-inline .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .form-inline .gfield_label, .navbar-form .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .navbar-form .gfield_label {
+  .form-inline .control-label, .navbar-form .control-label, .form-inline .gfield .gfield_label, .gfield .form-inline .gfield_label, .navbar-form .gfield .gfield_label, .gfield .navbar-form .gfield_label {
     margin-bottom: 0;
     vertical-align: middle;
   }
@@ -3351,15 +3401,15 @@ select[multiple].input-lg,
 .form-horizontal .checkbox {
   min-height: 27px;
 }
-.form-horizontal .form-group, .form-horizontal .gfield:not(.captcha) {
+.form-horizontal .form-group, .form-horizontal .gfield {
   margin-left: -15px;
   margin-right: -15px;
 }
-.form-horizontal .form-group:before, .form-horizontal .gfield:not(.captcha):before, .form-horizontal .form-group:after, .form-horizontal .gfield:not(.captcha):after {
+.form-horizontal .form-group:before, .form-horizontal .gfield:before, .form-horizontal .form-group:after, .form-horizontal .gfield:after {
   content: " ";
   display: table;
 }
-.form-horizontal .form-group:after, .form-horizontal .gfield:not(.captcha):after {
+.form-horizontal .form-group:after, .form-horizontal .gfield:after {
   clear: both;
 }
 .form-horizontal .form-control-static {
@@ -3367,7 +3417,7 @@ select[multiple].input-lg,
   padding-bottom: 7px;
 }
 @media (min-width: 768px) {
-  .form-horizontal .control-label, .form-horizontal .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .form-horizontal .gfield_label {
+  .form-horizontal .control-label, .form-horizontal .gfield .gfield_label, .gfield .form-horizontal .gfield_label {
     text-align: right;
     margin-bottom: 0;
     padding-top: 7px;
@@ -4044,7 +4094,7 @@ tbody.collapse.in {
   padding-left: 0;
   padding-right: 0;
 }
-.input-group .form-control, .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea, .gfield:not(.captcha) .input-group textarea, .input-group .gfield:not(.captcha) select, .gfield:not(.captcha) .input-group select {
+.input-group .form-control, .input-group .gfield input[type="text"], .gfield .input-group input[type="text"], .input-group .gfield input[type="password"], .gfield .input-group input[type="password"], .input-group .gfield input[type="datetime"], .gfield .input-group input[type="datetime"], .input-group .gfield input[type="datetime-local"], .gfield .input-group input[type="datetime-local"], .input-group .gfield input[type="date"], .gfield .input-group input[type="date"], .input-group .gfield input[type="month"], .gfield .input-group input[type="month"], .input-group .gfield input[type="time"], .gfield .input-group input[type="time"], .input-group .gfield input[type="week"], .gfield .input-group input[type="week"], .input-group .gfield input[type="number"], .gfield .input-group input[type="number"], .input-group .gfield input[type="email"], .gfield .input-group input[type="email"], .input-group .gfield input[type="url"], .gfield .input-group input[type="url"], .input-group .gfield input[type="search"], .gfield .input-group input[type="search"], .input-group .gfield input[type="tel"], .gfield .input-group input[type="tel"], .input-group .gfield input[type="color"], .gfield .input-group input[type="color"], .input-group .gfield textarea, .gfield .input-group textarea, .input-group .gfield select, .gfield .input-group select {
   position: relative;
   z-index: 2;
   float: left;
@@ -4055,23 +4105,75 @@ tbody.collapse.in {
 .input-group-addon,
 .input-group-btn,
 .input-group .form-control,
-.input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-.gfield:not(.captcha) .input-group input:not([type=checkbox]):not([type=radio]),
-.input-group .gfield:not(.captcha) textarea,
-.gfield:not(.captcha) .input-group textarea,
-.input-group .gfield:not(.captcha) select,
-.gfield:not(.captcha) .input-group select {
+.input-group .gfield input[type="text"],
+.gfield .input-group input[type="text"],
+.input-group .gfield input[type="password"],
+.gfield .input-group input[type="password"],
+.input-group .gfield input[type="datetime"],
+.gfield .input-group input[type="datetime"],
+.input-group .gfield input[type="datetime-local"],
+.gfield .input-group input[type="datetime-local"],
+.input-group .gfield input[type="date"],
+.gfield .input-group input[type="date"],
+.input-group .gfield input[type="month"],
+.gfield .input-group input[type="month"],
+.input-group .gfield input[type="time"],
+.gfield .input-group input[type="time"],
+.input-group .gfield input[type="week"],
+.gfield .input-group input[type="week"],
+.input-group .gfield input[type="number"],
+.gfield .input-group input[type="number"],
+.input-group .gfield input[type="email"],
+.gfield .input-group input[type="email"],
+.input-group .gfield input[type="url"],
+.gfield .input-group input[type="url"],
+.input-group .gfield input[type="search"],
+.gfield .input-group input[type="search"],
+.input-group .gfield input[type="tel"],
+.gfield .input-group input[type="tel"],
+.input-group .gfield input[type="color"],
+.gfield .input-group input[type="color"],
+.input-group .gfield textarea,
+.gfield .input-group textarea,
+.input-group .gfield select,
+.gfield .input-group select {
   display: table-cell;
 }
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
 .input-group .form-control:not(:first-child):not(:last-child),
-.input-group .gfield:not(.captcha) input:not(:first-child):not(:last-child):not([type=checkbox]):not([type=radio]),
-.gfield:not(.captcha) .input-group input:not(:first-child):not(:last-child):not([type=checkbox]):not([type=radio]),
-.input-group .gfield:not(.captcha) textarea:not(:first-child):not(:last-child),
-.gfield:not(.captcha) .input-group textarea:not(:first-child):not(:last-child),
-.input-group .gfield:not(.captcha) select:not(:first-child):not(:last-child),
-.gfield:not(.captcha) .input-group select:not(:first-child):not(:last-child) {
+.input-group .gfield input[type="text"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="text"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="password"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="password"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="datetime"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="datetime"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="datetime-local"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="datetime-local"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="date"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="date"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="month"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="month"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="time"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="time"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="week"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="week"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="number"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="number"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="email"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="email"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="url"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="url"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="search"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="search"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="tel"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="tel"]:not(:first-child):not(:last-child),
+.input-group .gfield input[type="color"]:not(:first-child):not(:last-child),
+.gfield .input-group input[type="color"]:not(:first-child):not(:last-child),
+.input-group .gfield textarea:not(:first-child):not(:last-child),
+.gfield .input-group textarea:not(:first-child):not(:last-child),
+.input-group .gfield select:not(:first-child):not(:last-child),
+.gfield .input-group select:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4093,7 +4195,7 @@ tbody.collapse.in {
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
-.input-group-addon.input-sm, .gfield:not(.captcha) .input-group-sm > input.input-group-addon:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-sm > textarea.input-group-addon, .gfield:not(.captcha) .input-group-sm > select.input-group-addon,
+.input-group-addon.input-sm, .gfield .input-group-sm > input.input-group-addon[type="text"], .gfield .input-group-sm > input.input-group-addon[type="password"], .gfield .input-group-sm > input.input-group-addon[type="datetime"], .gfield .input-group-sm > input.input-group-addon[type="datetime-local"], .gfield .input-group-sm > input.input-group-addon[type="date"], .gfield .input-group-sm > input.input-group-addon[type="month"], .gfield .input-group-sm > input.input-group-addon[type="time"], .gfield .input-group-sm > input.input-group-addon[type="week"], .gfield .input-group-sm > input.input-group-addon[type="number"], .gfield .input-group-sm > input.input-group-addon[type="email"], .gfield .input-group-sm > input.input-group-addon[type="url"], .gfield .input-group-sm > input.input-group-addon[type="search"], .gfield .input-group-sm > input.input-group-addon[type="tel"], .gfield .input-group-sm > input.input-group-addon[type="color"],
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .input-group-sm > .input-group-btn > .input-group-addon.gform_next_button,
@@ -4103,7 +4205,7 @@ tbody.collapse.in {
   font-size: 12px;
   border-radius: 3px;
 }
-.input-group-addon.input-lg, .gfield:not(.captcha) .input-group-lg > input.input-group-addon:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-lg > textarea.input-group-addon, .gfield:not(.captcha) .input-group-lg > select.input-group-addon,
+.input-group-addon.input-lg, .gfield .input-group-lg > input.input-group-addon[type="text"], .gfield .input-group-lg > input.input-group-addon[type="password"], .gfield .input-group-lg > input.input-group-addon[type="datetime"], .gfield .input-group-lg > input.input-group-addon[type="datetime-local"], .gfield .input-group-lg > input.input-group-addon[type="date"], .gfield .input-group-lg > input.input-group-addon[type="month"], .gfield .input-group-lg > input.input-group-addon[type="time"], .gfield .input-group-lg > input.input-group-addon[type="week"], .gfield .input-group-lg > input.input-group-addon[type="number"], .gfield .input-group-lg > input.input-group-addon[type="email"], .gfield .input-group-lg > input.input-group-addon[type="url"], .gfield .input-group-lg > input.input-group-addon[type="search"], .gfield .input-group-lg > input.input-group-addon[type="tel"], .gfield .input-group-lg > input.input-group-addon[type="color"],
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .input-group-lg > .input-group-btn > .input-group-addon.gform_next_button,
@@ -4118,7 +4220,7 @@ tbody.collapse.in {
   margin-top: 0;
 }
 
-.input-group .form-control:first-child, .input-group .gfield:not(.captcha) input:first-child:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:first-child:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea:first-child, .gfield:not(.captcha) .input-group textarea:first-child, .input-group .gfield:not(.captcha) select:first-child, .gfield:not(.captcha) .input-group select:first-child,
+.input-group .form-control:first-child, .input-group .gfield input[type="text"]:first-child, .gfield .input-group input[type="text"]:first-child, .input-group .gfield input[type="password"]:first-child, .gfield .input-group input[type="password"]:first-child, .input-group .gfield input[type="datetime"]:first-child, .gfield .input-group input[type="datetime"]:first-child, .input-group .gfield input[type="datetime-local"]:first-child, .gfield .input-group input[type="datetime-local"]:first-child, .input-group .gfield input[type="date"]:first-child, .gfield .input-group input[type="date"]:first-child, .input-group .gfield input[type="month"]:first-child, .gfield .input-group input[type="month"]:first-child, .input-group .gfield input[type="time"]:first-child, .gfield .input-group input[type="time"]:first-child, .input-group .gfield input[type="week"]:first-child, .gfield .input-group input[type="week"]:first-child, .input-group .gfield input[type="number"]:first-child, .gfield .input-group input[type="number"]:first-child, .input-group .gfield input[type="email"]:first-child, .gfield .input-group input[type="email"]:first-child, .input-group .gfield input[type="url"]:first-child, .gfield .input-group input[type="url"]:first-child, .input-group .gfield input[type="search"]:first-child, .gfield .input-group input[type="search"]:first-child, .input-group .gfield input[type="tel"]:first-child, .gfield .input-group input[type="tel"]:first-child, .input-group .gfield input[type="color"]:first-child, .gfield .input-group input[type="color"]:first-child, .input-group .gfield textarea:first-child, .gfield .input-group textarea:first-child, .input-group .gfield select:first-child, .gfield .input-group select:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .input-group-btn:first-child > .gform_next_button,
@@ -4145,7 +4247,7 @@ tbody.collapse.in {
   border-right: 0;
 }
 
-.input-group .form-control:last-child, .input-group .gfield:not(.captcha) input:last-child:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:last-child:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea:last-child, .gfield:not(.captcha) .input-group textarea:last-child, .input-group .gfield:not(.captcha) select:last-child, .gfield:not(.captcha) .input-group select:last-child,
+.input-group .form-control:last-child, .input-group .gfield input[type="text"]:last-child, .gfield .input-group input[type="text"]:last-child, .input-group .gfield input[type="password"]:last-child, .gfield .input-group input[type="password"]:last-child, .input-group .gfield input[type="datetime"]:last-child, .gfield .input-group input[type="datetime"]:last-child, .input-group .gfield input[type="datetime-local"]:last-child, .gfield .input-group input[type="datetime-local"]:last-child, .input-group .gfield input[type="date"]:last-child, .gfield .input-group input[type="date"]:last-child, .input-group .gfield input[type="month"]:last-child, .gfield .input-group input[type="month"]:last-child, .input-group .gfield input[type="time"]:last-child, .gfield .input-group input[type="time"]:last-child, .input-group .gfield input[type="week"]:last-child, .gfield .input-group input[type="week"]:last-child, .input-group .gfield input[type="number"]:last-child, .gfield .input-group input[type="number"]:last-child, .input-group .gfield input[type="email"]:last-child, .gfield .input-group input[type="email"]:last-child, .input-group .gfield input[type="url"]:last-child, .gfield .input-group input[type="url"]:last-child, .input-group .gfield input[type="search"]:last-child, .gfield .input-group input[type="search"]:last-child, .input-group .gfield input[type="tel"]:last-child, .gfield .input-group input[type="tel"]:last-child, .input-group .gfield input[type="color"]:last-child, .gfield .input-group input[type="color"]:last-child, .input-group .gfield textarea:last-child, .gfield .input-group textarea:last-child, .input-group .gfield select:last-child, .gfield .input-group select:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .input-group-btn:last-child > .gform_next_button,
@@ -4607,7 +4709,7 @@ tbody.collapse.in {
   margin-bottom: 8px;
 }
 @media (max-width: 767px) {
-  .navbar-form .form-group, .navbar-form .gfield:not(.captcha) {
+  .navbar-form .form-group, .navbar-form .gfield {
     margin-bottom: 5px;
   }
 }
@@ -8800,7 +8902,7 @@ b, em {
   margin: 0 auto;
 }
 
-.gfield:not(.captcha) {
+.gfield {
   margin-bottom: 10px;
 }
 
