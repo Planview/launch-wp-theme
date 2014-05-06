@@ -1456,7 +1456,7 @@ a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 
-.page-header {
+.page-header, .entry-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
@@ -6856,6 +6856,18 @@ b, em {
 }
 .footer-follow-menu li.contact a:hover, .footer-follow-menu li.contact a:active {
   background-position: right bottom;
+}
+
+.page .content-area {
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 1px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .launch-jumbotron, .launch-front-content, .launch-front-bottom {
