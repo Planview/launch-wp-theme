@@ -3395,46 +3395,46 @@ body.login #login form .form-horizontal p.forgetmenot {
   background-color: #333333;
 }
 
-.btn-primary, body.login #login form p.submit #wp-submit {
+.btn-primary {
   color: white;
   background-color: #0066cc;
   border-color: #0059b3;
 }
-.btn-primary:hover, body.login #login form p.submit #wp-submit:hover, .btn-primary:focus, body.login #login form p.submit #wp-submit:focus, .btn-primary:active, body.login #login form p.submit #wp-submit:active, .btn-primary.active, body.login #login form p.submit .active#wp-submit, .open > .btn-primary.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: white;
   background-color: #004c99;
   border-color: #003b75;
 }
-.btn-primary:active, body.login #login form p.submit #wp-submit:active, .btn-primary.active, body.login #login form p.submit .active#wp-submit, .open > .btn-primary.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   background-image: none;
 }
-.btn-primary.disabled, body.login #login form p.submit .disabled#wp-submit, .btn-primary.disabled:hover, body.login #login form p.submit .disabled#wp-submit:hover, .btn-primary.disabled:focus, body.login #login form p.submit .disabled#wp-submit:focus, .btn-primary.disabled:active, body.login #login form p.submit .disabled#wp-submit:active, .btn-primary.disabled.active, body.login #login form p.submit .disabled.active#wp-submit, .btn-primary[disabled], body.login #login form p.submit [disabled]#wp-submit, .btn-primary[disabled]:hover, body.login #login form p.submit [disabled]#wp-submit:hover, .btn-primary[disabled]:focus, body.login #login form p.submit [disabled]#wp-submit:focus, .btn-primary[disabled]:active, body.login #login form p.submit [disabled]#wp-submit:active, .btn-primary[disabled].active, body.login #login form p.submit [disabled].active#wp-submit, fieldset[disabled] .btn-primary, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit, fieldset[disabled] .btn-primary:hover, fieldset[disabled] body.login #login form p.submit #wp-submit:hover, body.login #login form p.submit fieldset[disabled] #wp-submit:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] body.login #login form p.submit #wp-submit:focus, body.login #login form p.submit fieldset[disabled] #wp-submit:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] body.login #login form p.submit #wp-submit:active, body.login #login form p.submit fieldset[disabled] #wp-submit:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] body.login #login form p.submit .active#wp-submit, body.login #login form p.submit fieldset[disabled] .active#wp-submit {
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
   background-color: #0066cc;
   border-color: #0059b3;
 }
-.btn-primary .badge, body.login #login form p.submit #wp-submit .badge {
+.btn-primary .badge {
   color: #0066cc;
   background-color: white;
 }
 
-.btn-success {
+.btn-success, body.login #login form p.submit #wp-submit {
   color: white;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+.btn-success:hover, body.login #login form p.submit #wp-submit:hover, .btn-success:focus, body.login #login form p.submit #wp-submit:focus, .btn-success:active, body.login #login form p.submit #wp-submit:active, .btn-success.active, body.login #login form p.submit .active#wp-submit, .open > .btn-success.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
   color: white;
   background-color: #449d44;
   border-color: #398439;
 }
-.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
+.btn-success:active, body.login #login form p.submit #wp-submit:active, .btn-success.active, body.login #login form p.submit .active#wp-submit, .open > .btn-success.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
   background-image: none;
 }
-.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
+.btn-success.disabled, body.login #login form p.submit .disabled#wp-submit, .btn-success.disabled:hover, body.login #login form p.submit .disabled#wp-submit:hover, .btn-success.disabled:focus, body.login #login form p.submit .disabled#wp-submit:focus, .btn-success.disabled:active, body.login #login form p.submit .disabled#wp-submit:active, .btn-success.disabled.active, body.login #login form p.submit .disabled.active#wp-submit, .btn-success[disabled], body.login #login form p.submit [disabled]#wp-submit, .btn-success[disabled]:hover, body.login #login form p.submit [disabled]#wp-submit:hover, .btn-success[disabled]:focus, body.login #login form p.submit [disabled]#wp-submit:focus, .btn-success[disabled]:active, body.login #login form p.submit [disabled]#wp-submit:active, .btn-success[disabled].active, body.login #login form p.submit [disabled].active#wp-submit, fieldset[disabled] .btn-success, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit, fieldset[disabled] .btn-success:hover, fieldset[disabled] body.login #login form p.submit #wp-submit:hover, body.login #login form p.submit fieldset[disabled] #wp-submit:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] body.login #login form p.submit #wp-submit:focus, body.login #login form p.submit fieldset[disabled] #wp-submit:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] body.login #login form p.submit #wp-submit:active, body.login #login form p.submit fieldset[disabled] #wp-submit:active, fieldset[disabled] .btn-success.active, fieldset[disabled] body.login #login form p.submit .active#wp-submit, body.login #login form p.submit fieldset[disabled] .active#wp-submit {
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
-.btn-success .badge {
+.btn-success .badge, body.login #login form p.submit #wp-submit .badge {
   color: #5cb85c;
   background-color: white;
 }
@@ -4946,10 +4946,10 @@ a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a
   cursor: pointer;
 }
 
-.label-default, body.login #login p#nav a, body.login #login p#backtoblog a {
+.label-default {
   background-color: #999999;
 }
-.label-default[href]:hover, body.login #login p#nav a[href]:hover, body.login #login p#backtoblog a[href]:hover, .label-default[href]:focus, body.login #login p#nav a[href]:focus, body.login #login p#backtoblog a[href]:focus {
+.label-default[href]:hover, .label-default[href]:focus {
   background-color: gray;
 }
 
@@ -4967,10 +4967,10 @@ a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a
   background-color: #449d44;
 }
 
-.label-info {
+.label-info, body.login #login p#nav a, body.login #login p#backtoblog a {
   background-color: #157ab3;
 }
-.label-info[href]:hover, .label-info[href]:focus {
+.label-info[href]:hover, body.login #login p#nav a[href]:hover, body.login #login p#backtoblog a[href]:hover, .label-info[href]:focus, body.login #login p#nav a[href]:focus, body.login #login p#backtoblog a[href]:focus {
   background-color: #105b85;
 }
 
@@ -8456,7 +8456,7 @@ b, em {
 }
 
 body.login {
-  background-image: url("../img/header-multi-colors.png");
+  background-image: url("../img/header-multi-colors-tall.png");
   background-position: bottom left;
   background-repeat: no-repeat;
   background-attachment: fixed;

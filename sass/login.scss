@@ -8,7 +8,7 @@
 
 body.login {
 	background: {
-		image: url('../img/header-multi-colors.png');
+		image: url('../img/header-multi-colors-tall.png');
 		position: bottom left;
 		repeat: no-repeat;
 		attachment: fixed;
@@ -51,7 +51,7 @@ body.login {
 				margin-top: 20px;
 				@include make-xs-column(12);
 				#wp-submit {
-					@extend .btn, .btn-block, .btn-primary;
+					@extend .btn, .btn-block, .btn-success;
 					height: auto;
 					border: 0;
 				}
@@ -79,7 +79,7 @@ body.login {
 				size: $font-size-base;
 			}
 			a {
-				@extend a, .label, .label-default;
+				@extend a, .label, .label-info;
 			}
 		}
 	}
