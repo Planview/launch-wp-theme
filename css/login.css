@@ -43,12 +43,14 @@ template {
   display: none;
 }
 
-a {
+a, body.login #login p#nav a, body.login #login p#backtoblog a {
   background: transparent;
 }
 
-a:active,
-a:hover {
+a:active, body.login #login p#nav a:active, body.login #login p#backtoblog a:active,
+a:hover,
+body.login #login p#nav a:hover,
+body.login #login p#backtoblog a:hover {
   outline: 0;
 }
 
@@ -227,12 +229,14 @@ th {
     box-shadow: none !important;
   }
 
-  a,
-  a:visited {
+  a, body.login #login p#nav a, body.login #login p#backtoblog a,
+  a:visited,
+  body.login #login p#nav a:visited,
+  body.login #login p#backtoblog a:visited {
     text-decoration: underline;
   }
 
-  a[href]:after {
+  a[href]:after, body.login #login p#nav a[href]:after, body.login #login p#backtoblog a[href]:after {
     content: " (" attr(href) ")";
   }
 
@@ -240,8 +244,10 @@ th {
     content: " (" attr(title) ")";
   }
 
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="javascript:"]:after, body.login #login p#nav a[href^="javascript:"]:after, body.login #login p#backtoblog a[href^="javascript:"]:after,
+  a[href^="#"]:after,
+  body.login #login p#nav a[href^="#"]:after,
+  body.login #login p#backtoblog a[href^="#"]:after {
     content: "";
   }
 
@@ -289,15 +295,13 @@ th {
     background-color: #fff !important;
   }
 
-  .btn > .caret, .gform_next_button > .caret, .gform_previous_button > .caret, .gform_button > .caret,
+  .btn > .caret, body.login #login form p.submit #wp-submit > .caret,
   .dropup > .btn > .caret,
-  .dropup > .gform_next_button > .caret,
-  .dropup > .gform_previous_button > .caret,
-  .dropup > .gform_button > .caret {
+  body.login #login form p.submit .dropup > #wp-submit > .caret {
     border-top-color: #000 !important;
   }
 
-  .label, .validation_message {
+  .label, body.login #login p#nav a, body.login #login p#backtoblog a {
     border: 1px solid #000;
   }
 
@@ -1162,15 +1166,15 @@ textarea {
   line-height: inherit;
 }
 
-a {
+a, body.login #login p#nav a, body.login #login p#backtoblog a {
   color: #0066cc;
   text-decoration: none;
 }
-a:hover, a:focus {
+a:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a:hover, a:focus, body.login #login p#nav a:focus, body.login #login p#backtoblog a:focus {
   color: #004080;
   text-decoration: underline;
 }
-a:focus {
+a:focus, body.login #login p#nav a:focus, body.login #login p#backtoblog a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -1219,7 +1223,7 @@ hr {
   border-top: 1px solid #eeeeee;
 }
 
-.sr-only, .screen-reader-text, .site-description, .gf_progressbar_percentage * {
+.sr-only, .screen-reader-text {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1240,7 +1244,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .gf_progressbar_title, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 600;
   line-height: 1.1;
@@ -1255,9 +1259,8 @@ h5 .small, h6 small,
 h6 .small,
 .h1 small,
 .h1 .small, .h2 small,
-.h2 .small, .h3 small, .gf_progressbar_title small,
-.h3 .small,
-.gf_progressbar_title .small, .h4 small,
+.h2 .small, .h3 small,
+.h3 .small, .h4 small,
 .h4 .small, .h5 small,
 .h5 .small, .h6 small,
 .h6 .small {
@@ -1268,7 +1271,7 @@ h6 .small,
 
 h1, .h1,
 h2, .h2,
-h3, .h3, .gf_progressbar_title {
+h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -1279,9 +1282,8 @@ h2 small,
 h2 .small, .h2 small,
 .h2 .small,
 h3 small,
-h3 .small, .h3 small, .gf_progressbar_title small,
-.h3 .small,
-.gf_progressbar_title .small {
+h3 .small, .h3 small,
+.h3 .small {
   font-size: 65%;
 }
 
@@ -1311,7 +1313,7 @@ h2, .h2 {
   font-size: 30px;
 }
 
-h3, .h3, .gf_progressbar_title {
+h3, .h3 {
   font-size: 24px;
 }
 
@@ -1382,7 +1384,7 @@ mark,
   color: #0066cc;
 }
 
-a.text-primary:hover {
+a.text-primary:hover, body.login #login p#nav a.text-primary:hover, body.login #login p#backtoblog a.text-primary:hover {
   color: #004c99;
 }
 
@@ -1390,7 +1392,7 @@ a.text-primary:hover {
   color: #3c763d;
 }
 
-a.text-success:hover {
+a.text-success:hover, body.login #login p#nav a.text-success:hover, body.login #login p#backtoblog a.text-success:hover {
   color: #2b542c;
 }
 
@@ -1398,7 +1400,7 @@ a.text-success:hover {
   color: #31708f;
 }
 
-a.text-info:hover {
+a.text-info:hover, body.login #login p#nav a.text-info:hover, body.login #login p#backtoblog a.text-info:hover {
   color: #245269;
 }
 
@@ -1406,7 +1408,7 @@ a.text-info:hover {
   color: #8a6d3b;
 }
 
-a.text-warning:hover {
+a.text-warning:hover, body.login #login p#nav a.text-warning:hover, body.login #login p#backtoblog a.text-warning:hover {
   color: #66512c;
 }
 
@@ -1414,7 +1416,7 @@ a.text-warning:hover {
   color: #a94442;
 }
 
-a.text-danger:hover {
+a.text-danger:hover, body.login #login p#nav a.text-danger:hover, body.login #login p#backtoblog a.text-danger:hover {
   color: #843534;
 }
 
@@ -1426,7 +1428,7 @@ a.text-danger:hover {
   background-color: #0066cc;
 }
 
-a.bg-primary:hover {
+a.bg-primary:hover, body.login #login p#nav a.bg-primary:hover, body.login #login p#backtoblog a.bg-primary:hover {
   background-color: #004c99;
 }
 
@@ -1434,7 +1436,7 @@ a.bg-primary:hover {
   background-color: #dff0d8;
 }
 
-a.bg-success:hover {
+a.bg-success:hover, body.login #login p#nav a.bg-success:hover, body.login #login p#backtoblog a.bg-success:hover {
   background-color: #c1e2b3;
 }
 
@@ -1442,7 +1444,7 @@ a.bg-success:hover {
   background-color: #d9edf7;
 }
 
-a.bg-info:hover {
+a.bg-info:hover, body.login #login p#nav a.bg-info:hover, body.login #login p#backtoblog a.bg-info:hover {
   background-color: #afd9ee;
 }
 
@@ -1450,7 +1452,7 @@ a.bg-info:hover {
   background-color: #fcf8e3;
 }
 
-a.bg-warning:hover {
+a.bg-warning:hover, body.login #login p#nav a.bg-warning:hover, body.login #login p#backtoblog a.bg-warning:hover {
   background-color: #f7ecb5;
 }
 
@@ -1458,11 +1460,11 @@ a.bg-warning:hover {
   background-color: #f2dede;
 }
 
-a.bg-danger:hover {
+a.bg-danger:hover, body.login #login p#nav a.bg-danger:hover, body.login #login p#backtoblog a.bg-danger:hover {
   background-color: #e4b9b9;
 }
 
-.page-header, .entry-header {
+.page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eeeeee;
@@ -1480,15 +1482,15 @@ ol ol {
   margin-bottom: 0;
 }
 
-.list-unstyled, .list-inline, .menu-footer-list, .footer-legal-menu, .footer-follow-menu, .gform_wrapper .gform_body ul, .gfield_checkbox {
+.list-unstyled, .list-inline {
   padding-left: 0;
   list-style: none;
 }
 
-.list-inline, .menu-footer-list, .footer-legal-menu, .footer-follow-menu {
+.list-inline {
   margin-left: -5px;
 }
-.list-inline > li, .menu-footer-list > li, .footer-legal-menu > li, .footer-follow-menu > li {
+.list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
@@ -1571,9 +1573,7 @@ blockquote .small:before {
 }
 
 .blockquote-reverse,
-blockquote.pull-right,
-blockquote.gform_next_button,
-blockquote.gform_button {
+blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
@@ -1584,28 +1584,16 @@ blockquote.gform_button {
 .blockquote-reverse small:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right footer:before,
-blockquote.gform_next_button footer:before,
-blockquote.gform_button footer:before,
 blockquote.pull-right small:before,
-blockquote.gform_next_button small:before,
-blockquote.gform_button small:before,
-blockquote.pull-right .small:before,
-blockquote.gform_next_button .small:before,
-blockquote.gform_button .small:before {
+blockquote.pull-right .small:before {
   content: '';
 }
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
 .blockquote-reverse .small:after,
 blockquote.pull-right footer:after,
-blockquote.gform_next_button footer:after,
-blockquote.gform_button footer:after,
 blockquote.pull-right small:after,
-blockquote.gform_next_button small:after,
-blockquote.gform_button small:after,
-blockquote.pull-right .small:after,
-blockquote.gform_next_button .small:after,
-blockquote.gform_button .small:after {
+blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
 
@@ -1671,31 +1659,31 @@ pre code {
   overflow-y: scroll;
 }
 
-.container, .header-inner, .footer-inner, .site-content {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.container:before, .header-inner:before, .footer-inner:before, .site-content:before, .container:after, .header-inner:after, .footer-inner:after, .site-content:after {
+.container:before, .container:after {
   content: " ";
   display: table;
 }
-.container:after, .header-inner:after, .footer-inner:after, .site-content:after {
+.container:after {
   clear: both;
 }
 @media (min-width: 768px) {
-  .container, .header-inner, .footer-inner, .site-content {
+  .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container, .header-inner, .footer-inner, .site-content {
+  .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container, .header-inner, .footer-inner, .site-content {
+  .container {
     width: 1170px;
   }
 }
@@ -2845,7 +2833,7 @@ input[type="range"] {
   width: 100%;
 }
 
-select[multiple], .gfield:not(.captcha) select[multiple], .gfield:not(.captcha) select[size],
+select[multiple],
 select[size] {
   height: auto;
 }
@@ -2866,7 +2854,7 @@ output {
   color: #555555;
 }
 
-.form-control, .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea, .gfield:not(.captcha) select {
+.form-control, body.login #login form p .input {
   display: block;
   width: 100%;
   height: 34px;
@@ -2884,29 +2872,29 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:focus, .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) select:focus {
+.form-control:focus, body.login #login form p .input:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.form-control::-moz-placeholder, .gfield:not(.captcha) input:not([type=radio]):not([type=checkbox])::-moz-placeholder, .gfield:not(.captcha) textarea::-moz-placeholder, .gfield:not(.captcha) select::-moz-placeholder {
+.form-control::-moz-placeholder, body.login #login form p .input::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, .gfield:not(.captcha) input:-ms-input-placeholder:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea:-ms-input-placeholder, .gfield:not(.captcha) select:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, body.login #login form p .input:-ms-input-placeholder {
   color: #999999;
 }
-.form-control::-webkit-input-placeholder, .gfield:not(.captcha) input:not([type=radio]):not([type=checkbox])::-webkit-input-placeholder, .gfield:not(.captcha) textarea::-webkit-input-placeholder, .gfield:not(.captcha) select::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, body.login #login form p .input::-webkit-input-placeholder {
   color: #999999;
 }
-.form-control[disabled], .gfield:not(.captcha) input[disabled]:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea[disabled], .gfield:not(.captcha) select[disabled], .form-control[readonly], .gfield:not(.captcha) input[readonly]:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) textarea[readonly], .gfield:not(.captcha) select[readonly], fieldset[disabled] .form-control, fieldset[disabled] .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) fieldset[disabled] input:not([type=checkbox]):not([type=radio]), fieldset[disabled] .gfield:not(.captcha) textarea, .gfield:not(.captcha) fieldset[disabled] textarea, fieldset[disabled] .gfield:not(.captcha) select, .gfield:not(.captcha) fieldset[disabled] select {
+.form-control[disabled], body.login #login form p [disabled].input, .form-control[readonly], body.login #login form p [readonly].input, fieldset[disabled] .form-control, fieldset[disabled] body.login #login form p .input, body.login #login form p fieldset[disabled] .input {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 
-textarea.form-control, .gfield:not(.captcha) textarea {
+textarea.form-control, body.login #login form p textarea.input {
   height: auto;
 }
 
@@ -2921,84 +2909,70 @@ input[type="month"] {
   line-height: 34px;
   line-height: 1.42857 \0;
 }
-input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, .gfield:not(.captcha) .input-group-sm > input[type="date"]:not([type=checkbox]):not([type=radio]),
+input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control, body.login #login form p .input-group-sm > input[type="date"].input,
 .input-group-sm > input[type="date"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="date"].btn,
-.input-group-sm > .input-group-btn > input[type="date"].gform_next_button,
-.input-group-sm > .input-group-btn > input[type="date"].gform_previous_button,
-.input-group-sm > .input-group-btn > input[type="date"].gform_button,
+body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="date"]#wp-submit,
 input[type="time"].input-sm,
 .input-group-sm > input[type="time"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="time"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-sm > input[type="time"].input,
 .input-group-sm > input[type="time"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="time"].btn,
-.input-group-sm > .input-group-btn > input[type="time"].gform_next_button,
-.input-group-sm > .input-group-btn > input[type="time"].gform_previous_button,
-.input-group-sm > .input-group-btn > input[type="time"].gform_button,
+body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="time"]#wp-submit,
 input[type="datetime-local"].input-sm,
 .input-group-sm > input[type="datetime-local"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="datetime-local"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-sm > input[type="datetime-local"].input,
 .input-group-sm > input[type="datetime-local"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
-.input-group-sm > .input-group-btn > input[type="datetime-local"].gform_next_button,
-.input-group-sm > .input-group-btn > input[type="datetime-local"].gform_previous_button,
-.input-group-sm > .input-group-btn > input[type="datetime-local"].gform_button,
+body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="datetime-local"]#wp-submit,
 input[type="month"].input-sm,
 .input-group-sm > input[type="month"].form-control,
-.gfield:not(.captcha) .input-group-sm > input[type="month"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-sm > input[type="month"].input,
 .input-group-sm > input[type="month"].input-group-addon,
 .input-group-sm > .input-group-btn > input[type="month"].btn,
-.input-group-sm > .input-group-btn > input[type="month"].gform_next_button,
-.input-group-sm > .input-group-btn > input[type="month"].gform_previous_button,
-.input-group-sm > .input-group-btn > input[type="month"].gform_button {
+body.login #login form p.submit .input-group-sm > .input-group-btn > input[type="month"]#wp-submit {
   line-height: 30px;
 }
-input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, .gfield:not(.captcha) .input-group-lg > input[type="date"]:not([type=checkbox]):not([type=radio]),
+input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control, body.login #login form p .input-group-lg > input[type="date"].input,
 .input-group-lg > input[type="date"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="date"].btn,
-.input-group-lg > .input-group-btn > input[type="date"].gform_next_button,
-.input-group-lg > .input-group-btn > input[type="date"].gform_previous_button,
-.input-group-lg > .input-group-btn > input[type="date"].gform_button,
+body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="date"]#wp-submit,
 input[type="time"].input-lg,
 .input-group-lg > input[type="time"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="time"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-lg > input[type="time"].input,
 .input-group-lg > input[type="time"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="time"].btn,
-.input-group-lg > .input-group-btn > input[type="time"].gform_next_button,
-.input-group-lg > .input-group-btn > input[type="time"].gform_previous_button,
-.input-group-lg > .input-group-btn > input[type="time"].gform_button,
+body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="time"]#wp-submit,
 input[type="datetime-local"].input-lg,
 .input-group-lg > input[type="datetime-local"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="datetime-local"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-lg > input[type="datetime-local"].input,
 .input-group-lg > input[type="datetime-local"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="datetime-local"].btn,
-.input-group-lg > .input-group-btn > input[type="datetime-local"].gform_next_button,
-.input-group-lg > .input-group-btn > input[type="datetime-local"].gform_previous_button,
-.input-group-lg > .input-group-btn > input[type="datetime-local"].gform_button,
+body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="datetime-local"]#wp-submit,
 input[type="month"].input-lg,
 .input-group-lg > input[type="month"].form-control,
-.gfield:not(.captcha) .input-group-lg > input[type="month"]:not([type=checkbox]):not([type=radio]),
+body.login #login form p .input-group-lg > input[type="month"].input,
 .input-group-lg > input[type="month"].input-group-addon,
 .input-group-lg > .input-group-btn > input[type="month"].btn,
-.input-group-lg > .input-group-btn > input[type="month"].gform_next_button,
-.input-group-lg > .input-group-btn > input[type="month"].gform_previous_button,
-.input-group-lg > .input-group-btn > input[type="month"].gform_button {
+body.login #login form p.submit .input-group-lg > .input-group-btn > input[type="month"]#wp-submit {
   line-height: 46px;
 }
 
-.form-group, .gfield:not(.captcha) {
+.form-group, body.login #login form p {
   margin-bottom: 15px;
 }
 
 .radio,
-.checkbox {
+.checkbox,
+body.login #login form p.forgetmenot {
   display: block;
   min-height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .radio label,
-.checkbox label {
+.checkbox label,
+body.login #login form p.forgetmenot label {
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -3008,13 +2982,17 @@ input[type="month"].input-lg,
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
+body.login #login form p.forgetmenot input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
   margin-left: -20px;
 }
 
 .radio + .radio,
-.checkbox + .checkbox {
+.checkbox + .checkbox,
+body.login #login form p.forgetmenot + .checkbox,
+body.login #login form .checkbox + p.forgetmenot,
+body.login #login form p.forgetmenot + p.forgetmenot {
   margin-top: -5px;
 }
 
@@ -3041,19 +3019,18 @@ input[type="checkbox"],
 .radio,
 .radio-inline[disabled], fieldset[disabled]
 .radio-inline,
-.checkbox[disabled], fieldset[disabled]
-.checkbox,
+.checkbox[disabled],
+body.login #login form p[disabled].forgetmenot, fieldset[disabled]
+.checkbox, fieldset[disabled] body.login #login form p.forgetmenot, body.login #login form fieldset[disabled] p.forgetmenot,
 .checkbox-inline[disabled], fieldset[disabled]
 .checkbox-inline {
   cursor: not-allowed;
 }
 
-.input-sm, .input-group-sm > .form-control, .gfield:not(.captcha) .input-group-sm > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-sm > textarea, .gfield:not(.captcha) .input-group-sm > select,
+.input-sm, .input-group-sm > .form-control, body.login #login form p .input-group-sm > .input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
-.input-group-sm > .input-group-btn > .gform_next_button,
-.input-group-sm > .input-group-btn > .gform_previous_button,
-.input-group-sm > .input-group-btn > .gform_button {
+body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -3061,42 +3038,31 @@ input[type="checkbox"],
   border-radius: 3px;
 }
 
-select.input-sm, .input-group-sm > select.form-control, .gfield:not(.captcha) .input-group-sm > select,
+select.input-sm, .input-group-sm > select.form-control, body.login #login form p .input-group-sm > select.input,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn,
-.input-group-sm > .input-group-btn > select.gform_next_button,
-.input-group-sm > .input-group-btn > select.gform_previous_button,
-.input-group-sm > .input-group-btn > select.gform_button {
+body.login #login form p.submit .input-group-sm > .input-group-btn > select#wp-submit {
   height: 30px;
   line-height: 30px;
 }
 
-textarea.input-sm, .input-group-sm > textarea.form-control, .gfield:not(.captcha) .input-group-sm > textarea,
+textarea.input-sm, .input-group-sm > textarea.form-control, body.login #login form p .input-group-sm > textarea.input,
 .input-group-sm > textarea.input-group-addon,
 .input-group-sm > .input-group-btn > textarea.btn,
-.input-group-sm > .input-group-btn > textarea.gform_next_button,
-.input-group-sm > .input-group-btn > textarea.gform_previous_button,
-.input-group-sm > .input-group-btn > textarea.gform_button,
+body.login #login form p.submit .input-group-sm > .input-group-btn > textarea#wp-submit,
 select[multiple].input-sm,
 .input-group-sm > select[multiple].form-control,
-.gfield:not(.captcha) .input-group-sm > select[multiple],
-.gfield:not(.captcha) .input-group-sm > select[size],
+body.login #login form p .input-group-sm > select[multiple].input,
 .input-group-sm > select[multiple].input-group-addon,
 .input-group-sm > .input-group-btn > select[multiple].btn,
-.input-group-sm > .input-group-btn > select[multiple].gform_next_button,
-.input-group-sm > .input-group-btn > select[multiple].gform_previous_button,
-.input-group-sm > .input-group-btn > select[multiple].gform_button,
-.gfield:not(.captcha) select.input-sm[multiple],
-.gfield:not(.captcha) select.input-sm[size] {
+body.login #login form p.submit .input-group-sm > .input-group-btn > select[multiple]#wp-submit {
   height: auto;
 }
 
-.input-lg, .input-group-lg > .form-control, .gfield:not(.captcha) .input-group-lg > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-lg > textarea, .gfield:not(.captcha) .input-group-lg > select,
+.input-lg, .input-group-lg > .form-control, body.login #login form p .input-group-lg > .input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
-.input-group-lg > .input-group-btn > .gform_next_button,
-.input-group-lg > .input-group-btn > .gform_previous_button,
-.input-group-lg > .input-group-btn > .gform_button {
+body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -3104,40 +3070,31 @@ select[multiple].input-sm,
   border-radius: 6px;
 }
 
-select.input-lg, .input-group-lg > select.form-control, .gfield:not(.captcha) .input-group-lg > select,
+select.input-lg, .input-group-lg > select.form-control, body.login #login form p .input-group-lg > select.input,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn,
-.input-group-lg > .input-group-btn > select.gform_next_button,
-.input-group-lg > .input-group-btn > select.gform_previous_button,
-.input-group-lg > .input-group-btn > select.gform_button {
+body.login #login form p.submit .input-group-lg > .input-group-btn > select#wp-submit {
   height: 46px;
   line-height: 46px;
 }
 
-textarea.input-lg, .input-group-lg > textarea.form-control, .gfield:not(.captcha) .input-group-lg > textarea,
+textarea.input-lg, .input-group-lg > textarea.form-control, body.login #login form p .input-group-lg > textarea.input,
 .input-group-lg > textarea.input-group-addon,
 .input-group-lg > .input-group-btn > textarea.btn,
-.input-group-lg > .input-group-btn > textarea.gform_next_button,
-.input-group-lg > .input-group-btn > textarea.gform_previous_button,
-.input-group-lg > .input-group-btn > textarea.gform_button,
+body.login #login form p.submit .input-group-lg > .input-group-btn > textarea#wp-submit,
 select[multiple].input-lg,
 .input-group-lg > select[multiple].form-control,
-.gfield:not(.captcha) .input-group-lg > select[multiple],
-.gfield:not(.captcha) .input-group-lg > select[size],
+body.login #login form p .input-group-lg > select[multiple].input,
 .input-group-lg > select[multiple].input-group-addon,
 .input-group-lg > .input-group-btn > select[multiple].btn,
-.input-group-lg > .input-group-btn > select[multiple].gform_next_button,
-.input-group-lg > .input-group-btn > select[multiple].gform_previous_button,
-.input-group-lg > .input-group-btn > select[multiple].gform_button,
-.gfield:not(.captcha) select.input-lg[multiple],
-.gfield:not(.captcha) select.input-lg[size] {
+body.login #login form p.submit .input-group-lg > .input-group-btn > select[multiple]#wp-submit {
   height: auto;
 }
 
 .has-feedback {
   position: relative;
 }
-.has-feedback .form-control, .has-feedback .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-feedback input:not([type=checkbox]):not([type=radio]), .has-feedback .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-feedback textarea, .has-feedback .gfield:not(.captcha) select, .gfield:not(.captcha) .has-feedback select {
+.has-feedback .form-control, .has-feedback body.login #login form p .input, body.login #login form p .has-feedback .input {
   padding-right: 42.5px;
 }
 
@@ -3153,23 +3110,19 @@ select[multiple].input-lg,
   text-align: center;
 }
 
-.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > input:not([type=checkbox]):not([type=radio]) + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > textarea + .form-control-feedback, .gfield:not(.captcha) .input-group-lg > select + .form-control-feedback,
+.input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback, body.login #login form p .input-group-lg > .input + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
-.input-group-lg > .input-group-btn > .gform_next_button + .form-control-feedback,
-.input-group-lg > .input-group-btn > .gform_previous_button + .form-control-feedback,
-.input-group-lg > .input-group-btn > .gform_button + .form-control-feedback {
+body.login #login form p.submit .input-group-lg > .input-group-btn > #wp-submit + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px;
 }
 
-.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > input:not([type=checkbox]):not([type=radio]) + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > textarea + .form-control-feedback, .gfield:not(.captcha) .input-group-sm > select + .form-control-feedback,
+.input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback, body.login #login form p .input-group-sm > .input + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
-.input-group-sm > .input-group-btn > .gform_next_button + .form-control-feedback,
-.input-group-sm > .input-group-btn > .gform_previous_button + .form-control-feedback,
-.input-group-sm > .input-group-btn > .gform_button + .form-control-feedback {
+body.login #login form p.submit .input-group-sm > .input-group-btn > #wp-submit + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px;
@@ -3177,20 +3130,20 @@ select[multiple].input-lg,
 
 .has-success .help-block,
 .has-success .control-label,
-.has-success .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-success .gfield_label,
 .has-success .radio,
 .has-success .checkbox,
+.has-success body.login #login form p.forgetmenot,
+body.login #login form .has-success p.forgetmenot,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
   color: #3c763d;
 }
-.has-success .form-control, .has-success .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-success input:not([type=checkbox]):not([type=radio]), .has-success .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-success textarea, .has-success .gfield:not(.captcha) select, .gfield:not(.captcha) .has-success select {
+.has-success .form-control, .has-success body.login #login form p .input, body.login #login form p .has-success .input {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-success .form-control:focus, .has-success .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-success input:focus:not([type=checkbox]):not([type=radio]), .has-success .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-success textarea:focus, .has-success .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-success select:focus {
+.has-success .form-control:focus, .has-success body.login #login form p .input:focus, body.login #login form p .has-success .input:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
@@ -3206,20 +3159,20 @@ select[multiple].input-lg,
 
 .has-warning .help-block,
 .has-warning .control-label,
-.has-warning .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-warning .gfield_label,
 .has-warning .radio,
 .has-warning .checkbox,
+.has-warning body.login #login form p.forgetmenot,
+body.login #login form .has-warning p.forgetmenot,
 .has-warning .radio-inline,
 .has-warning .checkbox-inline {
   color: #8a6d3b;
 }
-.has-warning .form-control, .has-warning .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-warning input:not([type=checkbox]):not([type=radio]), .has-warning .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-warning textarea, .has-warning .gfield:not(.captcha) select, .gfield:not(.captcha) .has-warning select {
+.has-warning .form-control, .has-warning body.login #login form p .input, body.login #login form p .has-warning .input {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-warning .form-control:focus, .has-warning .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-warning input:focus:not([type=checkbox]):not([type=radio]), .has-warning .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-warning textarea:focus, .has-warning .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-warning select:focus {
+.has-warning .form-control:focus, .has-warning body.login #login form p .input:focus, body.login #login form p .has-warning .input:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
@@ -3233,38 +3186,32 @@ select[multiple].input-lg,
   color: #8a6d3b;
 }
 
-.has-error .help-block, .gfield.gfield_error:not(.captcha) .help-block,
+.has-error .help-block,
 .has-error .control-label,
-.gfield.gfield_error:not(.captcha) .control-label,
-.has-error .gfield:not(.captcha) .gfield_label,
-.gfield:not(.captcha) .has-error .gfield_label,
-.gfield.gfield_error:not(.captcha) .gfield_label,
 .has-error .radio,
-.gfield.gfield_error:not(.captcha) .radio,
 .has-error .checkbox,
-.gfield.gfield_error:not(.captcha) .checkbox,
+.has-error body.login #login form p.forgetmenot,
+body.login #login form .has-error p.forgetmenot,
 .has-error .radio-inline,
-.gfield.gfield_error:not(.captcha) .radio-inline,
-.has-error .checkbox-inline,
-.gfield.gfield_error:not(.captcha) .checkbox-inline {
+.has-error .checkbox-inline {
   color: #a94442;
 }
-.has-error .form-control, .gfield.gfield_error:not(.captcha) .form-control, .has-error .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-error input:not([type=checkbox]):not([type=radio]), .gfield.gfield_error:not(.captcha) input:not([type=checkbox]):not([type=radio]), .has-error .gfield:not(.captcha) textarea, .gfield:not(.captcha) .has-error textarea, .gfield.gfield_error:not(.captcha) textarea, .has-error .gfield:not(.captcha) select, .gfield:not(.captcha) .has-error select, .gfield.gfield_error:not(.captcha) select {
+.has-error .form-control, .has-error body.login #login form p .input, body.login #login form p .has-error .input {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-error .form-control:focus, .gfield.gfield_error:not(.captcha) .form-control:focus, .has-error .gfield:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .has-error input:focus:not([type=checkbox]):not([type=radio]), .gfield.gfield_error:not(.captcha) input:focus:not([type=checkbox]):not([type=radio]), .has-error .gfield:not(.captcha) textarea:focus, .gfield:not(.captcha) .has-error textarea:focus, .gfield.gfield_error:not(.captcha) textarea:focus, .has-error .gfield:not(.captcha) select:focus, .gfield:not(.captcha) .has-error select:focus, .gfield.gfield_error:not(.captcha) select:focus {
+.has-error .form-control:focus, .has-error body.login #login form p .input:focus, body.login #login form p .has-error .input:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
 }
-.has-error .input-group-addon, .gfield.gfield_error:not(.captcha) .input-group-addon {
+.has-error .input-group-addon {
   color: #a94442;
   border-color: #a94442;
   background-color: #f2dede;
 }
-.has-error .form-control-feedback, .gfield.gfield_error:not(.captcha) .form-control-feedback {
+.has-error .form-control-feedback {
   color: #a94442;
 }
 
@@ -3280,12 +3227,12 @@ select[multiple].input-lg,
 }
 
 @media (min-width: 768px) {
-  .form-inline .form-group, .navbar-form .form-group, .form-inline .gfield:not(.captcha), .navbar-form .gfield:not(.captcha) {
+  .form-inline .form-group, .navbar-form .form-group, .form-inline body.login #login form p, body.login #login form .form-inline p, .navbar-form body.login #login form p, body.login #login form .navbar-form p {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control, .navbar-form .form-control, .form-inline .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .form-inline input:not([type=checkbox]):not([type=radio]), .navbar-form .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .navbar-form input:not([type=checkbox]):not([type=radio]), .form-inline .gfield:not(.captcha) textarea, .gfield:not(.captcha) .form-inline textarea, .navbar-form .gfield:not(.captcha) textarea, .gfield:not(.captcha) .navbar-form textarea, .form-inline .gfield:not(.captcha) select, .gfield:not(.captcha) .form-inline select, .navbar-form .gfield:not(.captcha) select, .gfield:not(.captcha) .navbar-form select {
+  .form-inline .form-control, .navbar-form .form-control, .form-inline body.login #login form p .input, body.login #login form p .form-inline .input, .navbar-form body.login #login form p .input, body.login #login form p .navbar-form .input {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -3299,30 +3246,26 @@ select[multiple].input-lg,
   .navbar-form .input-group .input-group-btn,
   .form-inline .input-group .form-control,
   .navbar-form .input-group .form-control,
-  .form-inline .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-  .gfield:not(.captcha) .form-inline .input-group input:not([type=checkbox]):not([type=radio]),
-  .navbar-form .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-  .gfield:not(.captcha) .navbar-form .input-group input:not([type=checkbox]):not([type=radio]),
-  .form-inline .input-group .gfield:not(.captcha) textarea,
-  .gfield:not(.captcha) .form-inline .input-group textarea,
-  .navbar-form .input-group .gfield:not(.captcha) textarea,
-  .gfield:not(.captcha) .navbar-form .input-group textarea,
-  .form-inline .input-group .gfield:not(.captcha) select,
-  .gfield:not(.captcha) .form-inline .input-group select,
-  .navbar-form .input-group .gfield:not(.captcha) select,
-  .gfield:not(.captcha) .navbar-form .input-group select {
+  .form-inline .input-group body.login #login form p .input,
+  body.login #login form p .form-inline .input-group .input,
+  .navbar-form .input-group body.login #login form p .input,
+  body.login #login form p .navbar-form .input-group .input {
     width: auto;
   }
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline .gfield:not(.captcha) .input-group > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .form-inline .input-group > input:not([type=checkbox]):not([type=radio]), .navbar-form .gfield:not(.captcha) .input-group > input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .navbar-form .input-group > input:not([type=checkbox]):not([type=radio]), .form-inline .gfield:not(.captcha) .input-group > textarea, .gfield:not(.captcha) .form-inline .input-group > textarea, .navbar-form .gfield:not(.captcha) .input-group > textarea, .gfield:not(.captcha) .navbar-form .input-group > textarea, .form-inline .gfield:not(.captcha) .input-group > select, .gfield:not(.captcha) .form-inline .input-group > select, .navbar-form .gfield:not(.captcha) .input-group > select, .gfield:not(.captcha) .navbar-form .input-group > select {
+  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control, .form-inline body.login #login form p .input-group > .input, body.login #login form p .form-inline .input-group > .input, .navbar-form body.login #login form p .input-group > .input, body.login #login form p .navbar-form .input-group > .input {
     width: 100%;
   }
-  .form-inline .control-label, .navbar-form .control-label, .form-inline .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .form-inline .gfield_label, .navbar-form .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .navbar-form .gfield_label {
+  .form-inline .control-label, .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
   .form-inline .radio, .navbar-form .radio,
   .form-inline .checkbox,
-  .navbar-form .checkbox {
+  .navbar-form .checkbox,
+  .form-inline body.login #login form p.forgetmenot,
+  body.login #login form .form-inline p.forgetmenot,
+  .navbar-form body.login #login form p.forgetmenot,
+  body.login #login form .navbar-form p.forgetmenot {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
@@ -3331,7 +3274,11 @@ select[multiple].input-lg,
   }
   .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"],
   .form-inline .checkbox input[type="checkbox"],
-  .navbar-form .checkbox input[type="checkbox"] {
+  .navbar-form .checkbox input[type="checkbox"],
+  .form-inline body.login #login form p.forgetmenot input[type="checkbox"],
+  body.login #login form .form-inline p.forgetmenot input[type="checkbox"],
+  .navbar-form body.login #login form p.forgetmenot input[type="checkbox"],
+  body.login #login form .navbar-form p.forgetmenot input[type="checkbox"] {
     float: none;
     margin-left: 0;
   }
@@ -3342,6 +3289,8 @@ select[multiple].input-lg,
 
 .form-horizontal .radio,
 .form-horizontal .checkbox,
+.form-horizontal body.login #login form p.forgetmenot,
+body.login #login form .form-horizontal p.forgetmenot,
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
   margin-top: 0;
@@ -3349,18 +3298,20 @@ select[multiple].input-lg,
   padding-top: 7px;
 }
 .form-horizontal .radio,
-.form-horizontal .checkbox {
+.form-horizontal .checkbox,
+.form-horizontal body.login #login form p.forgetmenot,
+body.login #login form .form-horizontal p.forgetmenot {
   min-height: 27px;
 }
-.form-horizontal .form-group, .form-horizontal .gfield:not(.captcha) {
+.form-horizontal .form-group, .form-horizontal body.login #login form p, body.login #login form .form-horizontal p {
   margin-left: -15px;
   margin-right: -15px;
 }
-.form-horizontal .form-group:before, .form-horizontal .gfield:not(.captcha):before, .form-horizontal .form-group:after, .form-horizontal .gfield:not(.captcha):after {
+.form-horizontal .form-group:before, .form-horizontal body.login #login form p:before, body.login #login form .form-horizontal p:before, .form-horizontal .form-group:after, .form-horizontal body.login #login form p:after, body.login #login form .form-horizontal p:after {
   content: " ";
   display: table;
 }
-.form-horizontal .form-group:after, .form-horizontal .gfield:not(.captcha):after {
+.form-horizontal .form-group:after, .form-horizontal body.login #login form p:after, body.login #login form .form-horizontal p:after {
   clear: both;
 }
 .form-horizontal .form-control-static {
@@ -3368,7 +3319,7 @@ select[multiple].input-lg,
   padding-bottom: 7px;
 }
 @media (min-width: 768px) {
-  .form-horizontal .control-label, .form-horizontal .gfield:not(.captcha) .gfield_label, .gfield:not(.captcha) .form-horizontal .gfield_label {
+  .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
     padding-top: 7px;
@@ -3379,7 +3330,7 @@ select[multiple].input-lg,
   right: 15px;
 }
 
-.btn, .gform_next_button, .gform_previous_button, .gform_button {
+.btn, body.login #login form p.submit #wp-submit {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3398,22 +3349,22 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, .gform_next_button:focus, .gform_previous_button:focus, .gform_button:focus, .btn:active:focus, .gform_next_button:active:focus, .gform_previous_button:active:focus, .gform_button:active:focus, .btn.active:focus, .active.gform_next_button:focus, .active.gform_previous_button:focus, .active.gform_button:focus {
+.btn:focus, body.login #login form p.submit #wp-submit:focus, .btn:active:focus, body.login #login form p.submit #wp-submit:active:focus, .btn.active:focus, body.login #login form p.submit .active#wp-submit:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .gform_next_button:hover, .gform_previous_button:hover, .gform_button:hover, .btn:focus, .gform_next_button:focus, .gform_previous_button:focus, .gform_button:focus {
+.btn:hover, body.login #login form p.submit #wp-submit:hover, .btn:focus, body.login #login form p.submit #wp-submit:focus {
   color: #333333;
   text-decoration: none;
 }
-.btn:active, .gform_next_button:active, .gform_previous_button:active, .gform_button:active, .btn.active, .active.gform_next_button, .active.gform_previous_button, .active.gform_button {
+.btn:active, body.login #login form p.submit #wp-submit:active, .btn.active, body.login #login form p.submit .active#wp-submit {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .disabled.gform_next_button, .disabled.gform_previous_button, .disabled.gform_button, .btn[disabled], [disabled].gform_next_button, [disabled].gform_previous_button, [disabled].gform_button, fieldset[disabled] .btn, fieldset[disabled] .gform_next_button, fieldset[disabled] .gform_previous_button, fieldset[disabled] .gform_button {
+.btn.disabled, body.login #login form p.submit .disabled#wp-submit, .btn[disabled], body.login #login form p.submit [disabled]#wp-submit, fieldset[disabled] .btn, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -3422,68 +3373,68 @@ select[multiple].input-lg,
   box-shadow: none;
 }
 
-.btn-default, .gform_previous_button {
+.btn-default {
   color: #333333;
   background-color: white;
   border-color: #cccccc;
 }
-.btn-default:hover, .gform_previous_button:hover, .btn-default:focus, .gform_previous_button:focus, .btn-default:active, .gform_previous_button:active, .btn-default.active, .active.gform_previous_button, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.gform_previous_button {
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
-.btn-default:active, .gform_previous_button:active, .btn-default.active, .active.gform_previous_button, .open > .btn-default.dropdown-toggle, .open > .dropdown-toggle.gform_previous_button {
+.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
   background-image: none;
 }
-.btn-default.disabled, .disabled.gform_previous_button, .btn-default.disabled:hover, .disabled.gform_previous_button:hover, .btn-default.disabled:focus, .disabled.gform_previous_button:focus, .btn-default.disabled:active, .disabled.gform_previous_button:active, .btn-default.disabled.active, .disabled.active.gform_previous_button, .btn-default[disabled], [disabled].gform_previous_button, .btn-default[disabled]:hover, [disabled].gform_previous_button:hover, .btn-default[disabled]:focus, [disabled].gform_previous_button:focus, .btn-default[disabled]:active, [disabled].gform_previous_button:active, .btn-default[disabled].active, [disabled].active.gform_previous_button, fieldset[disabled] .btn-default, fieldset[disabled] .gform_previous_button, fieldset[disabled] .btn-default:hover, fieldset[disabled] .gform_previous_button:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .gform_previous_button:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .gform_previous_button:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .active.gform_previous_button {
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
   background-color: white;
   border-color: #cccccc;
 }
-.btn-default .badge, .gform_previous_button .badge {
+.btn-default .badge {
   color: white;
   background-color: #333333;
 }
 
-.btn-primary {
+.btn-primary, body.login #login form p.submit #wp-submit {
   color: white;
   background-color: #0066cc;
   border-color: #0059b3;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+.btn-primary:hover, body.login #login form p.submit #wp-submit:hover, .btn-primary:focus, body.login #login form p.submit #wp-submit:focus, .btn-primary:active, body.login #login form p.submit #wp-submit:active, .btn-primary.active, body.login #login form p.submit .active#wp-submit, .open > .btn-primary.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
   color: white;
   background-color: #004c99;
   border-color: #003b75;
 }
-.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+.btn-primary:active, body.login #login form p.submit #wp-submit:active, .btn-primary.active, body.login #login form p.submit .active#wp-submit, .open > .btn-primary.dropdown-toggle, body.login #login form p.submit .open > .dropdown-toggle#wp-submit {
   background-image: none;
 }
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+.btn-primary.disabled, body.login #login form p.submit .disabled#wp-submit, .btn-primary.disabled:hover, body.login #login form p.submit .disabled#wp-submit:hover, .btn-primary.disabled:focus, body.login #login form p.submit .disabled#wp-submit:focus, .btn-primary.disabled:active, body.login #login form p.submit .disabled#wp-submit:active, .btn-primary.disabled.active, body.login #login form p.submit .disabled.active#wp-submit, .btn-primary[disabled], body.login #login form p.submit [disabled]#wp-submit, .btn-primary[disabled]:hover, body.login #login form p.submit [disabled]#wp-submit:hover, .btn-primary[disabled]:focus, body.login #login form p.submit [disabled]#wp-submit:focus, .btn-primary[disabled]:active, body.login #login form p.submit [disabled]#wp-submit:active, .btn-primary[disabled].active, body.login #login form p.submit [disabled].active#wp-submit, fieldset[disabled] .btn-primary, fieldset[disabled] body.login #login form p.submit #wp-submit, body.login #login form p.submit fieldset[disabled] #wp-submit, fieldset[disabled] .btn-primary:hover, fieldset[disabled] body.login #login form p.submit #wp-submit:hover, body.login #login form p.submit fieldset[disabled] #wp-submit:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] body.login #login form p.submit #wp-submit:focus, body.login #login form p.submit fieldset[disabled] #wp-submit:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] body.login #login form p.submit #wp-submit:active, body.login #login form p.submit fieldset[disabled] #wp-submit:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] body.login #login form p.submit .active#wp-submit, body.login #login form p.submit fieldset[disabled] .active#wp-submit {
   background-color: #0066cc;
   border-color: #0059b3;
 }
-.btn-primary .badge {
+.btn-primary .badge, body.login #login form p.submit #wp-submit .badge {
   color: #0066cc;
   background-color: white;
 }
 
-.btn-success, .gform_next_button, .gform_button {
+.btn-success {
   color: white;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
-.btn-success:hover, .gform_next_button:hover, .gform_button:hover, .btn-success:focus, .gform_next_button:focus, .gform_button:focus, .btn-success:active, .gform_next_button:active, .gform_button:active, .btn-success.active, .active.gform_next_button, .active.gform_button, .open > .btn-success.dropdown-toggle, .open > .dropdown-toggle.gform_next_button, .open > .dropdown-toggle.gform_button {
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
   color: white;
   background-color: #449d44;
   border-color: #398439;
 }
-.btn-success:active, .gform_next_button:active, .gform_button:active, .btn-success.active, .active.gform_next_button, .active.gform_button, .open > .btn-success.dropdown-toggle, .open > .dropdown-toggle.gform_next_button, .open > .dropdown-toggle.gform_button {
+.btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
   background-image: none;
 }
-.btn-success.disabled, .disabled.gform_next_button, .disabled.gform_button, .btn-success.disabled:hover, .disabled.gform_next_button:hover, .disabled.gform_button:hover, .btn-success.disabled:focus, .disabled.gform_next_button:focus, .disabled.gform_button:focus, .btn-success.disabled:active, .disabled.gform_next_button:active, .disabled.gform_button:active, .btn-success.disabled.active, .disabled.active.gform_next_button, .disabled.active.gform_button, .btn-success[disabled], [disabled].gform_next_button, [disabled].gform_button, .btn-success[disabled]:hover, [disabled].gform_next_button:hover, [disabled].gform_button:hover, .btn-success[disabled]:focus, [disabled].gform_next_button:focus, [disabled].gform_button:focus, .btn-success[disabled]:active, [disabled].gform_next_button:active, [disabled].gform_button:active, .btn-success[disabled].active, [disabled].active.gform_next_button, [disabled].active.gform_button, fieldset[disabled] .btn-success, fieldset[disabled] .gform_next_button, fieldset[disabled] .gform_button, fieldset[disabled] .btn-success:hover, fieldset[disabled] .gform_next_button:hover, fieldset[disabled] .gform_button:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .gform_next_button:focus, fieldset[disabled] .gform_button:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .gform_next_button:active, fieldset[disabled] .gform_button:active, fieldset[disabled] .btn-success.active, fieldset[disabled] .active.gform_next_button, fieldset[disabled] .active.gform_button {
+.btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
-.btn-success .badge, .gform_next_button .badge, .gform_button .badge {
+.btn-success .badge {
   color: #5cb85c;
   background-color: white;
 }
@@ -3578,41 +3529,43 @@ select[multiple].input-lg,
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .gform_next_button, .btn-group-lg > .gform_previous_button, .btn-group-lg > .gform_button, .gform_next_button, .gform_previous_button, .gform_button {
+.btn-lg, .btn-group-lg > .btn, body.login #login form p.submit .btn-group-lg > #wp-submit {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .gform_next_button, .btn-group-sm > .gform_previous_button, .btn-group-sm > .gform_button {
+.btn-sm, .btn-group-sm > .btn, body.login #login form p.submit .btn-group-sm > #wp-submit {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > .gform_next_button, .btn-group-xs > .gform_previous_button, .btn-group-xs > .gform_button {
+.btn-xs, .btn-group-xs > .btn, body.login #login form p.submit .btn-group-xs > #wp-submit {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-block {
+.btn-block, body.login #login form p.submit #wp-submit {
   display: block;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
 
-.btn-block + .btn-block {
+.btn-block + .btn-block, body.login #login form p.submit #wp-submit + .btn-block, body.login #login form p.submit .btn-block + #wp-submit, body.login #login form p.submit #wp-submit + #wp-submit {
   margin-top: 5px;
 }
 
-input[type="submit"].btn-block,
+input[type="submit"].btn-block, body.login #login form p.submit input[type="submit"]#wp-submit,
 input[type="reset"].btn-block,
-input[type="button"].btn-block {
+body.login #login form p.submit input[type="reset"]#wp-submit,
+input[type="button"].btn-block,
+body.login #login form p.submit input[type="button"]#wp-submit {
   width: 100%;
 }
 
@@ -3690,7 +3643,7 @@ tbody.collapse.in {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
-.dropdown-menu.pull-right, .dropdown-menu.gform_next_button, .dropdown-menu.gform_button {
+.dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
@@ -3700,7 +3653,7 @@ tbody.collapse.in {
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.dropdown-menu > li > a {
+.dropdown-menu > li > a, body.login #login p#nav .dropdown-menu > li > a, body.login #login p#backtoblog .dropdown-menu > li > a {
   display: block;
   padding: 3px 20px;
   clear: both;
@@ -3710,24 +3663,24 @@ tbody.collapse.in {
   white-space: nowrap;
 }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:hover, body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#backtoblog .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#backtoblog .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
   background-color: whitesmoke;
 }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+.dropdown-menu > .active > a, body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#backtoblog .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .dropdown-menu > .active > a:focus {
   color: white;
   text-decoration: none;
   outline: 0;
   background-color: #0066cc;
 }
 
-.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a, body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#backtoblog .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus {
   color: #999999;
 }
 
-.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+.dropdown-menu > .disabled > a:hover, body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus, body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -3738,7 +3691,7 @@ tbody.collapse.in {
 .open > .dropdown-menu {
   display: block;
 }
-.open > a {
+.open > a, body.login #login p#nav .open > a, body.login #login p#backtoblog .open > a {
   outline: 0;
 }
 
@@ -3769,7 +3722,7 @@ tbody.collapse.in {
   z-index: 990;
 }
 
-.pull-right > .dropdown-menu, .gform_next_button > .dropdown-menu, .gform_button > .dropdown-menu {
+.pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
@@ -3803,50 +3756,36 @@ tbody.collapse.in {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .gform_next_button, .btn-group > .gform_previous_button, .btn-group > .gform_button,
+.btn-group > .btn, body.login #login form p.submit .btn-group > #wp-submit,
 .btn-group-vertical > .btn,
-.btn-group-vertical > .gform_next_button,
-.btn-group-vertical > .gform_previous_button,
-.btn-group-vertical > .gform_button {
+body.login #login form p.submit .btn-group-vertical > #wp-submit {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, .btn-group > .gform_next_button:hover, .btn-group > .gform_previous_button:hover, .btn-group > .gform_button:hover, .btn-group > .btn:focus, .btn-group > .gform_next_button:focus, .btn-group > .gform_previous_button:focus, .btn-group > .gform_button:focus, .btn-group > .btn:active, .btn-group > .gform_next_button:active, .btn-group > .gform_previous_button:active, .btn-group > .gform_button:active, .btn-group > .btn.active, .btn-group > .active.gform_next_button, .btn-group > .active.gform_previous_button, .btn-group > .active.gform_button,
+.btn-group > .btn:hover, body.login #login form p.submit .btn-group > #wp-submit:hover, .btn-group > .btn:focus, body.login #login form p.submit .btn-group > #wp-submit:focus, .btn-group > .btn:active, body.login #login form p.submit .btn-group > #wp-submit:active, .btn-group > .btn.active, body.login #login form p.submit .btn-group > .active#wp-submit,
 .btn-group-vertical > .btn:hover,
-.btn-group-vertical > .gform_next_button:hover,
-.btn-group-vertical > .gform_previous_button:hover,
-.btn-group-vertical > .gform_button:hover,
+body.login #login form p.submit .btn-group-vertical > #wp-submit:hover,
 .btn-group-vertical > .btn:focus,
-.btn-group-vertical > .gform_next_button:focus,
-.btn-group-vertical > .gform_previous_button:focus,
-.btn-group-vertical > .gform_button:focus,
+body.login #login form p.submit .btn-group-vertical > #wp-submit:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .gform_next_button:active,
-.btn-group-vertical > .gform_previous_button:active,
-.btn-group-vertical > .gform_button:active,
+body.login #login form p.submit .btn-group-vertical > #wp-submit:active,
 .btn-group-vertical > .btn.active,
-.btn-group-vertical > .active.gform_next_button,
-.btn-group-vertical > .active.gform_previous_button,
-.btn-group-vertical > .active.gform_button {
+body.login #login form p.submit .btn-group-vertical > .active#wp-submit {
   z-index: 2;
 }
-.btn-group > .btn:focus, .btn-group > .gform_next_button:focus, .btn-group > .gform_previous_button:focus, .btn-group > .gform_button:focus,
+.btn-group > .btn:focus, body.login #login form p.submit .btn-group > #wp-submit:focus,
 .btn-group-vertical > .btn:focus,
-.btn-group-vertical > .gform_next_button:focus,
-.btn-group-vertical > .gform_previous_button:focus,
-.btn-group-vertical > .gform_button:focus {
+body.login #login form p.submit .btn-group-vertical > #wp-submit:focus {
   outline: 0;
 }
 
-.btn-group .btn + .btn, .btn-group .gform_next_button + .btn, .btn-group .gform_previous_button + .btn, .btn-group .gform_button + .btn, .btn-group .btn + .gform_next_button, .btn-group .gform_next_button + .gform_next_button, .btn-group .gform_previous_button + .gform_next_button, .btn-group .gform_button + .gform_next_button, .btn-group .btn + .gform_previous_button, .btn-group .gform_next_button + .gform_previous_button, .btn-group .gform_previous_button + .gform_previous_button, .btn-group .gform_button + .gform_previous_button, .btn-group .btn + .gform_button, .btn-group .gform_next_button + .gform_button, .btn-group .gform_previous_button + .gform_button, .btn-group .gform_button + .gform_button,
+.btn-group .btn + .btn, .btn-group body.login #login form p.submit #wp-submit + .btn, body.login #login form p.submit .btn-group #wp-submit + .btn, .btn-group body.login #login form p.submit .btn + #wp-submit, body.login #login form p.submit .btn-group .btn + #wp-submit, .btn-group body.login #login form p.submit #wp-submit + #wp-submit, body.login #login form p.submit .btn-group #wp-submit + #wp-submit,
 .btn-group .btn + .btn-group,
-.btn-group .gform_next_button + .btn-group,
-.btn-group .gform_previous_button + .btn-group,
-.btn-group .gform_button + .btn-group,
+.btn-group body.login #login form p.submit #wp-submit + .btn-group,
+body.login #login form p.submit .btn-group #wp-submit + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + .gform_next_button,
-.btn-group .btn-group + .gform_previous_button,
-.btn-group .btn-group + .gform_button,
+.btn-group body.login #login form p.submit .btn-group + #wp-submit,
+body.login #login form p.submit .btn-group .btn-group + #wp-submit,
 .btn-group .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3865,25 +3804,25 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn, .btn-toolbar > .gform_next_button, .btn-toolbar > .gform_previous_button, .btn-toolbar > .gform_button,
+.btn-toolbar > .btn, body.login #login form p.submit .btn-toolbar > #wp-submit,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .gform_next_button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .gform_previous_button:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > .gform_button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), body.login #login form p.submit .btn-group > #wp-submit:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .btn-group > .gform_next_button:first-child, .btn-group > .gform_previous_button:first-child, .btn-group > .gform_button:first-child {
+.btn-group > .btn:first-child, body.login #login form p.submit .btn-group > #wp-submit:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .gform_next_button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .gform_previous_button:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > .gform_button:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), body.login #login form p.submit .btn-group > #wp-submit:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > .gform_next_button:last-child:not(:first-child), .btn-group > .gform_previous_button:last-child:not(:first-child), .btn-group > .gform_button:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), body.login #login form p.submit .btn-group > #wp-submit:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -3893,17 +3832,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > .gform_next_button, .btn-group > .btn-group:not(:first-child):not(:last-child) > .gform_previous_button, .btn-group > .btn-group:not(:first-child):not(:last-child) > .gform_button {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, body.login #login form p.submit .btn-group > .btn-group:not(:first-child):not(:last-child) > #wp-submit {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child > .btn:last-child, .btn-group > .btn-group:first-child > .gform_next_button:last-child, .btn-group > .btn-group:first-child > .gform_previous_button:last-child, .btn-group > .btn-group:first-child > .gform_button:last-child,
+.btn-group > .btn-group:first-child > .btn:last-child, body.login #login form p.submit .btn-group > .btn-group:first-child > #wp-submit:last-child,
 .btn-group > .btn-group:first-child > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child > .btn:first-child, .btn-group > .btn-group:last-child > .gform_next_button:first-child, .btn-group > .btn-group:last-child > .gform_previous_button:first-child, .btn-group > .btn-group:last-child > .gform_button:first-child {
+.btn-group > .btn-group:last-child > .btn:first-child, body.login #login form p.submit .btn-group > .btn-group:last-child > #wp-submit:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3913,12 +3852,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .btn-group > .gform_next_button + .dropdown-toggle, .btn-group > .gform_previous_button + .dropdown-toggle, .btn-group > .gform_button + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, body.login #login form p.submit .btn-group > #wp-submit + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .btn-group > .gform_next_button + .dropdown-toggle, .btn-group > .gform_previous_button + .dropdown-toggle, .btn-group > .gform_button + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, body.login #login form p.submit .btn-group-lg.btn-group > #wp-submit + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -3932,25 +3871,23 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, .gform_next_button .caret, .gform_previous_button .caret, .gform_button .caret {
+.btn .caret, body.login #login form p.submit #wp-submit .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .gform_next_button .caret, .gform_previous_button .caret, .gform_button .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, body.login #login form p.submit .btn-group-lg > #wp-submit .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .gform_next_button .caret, .dropup .gform_previous_button .caret, .dropup .gform_button .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup body.login #login form p.submit .btn-group-lg > #wp-submit .caret, body.login #login form p.submit .dropup .btn-group-lg > #wp-submit .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, .btn-group-vertical > .gform_next_button, .btn-group-vertical > .gform_previous_button, .btn-group-vertical > .gform_button,
+.btn-group-vertical > .btn, body.login #login form p.submit .btn-group-vertical > #wp-submit,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
-.btn-group-vertical > .btn-group > .gform_next_button,
-.btn-group-vertical > .btn-group > .gform_previous_button,
-.btn-group-vertical > .btn-group > .gform_button {
+body.login #login form p.submit .btn-group-vertical > .btn-group > #wp-submit {
   display: block;
   float: none;
   width: 100%;
@@ -3963,48 +3900,44 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, .btn-group-vertical > .btn-group > .gform_next_button, .btn-group-vertical > .btn-group > .gform_previous_button, .btn-group-vertical > .btn-group > .gform_button {
+.btn-group-vertical > .btn-group > .btn, body.login #login form p.submit .btn-group-vertical > .btn-group > #wp-submit {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > .gform_next_button + .btn, .btn-group-vertical > .gform_previous_button + .btn, .btn-group-vertical > .gform_button + .btn, .btn-group-vertical > .btn + .gform_next_button, .btn-group-vertical > .gform_next_button + .gform_next_button, .btn-group-vertical > .gform_previous_button + .gform_next_button, .btn-group-vertical > .gform_button + .gform_next_button, .btn-group-vertical > .btn + .gform_previous_button, .btn-group-vertical > .gform_next_button + .gform_previous_button, .btn-group-vertical > .gform_previous_button + .gform_previous_button, .btn-group-vertical > .gform_button + .gform_previous_button, .btn-group-vertical > .btn + .gform_button, .btn-group-vertical > .gform_next_button + .gform_button, .btn-group-vertical > .gform_previous_button + .gform_button, .btn-group-vertical > .gform_button + .gform_button,
+.btn-group-vertical > .btn + .btn, body.login #login form p.submit .btn-group-vertical > #wp-submit + .btn, body.login #login form p.submit .btn-group-vertical > .btn + #wp-submit, body.login #login form p.submit .btn-group-vertical > #wp-submit + #wp-submit,
 .btn-group-vertical > .btn + .btn-group,
-.btn-group-vertical > .gform_next_button + .btn-group,
-.btn-group-vertical > .gform_previous_button + .btn-group,
-.btn-group-vertical > .gform_button + .btn-group,
+body.login #login form p.submit .btn-group-vertical > #wp-submit + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
-.btn-group-vertical > .btn-group + .gform_next_button,
-.btn-group-vertical > .btn-group + .gform_previous_button,
-.btn-group-vertical > .btn-group + .gform_button,
+body.login #login form p.submit .btn-group-vertical > .btn-group + #wp-submit,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > .gform_next_button:not(:first-child):not(:last-child), .btn-group-vertical > .gform_previous_button:not(:first-child):not(:last-child), .btn-group-vertical > .gform_button:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), body.login #login form p.submit .btn-group-vertical > #wp-submit:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > .gform_next_button:first-child:not(:last-child), .btn-group-vertical > .gform_previous_button:first-child:not(:last-child), .btn-group-vertical > .gform_button:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), body.login #login form p.submit .btn-group-vertical > #wp-submit:first-child:not(:last-child) {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > .gform_next_button:last-child:not(:first-child), .btn-group-vertical > .gform_previous_button:last-child:not(:first-child), .btn-group-vertical > .gform_button:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), body.login #login form p.submit .btn-group-vertical > #wp-submit:last-child:not(:first-child) {
   border-bottom-left-radius: 4px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .gform_next_button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .gform_previous_button, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .gform_button {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, body.login #login form p.submit .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #wp-submit {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .gform_next_button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .gform_previous_button:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .gform_button:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, body.login #login form p.submit .btn-group-vertical > .btn-group:first-child:not(:last-child) > #wp-submit:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .gform_next_button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .gform_previous_button:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > .gform_button:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, body.login #login form p.submit .btn-group-vertical > .btn-group:last-child:not(:first-child) > #wp-submit:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4015,21 +3948,19 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn, .btn-group-justified > .gform_next_button, .btn-group-justified > .gform_previous_button, .btn-group-justified > .gform_button,
+.btn-group-justified > .btn, body.login #login form p.submit .btn-group-justified > #wp-submit,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .gform_next_button, .btn-group-justified > .btn-group .gform_previous_button, .btn-group-justified > .btn-group .gform_button {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group body.login #login form p.submit #wp-submit, body.login #login form p.submit .btn-group-justified > .btn-group #wp-submit {
   width: 100%;
 }
 
-[data-toggle="buttons"] > .btn > input[type="radio"], [data-toggle="buttons"] > .gform_next_button > input[type="radio"], [data-toggle="buttons"] > .gform_previous_button > input[type="radio"], [data-toggle="buttons"] > .gform_button > input[type="radio"],
+[data-toggle="buttons"] > .btn > input[type="radio"], body.login #login form p.submit [data-toggle="buttons"] > #wp-submit > input[type="radio"],
 [data-toggle="buttons"] > .btn > input[type="checkbox"],
-[data-toggle="buttons"] > .gform_next_button > input[type="checkbox"],
-[data-toggle="buttons"] > .gform_previous_button > input[type="checkbox"],
-[data-toggle="buttons"] > .gform_button > input[type="checkbox"] {
+body.login #login form p.submit [data-toggle="buttons"] > #wp-submit > input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -4045,7 +3976,7 @@ tbody.collapse.in {
   padding-left: 0;
   padding-right: 0;
 }
-.input-group .form-control, .input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea, .gfield:not(.captcha) .input-group textarea, .input-group .gfield:not(.captcha) select, .gfield:not(.captcha) .input-group select {
+.input-group .form-control, .input-group body.login #login form p .input, body.login #login form p .input-group .input {
   position: relative;
   z-index: 2;
   float: left;
@@ -4056,23 +3987,15 @@ tbody.collapse.in {
 .input-group-addon,
 .input-group-btn,
 .input-group .form-control,
-.input-group .gfield:not(.captcha) input:not([type=checkbox]):not([type=radio]),
-.gfield:not(.captcha) .input-group input:not([type=checkbox]):not([type=radio]),
-.input-group .gfield:not(.captcha) textarea,
-.gfield:not(.captcha) .input-group textarea,
-.input-group .gfield:not(.captcha) select,
-.gfield:not(.captcha) .input-group select {
+.input-group body.login #login form p .input,
+body.login #login form p .input-group .input {
   display: table-cell;
 }
 .input-group-addon:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child),
 .input-group .form-control:not(:first-child):not(:last-child),
-.input-group .gfield:not(.captcha) input:not(:first-child):not(:last-child):not([type=checkbox]):not([type=radio]),
-.gfield:not(.captcha) .input-group input:not(:first-child):not(:last-child):not([type=checkbox]):not([type=radio]),
-.input-group .gfield:not(.captcha) textarea:not(:first-child):not(:last-child),
-.gfield:not(.captcha) .input-group textarea:not(:first-child):not(:last-child),
-.input-group .gfield:not(.captcha) select:not(:first-child):not(:last-child),
-.gfield:not(.captcha) .input-group select:not(:first-child):not(:last-child) {
+.input-group body.login #login form p .input:not(:first-child):not(:last-child),
+body.login #login form p .input-group .input:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
@@ -4094,22 +4017,18 @@ tbody.collapse.in {
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
-.input-group-addon.input-sm, .gfield:not(.captcha) .input-group-sm > input.input-group-addon:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-sm > textarea.input-group-addon, .gfield:not(.captcha) .input-group-sm > select.input-group-addon,
+.input-group-addon.input-sm, body.login #login form p .input-group-sm > .input-group-addon.input,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
-.input-group-sm > .input-group-btn > .input-group-addon.gform_next_button,
-.input-group-sm > .input-group-btn > .input-group-addon.gform_previous_button,
-.input-group-sm > .input-group-btn > .input-group-addon.gform_button {
+body.login #login form p.submit .input-group-sm > .input-group-btn > .input-group-addon#wp-submit {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 3px;
 }
-.input-group-addon.input-lg, .gfield:not(.captcha) .input-group-lg > input.input-group-addon:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group-lg > textarea.input-group-addon, .gfield:not(.captcha) .input-group-lg > select.input-group-addon,
+.input-group-addon.input-lg, body.login #login form p .input-group-lg > .input-group-addon.input,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
-.input-group-lg > .input-group-btn > .input-group-addon.gform_next_button,
-.input-group-lg > .input-group-btn > .input-group-addon.gform_previous_button,
-.input-group-lg > .input-group-btn > .input-group-addon.gform_button {
+body.login #login form p.submit .input-group-lg > .input-group-btn > .input-group-addon#wp-submit {
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 6px;
@@ -4119,25 +4038,17 @@ tbody.collapse.in {
   margin-top: 0;
 }
 
-.input-group .form-control:first-child, .input-group .gfield:not(.captcha) input:first-child:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:first-child:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea:first-child, .gfield:not(.captcha) .input-group textarea:first-child, .input-group .gfield:not(.captcha) select:first-child, .gfield:not(.captcha) .input-group select:first-child,
+.input-group .form-control:first-child, .input-group body.login #login form p .input:first-child, body.login #login form p .input-group .input:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .gform_next_button,
-.input-group-btn:first-child > .gform_previous_button,
-.input-group-btn:first-child > .gform_button,
+body.login #login form p.submit .input-group-btn:first-child > #wp-submit,
 .input-group-btn:first-child > .btn-group > .btn,
-.input-group-btn:first-child > .btn-group > .gform_next_button,
-.input-group-btn:first-child > .btn-group > .gform_previous_button,
-.input-group-btn:first-child > .btn-group > .gform_button,
+body.login #login form p.submit .input-group-btn:first-child > .btn-group > #wp-submit,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .gform_next_button:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .gform_previous_button:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .gform_button:not(:last-child):not(.dropdown-toggle),
+body.login #login form p.submit .input-group-btn:last-child > #wp-submit:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
-.input-group-btn:last-child > .btn-group:not(:last-child) > .gform_next_button,
-.input-group-btn:last-child > .btn-group:not(:last-child) > .gform_previous_button,
-.input-group-btn:last-child > .btn-group:not(:last-child) > .gform_button {
+body.login #login form p.submit .input-group-btn:last-child > .btn-group:not(:last-child) > #wp-submit {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4146,25 +4057,17 @@ tbody.collapse.in {
   border-right: 0;
 }
 
-.input-group .form-control:last-child, .input-group .gfield:not(.captcha) input:last-child:not([type=checkbox]):not([type=radio]), .gfield:not(.captcha) .input-group input:last-child:not([type=checkbox]):not([type=radio]), .input-group .gfield:not(.captcha) textarea:last-child, .gfield:not(.captcha) .input-group textarea:last-child, .input-group .gfield:not(.captcha) select:last-child, .gfield:not(.captcha) .input-group select:last-child,
+.input-group .form-control:last-child, .input-group body.login #login form p .input:last-child, body.login #login form p .input-group .input:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .gform_next_button,
-.input-group-btn:last-child > .gform_previous_button,
-.input-group-btn:last-child > .gform_button,
+body.login #login form p.submit .input-group-btn:last-child > #wp-submit,
 .input-group-btn:last-child > .btn-group > .btn,
-.input-group-btn:last-child > .btn-group > .gform_next_button,
-.input-group-btn:last-child > .btn-group > .gform_previous_button,
-.input-group-btn:last-child > .btn-group > .gform_button,
+body.login #login form p.submit .input-group-btn:last-child > .btn-group > #wp-submit,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .gform_next_button:not(:first-child),
-.input-group-btn:first-child > .gform_previous_button:not(:first-child),
-.input-group-btn:first-child > .gform_button:not(:first-child),
+body.login #login form p.submit .input-group-btn:first-child > #wp-submit:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
-.input-group-btn:first-child > .btn-group:not(:first-child) > .gform_next_button,
-.input-group-btn:first-child > .btn-group:not(:first-child) > .gform_previous_button,
-.input-group-btn:first-child > .btn-group:not(:first-child) > .gform_button {
+body.login #login form p.submit .input-group-btn:first-child > .btn-group:not(:first-child) > #wp-submit {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4178,69 +4081,69 @@ tbody.collapse.in {
   font-size: 0;
   white-space: nowrap;
 }
-.input-group-btn > .btn, .input-group-btn > .gform_next_button, .input-group-btn > .gform_previous_button, .input-group-btn > .gform_button {
+.input-group-btn > .btn, body.login #login form p.submit .input-group-btn > #wp-submit {
   position: relative;
 }
-.input-group-btn > .btn + .btn, .input-group-btn > .gform_next_button + .btn, .input-group-btn > .gform_previous_button + .btn, .input-group-btn > .gform_button + .btn, .input-group-btn > .btn + .gform_next_button, .input-group-btn > .gform_next_button + .gform_next_button, .input-group-btn > .gform_previous_button + .gform_next_button, .input-group-btn > .gform_button + .gform_next_button, .input-group-btn > .btn + .gform_previous_button, .input-group-btn > .gform_next_button + .gform_previous_button, .input-group-btn > .gform_previous_button + .gform_previous_button, .input-group-btn > .gform_button + .gform_previous_button, .input-group-btn > .btn + .gform_button, .input-group-btn > .gform_next_button + .gform_button, .input-group-btn > .gform_previous_button + .gform_button, .input-group-btn > .gform_button + .gform_button {
+.input-group-btn > .btn + .btn, body.login #login form p.submit .input-group-btn > #wp-submit + .btn, body.login #login form p.submit .input-group-btn > .btn + #wp-submit, body.login #login form p.submit .input-group-btn > #wp-submit + #wp-submit {
   margin-left: -1px;
 }
-.input-group-btn > .btn:hover, .input-group-btn > .gform_next_button:hover, .input-group-btn > .gform_previous_button:hover, .input-group-btn > .gform_button:hover, .input-group-btn > .btn:focus, .input-group-btn > .gform_next_button:focus, .input-group-btn > .gform_previous_button:focus, .input-group-btn > .gform_button:focus, .input-group-btn > .btn:active, .input-group-btn > .gform_next_button:active, .input-group-btn > .gform_previous_button:active, .input-group-btn > .gform_button:active {
+.input-group-btn > .btn:hover, body.login #login form p.submit .input-group-btn > #wp-submit:hover, .input-group-btn > .btn:focus, body.login #login form p.submit .input-group-btn > #wp-submit:focus, .input-group-btn > .btn:active, body.login #login form p.submit .input-group-btn > #wp-submit:active {
   z-index: 2;
 }
-.input-group-btn:first-child > .btn, .input-group-btn:first-child > .gform_next_button, .input-group-btn:first-child > .gform_previous_button, .input-group-btn:first-child > .gform_button,
+.input-group-btn:first-child > .btn, body.login #login form p.submit .input-group-btn:first-child > #wp-submit,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, .input-group-btn:last-child > .gform_next_button, .input-group-btn:last-child > .gform_previous_button, .input-group-btn:last-child > .gform_button,
+.input-group-btn:last-child > .btn, body.login #login form p.submit .input-group-btn:last-child > #wp-submit,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
 
-.nav, .main-navigation-list {
+.nav {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
-.nav:before, .main-navigation-list:before, .nav:after, .main-navigation-list:after {
+.nav:before, .nav:after {
   content: " ";
   display: table;
 }
-.nav:after, .main-navigation-list:after {
+.nav:after {
   clear: both;
 }
-.nav > li, .main-navigation-list > li {
+.nav > li {
   position: relative;
   display: block;
 }
-.nav > li > a, .main-navigation-list > li > a {
+.nav > li > a, body.login #login p#nav .nav > li > a, body.login #login p#backtoblog .nav > li > a {
   position: relative;
   display: block;
   padding: 5px 15px;
 }
-.nav > li > a:hover, .main-navigation-list > li > a:hover, .nav > li > a:focus, .main-navigation-list > li > a:focus {
+.nav > li > a:hover, body.login #login p#nav .nav > li > a:hover, body.login #login p#backtoblog .nav > li > a:hover, .nav > li > a:focus, body.login #login p#nav .nav > li > a:focus, body.login #login p#backtoblog .nav > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-.nav > li.disabled > a, .main-navigation-list > li.disabled > a {
+.nav > li.disabled > a, body.login #login p#nav .nav > li.disabled > a, body.login #login p#backtoblog .nav > li.disabled > a {
   color: #999999;
 }
-.nav > li.disabled > a:hover, .main-navigation-list > li.disabled > a:hover, .nav > li.disabled > a:focus, .main-navigation-list > li.disabled > a:focus {
+.nav > li.disabled > a:hover, body.login #login p#nav .nav > li.disabled > a:hover, body.login #login p#backtoblog .nav > li.disabled > a:hover, .nav > li.disabled > a:focus, body.login #login p#nav .nav > li.disabled > a:focus, body.login #login p#backtoblog .nav > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
-.nav .open > a, .main-navigation-list .open > a, .nav .open > a:hover, .main-navigation-list .open > a:hover, .nav .open > a:focus, .main-navigation-list .open > a:focus {
+.nav .open > a, .nav body.login #login p#nav .open > a, body.login #login p#nav .nav .open > a, .nav body.login #login p#backtoblog .open > a, body.login #login p#backtoblog .nav .open > a, .nav .open > a:hover, .nav body.login #login p#nav .open > a:hover, body.login #login p#nav .nav .open > a:hover, .nav body.login #login p#backtoblog .open > a:hover, body.login #login p#backtoblog .nav .open > a:hover, .nav .open > a:focus, .nav body.login #login p#nav .open > a:focus, body.login #login p#nav .nav .open > a:focus, .nav body.login #login p#backtoblog .open > a:focus, body.login #login p#backtoblog .nav .open > a:focus {
   background-color: #eeeeee;
   border-color: #0066cc;
 }
-.nav .nav-divider, .main-navigation-list .nav-divider {
+.nav .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.nav > li > a > img, .main-navigation-list > li > a > img {
+.nav > li > a > img, body.login #login p#nav .nav > li > a > img, body.login #login p#backtoblog .nav > li > a > img {
   max-width: none;
 }
 
@@ -4251,16 +4154,16 @@ tbody.collapse.in {
   float: left;
   margin-bottom: -1px;
 }
-.nav-tabs > li > a {
+.nav-tabs > li > a, body.login #login p#nav .nav-tabs > li > a, body.login #login p#backtoblog .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
-.nav-tabs > li > a:hover {
+.nav-tabs > li > a:hover, body.login #login p#nav .nav-tabs > li > a:hover, body.login #login p#backtoblog .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a, body.login #login p#nav .nav-tabs > li.active > a, body.login #login p#backtoblog .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, body.login #login p#nav .nav-tabs > li.active > a:hover, body.login #login p#backtoblog .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, body.login #login p#nav .nav-tabs > li.active > a:focus, body.login #login p#backtoblog .nav-tabs > li.active > a:focus {
   color: #555555;
   background-color: #efefef;
   border: 1px solid #dddddd;
@@ -4268,16 +4171,16 @@ tbody.collapse.in {
   cursor: default;
 }
 
-.nav-pills > li, .main-navigation-list > li {
+.nav-pills > li {
   float: left;
 }
-.nav-pills > li > a, .main-navigation-list > li > a {
+.nav-pills > li > a, body.login #login p#nav .nav-pills > li > a, body.login #login p#backtoblog .nav-pills > li > a {
   border-radius: 4px;
 }
-.nav-pills > li + li, .main-navigation-list > li + li {
+.nav-pills > li + li {
   margin-left: 2px;
 }
-.nav-pills > li.active > a, .main-navigation-list > li.active > a, .nav-pills > li.active > a:hover, .main-navigation-list > li.active > a:hover, .nav-pills > li.active > a:focus, .main-navigation-list > li.active > a:focus {
+.nav-pills > li.active > a, body.login #login p#nav .nav-pills > li.active > a, body.login #login p#backtoblog .nav-pills > li.active > a, .nav-pills > li.active > a:hover, body.login #login p#nav .nav-pills > li.active > a:hover, body.login #login p#backtoblog .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, body.login #login p#nav .nav-pills > li.active > a:focus, body.login #login p#backtoblog .nav-pills > li.active > a:focus {
   color: white;
   background-color: #0066cc;
 }
@@ -4296,7 +4199,7 @@ tbody.collapse.in {
 .nav-justified > li, .nav-tabs.nav-justified > li {
   float: none;
 }
-.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+.nav-justified > li > a, .nav-tabs.nav-justified > li > a, body.login #login p#nav .nav-justified > li > a, body.login #login p#backtoblog .nav-justified > li > a {
   text-align: center;
   margin-bottom: 5px;
 }
@@ -4309,7 +4212,7 @@ tbody.collapse.in {
     display: table-cell;
     width: 1%;
   }
-  .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+  .nav-justified > li > a, .nav-tabs.nav-justified > li > a, body.login #login p#nav .nav-justified > li > a, body.login #login p#backtoblog .nav-justified > li > a {
     margin-bottom: 0;
   }
 }
@@ -4317,27 +4220,43 @@ tbody.collapse.in {
 .nav-tabs-justified, .nav-tabs.nav-justified {
   border-bottom: 0;
 }
-.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+.nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a, body.login #login p#nav .nav-tabs-justified > li > a, body.login #login p#nav .nav-tabs.nav-justified > li > a, body.login #login p#backtoblog .nav-tabs-justified > li > a, body.login #login p#backtoblog .nav-tabs.nav-justified > li > a {
   margin-right: 0;
   border-radius: 4px;
 }
-.nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+.nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a, body.login #login p#nav .nav-tabs-justified > .active > a, body.login #login p#nav .nav-tabs.nav-justified > .active > a, body.login #login p#backtoblog .nav-tabs-justified > .active > a, body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:hover,
+body.login #login p#nav .nav-tabs-justified > .active > a:hover,
+body.login #login p#nav .nav-tabs.nav-justified > .active > a:hover,
+body.login #login p#backtoblog .nav-tabs-justified > .active > a:hover,
+body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs-justified > .active > a:focus,
-.nav-tabs.nav-justified > .active > a:focus {
+.nav-tabs.nav-justified > .active > a:focus,
+body.login #login p#nav .nav-tabs-justified > .active > a:focus,
+body.login #login p#nav .nav-tabs.nav-justified > .active > a:focus,
+body.login #login p#backtoblog .nav-tabs-justified > .active > a:focus,
+body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #dddddd;
 }
 @media (min-width: 768px) {
-  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a, body.login #login p#nav .nav-tabs-justified > li > a, body.login #login p#nav .nav-tabs.nav-justified > li > a, body.login #login p#backtoblog .nav-tabs-justified > li > a, body.login #login p#backtoblog .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #dddddd;
     border-radius: 4px 4px 0 0;
   }
-  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a, body.login #login p#nav .nav-tabs-justified > .active > a, body.login #login p#nav .nav-tabs.nav-justified > .active > a, body.login #login p#backtoblog .nav-tabs-justified > .active > a, body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:hover,
+  body.login #login p#nav .nav-tabs-justified > .active > a:hover,
+  body.login #login p#nav .nav-tabs.nav-justified > .active > a:hover,
+  body.login #login p#backtoblog .nav-tabs-justified > .active > a:hover,
+  body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus,
-  .nav-tabs.nav-justified > .active > a:focus {
+  .nav-tabs.nav-justified > .active > a:focus,
+  body.login #login p#nav .nav-tabs-justified > .active > a:focus,
+  body.login #login p#nav .nav-tabs.nav-justified > .active > a:focus,
+  body.login #login p#backtoblog .nav-tabs-justified > .active > a:focus,
+  body.login #login p#backtoblog .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #efefef;
   }
 }
@@ -4437,22 +4356,16 @@ tbody.collapse.in {
   }
 }
 
-.container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header, .site-content > .navbar-header,
+.container > .navbar-header,
 .container > .navbar-collapse,
-.header-inner > .navbar-collapse,
-.footer-inner > .navbar-collapse,
-.site-content > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header, .header-inner > .navbar-header, .footer-inner > .navbar-header, .site-content > .navbar-header,
+  .container > .navbar-header,
   .container > .navbar-collapse,
-  .header-inner > .navbar-collapse,
-  .footer-inner > .navbar-collapse,
-  .site-content > .navbar-collapse,
   .container-fluid > .navbar-header,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
@@ -4506,7 +4419,7 @@ tbody.collapse.in {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand, .navbar > .header-inner .navbar-brand, .navbar > .footer-inner .navbar-brand, .navbar > .site-content .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -4544,7 +4457,7 @@ tbody.collapse.in {
 .navbar-nav {
   margin: 7.5px -15px;
 }
-.navbar-nav > li > a {
+.navbar-nav > li > a, body.login #login p#nav .navbar-nav > li > a, body.login #login p#backtoblog .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
@@ -4559,14 +4472,14 @@ tbody.collapse.in {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-nav .open .dropdown-menu > li > a {
     line-height: 20px;
   }
-  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#nav .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:hover, body.login #login p#backtoblog .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#nav .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:focus, body.login #login p#backtoblog .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
@@ -4578,7 +4491,7 @@ tbody.collapse.in {
   .navbar-nav > li {
     float: left;
   }
-  .navbar-nav > li > a {
+  .navbar-nav > li > a, body.login #login p#nav .navbar-nav > li > a, body.login #login p#backtoblog .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -4608,7 +4521,7 @@ tbody.collapse.in {
   margin-bottom: 8px;
 }
 @media (max-width: 767px) {
-  .navbar-form .form-group, .navbar-form .gfield:not(.captcha) {
+  .navbar-form .form-group, .navbar-form body.login #login form p, body.login #login form .navbar-form p {
     margin-bottom: 5px;
   }
 }
@@ -4643,11 +4556,11 @@ tbody.collapse.in {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > .navbar-btn.gform_next_button, .btn-group-sm > .navbar-btn.gform_previous_button, .btn-group-sm > .navbar-btn.gform_button {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, body.login #login form p.submit .btn-group-sm > .navbar-btn#wp-submit {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > .navbar-btn.gform_next_button, .btn-group-xs > .navbar-btn.gform_previous_button, .btn-group-xs > .navbar-btn.gform_button {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, body.login #login form p.submit .btn-group-xs > .navbar-btn#wp-submit {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -4681,18 +4594,18 @@ tbody.collapse.in {
 .navbar-default .navbar-text {
   color: #777777;
 }
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a, .navbar-default body.login #login p#nav .navbar-nav > li > a, body.login #login p#nav .navbar-default .navbar-nav > li > a, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a {
   color: #777777;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default body.login #login p#nav .navbar-nav > li > a:hover, body.login #login p#nav .navbar-default .navbar-nav > li > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default body.login #login p#nav .navbar-nav > li > a:focus, body.login #login p#nav .navbar-default .navbar-nav > li > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > li > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > li > a:focus {
   color: #333333;
   background-color: transparent;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default body.login #login p#nav .navbar-nav > .active > a, body.login #login p#nav .navbar-default .navbar-nav > .active > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .active > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .active > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .active > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .active > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .active > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
   background-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+.navbar-default .navbar-nav > .disabled > a, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .disabled > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .disabled > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .disabled > a:focus {
   color: #cccccc;
   background-color: transparent;
 }
@@ -4709,23 +4622,23 @@ tbody.collapse.in {
 .navbar-default .navbar-form {
   border-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a, .navbar-default body.login #login p#nav .navbar-nav > .open > a, body.login #login p#nav .navbar-default .navbar-nav > .open > a, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default body.login #login p#nav .navbar-nav > .open > a:hover, body.login #login p#nav .navbar-default .navbar-nav > .open > a:hover, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default body.login #login p#nav .navbar-nav > .open > a:focus, body.login #login p#nav .navbar-default .navbar-nav > .open > a:focus, .navbar-default body.login #login p#backtoblog .navbar-nav > .open > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav > .open > a:focus {
   background-color: #e7e7e7;
   color: #555555;
 }
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777777;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333333;
     background-color: transparent;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
     background-color: #e7e7e7;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#nav .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #cccccc;
     background-color: transparent;
   }
@@ -4760,18 +4673,18 @@ tbody.collapse.in {
 .navbar-inverse .navbar-text {
   color: #999999;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse body.login #login p#nav .navbar-nav > li > a, body.login #login p#nav .navbar-inverse .navbar-nav > li > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a {
   color: #999999;
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > li > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > li > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > li > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > li > a:focus {
   color: white;
   background-color: transparent;
 }
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .active > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .active > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .active > a:focus {
   color: white;
   background-color: #090909;
 }
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .disabled > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .disabled > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .disabled > a:focus {
   color: #444444;
   background-color: transparent;
 }
@@ -4788,7 +4701,7 @@ tbody.collapse.in {
 .navbar-inverse .navbar-form {
   border-color: #101010;
 }
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse body.login #login p#nav .navbar-nav > .open > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse body.login #login p#backtoblog .navbar-nav > .open > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #090909;
   color: white;
 }
@@ -4799,18 +4712,18 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: #090909;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #999999;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > li > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > li > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: white;
     background-color: transparent;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .active > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .active > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: white;
     background-color: #090909;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:hover, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:hover, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#nav .dropdown-menu > .disabled > a:focus, body.login #login p#nav .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open body.login #login p#backtoblog .dropdown-menu > .disabled > a:focus, body.login #login p#backtoblog .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #444444;
     background-color: transparent;
   }
@@ -4859,7 +4772,7 @@ tbody.collapse.in {
 .pagination > li {
   display: inline;
 }
-.pagination > li > a,
+.pagination > li > a, body.login #login p#nav .pagination > li > a, body.login #login p#backtoblog .pagination > li > a,
 .pagination > li > span {
   position: relative;
   float: left;
@@ -4871,25 +4784,25 @@ tbody.collapse.in {
   border: 1px solid #dddddd;
   margin-left: -1px;
 }
-.pagination > li:first-child > a,
+.pagination > li:first-child > a, body.login #login p#nav .pagination > li:first-child > a, body.login #login p#backtoblog .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-.pagination > li:last-child > a,
+.pagination > li:last-child > a, body.login #login p#nav .pagination > li:last-child > a, body.login #login p#backtoblog .pagination > li:last-child > a,
 .pagination > li:last-child > span {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-.pagination > li > a:hover, .pagination > li > a:focus,
+.pagination > li > a:hover, body.login #login p#nav .pagination > li > a:hover, body.login #login p#backtoblog .pagination > li > a:hover, .pagination > li > a:focus, body.login #login p#nav .pagination > li > a:focus, body.login #login p#backtoblog .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   color: #004080;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
-.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > a, body.login #login p#nav .pagination > .active > a, body.login #login p#backtoblog .pagination > .active > a, .pagination > .active > a:hover, body.login #login p#nav .pagination > .active > a:hover, body.login #login p#backtoblog .pagination > .active > a:hover, .pagination > .active > a:focus, body.login #login p#nav .pagination > .active > a:focus, body.login #login p#backtoblog .pagination > .active > a:focus,
 .pagination > .active > span,
 .pagination > .active > span:hover,
 .pagination > .active > span:focus {
@@ -4903,41 +4816,47 @@ tbody.collapse.in {
 .pagination > .disabled > span:hover,
 .pagination > .disabled > span:focus,
 .pagination > .disabled > a,
+body.login #login p#nav .pagination > .disabled > a,
+body.login #login p#backtoblog .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
-.pagination > .disabled > a:focus {
+body.login #login p#nav .pagination > .disabled > a:hover,
+body.login #login p#backtoblog .pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus,
+body.login #login p#nav .pagination > .disabled > a:focus,
+body.login #login p#backtoblog .pagination > .disabled > a:focus {
   color: #999999;
   background-color: white;
   border-color: #dddddd;
   cursor: not-allowed;
 }
 
-.pagination-lg > li > a,
+.pagination-lg > li > a, body.login #login p#nav .pagination-lg > li > a, body.login #login p#backtoblog .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
   font-size: 18px;
 }
-.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > a, body.login #login p#nav .pagination-lg > li:first-child > a, body.login #login p#backtoblog .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
 }
-.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > a, body.login #login p#nav .pagination-lg > li:last-child > a, body.login #login p#backtoblog .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
   border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;
 }
 
-.pagination-sm > li > a,
+.pagination-sm > li > a, body.login #login p#nav .pagination-sm > li > a, body.login #login p#backtoblog .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
   font-size: 12px;
 }
-.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > a, body.login #login p#nav .pagination-sm > li:first-child > a, body.login #login p#backtoblog .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
-.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > a, body.login #login p#nav .pagination-sm > li:last-child > a, body.login #login p#backtoblog .pagination-sm > li:last-child > a,
 .pagination-sm > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -4959,7 +4878,7 @@ tbody.collapse.in {
 .pager li {
   display: inline;
 }
-.pager li > a,
+.pager li > a, .pager body.login #login p#nav li > a, body.login #login p#nav .pager li > a, .pager body.login #login p#backtoblog li > a, body.login #login p#backtoblog .pager li > a,
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
@@ -4967,29 +4886,41 @@ tbody.collapse.in {
   border: 1px solid #dddddd;
   border-radius: 15px;
 }
-.pager li > a:hover,
-.pager li > a:focus {
+.pager li > a:hover, .pager body.login #login p#nav li > a:hover, body.login #login p#nav .pager li > a:hover, .pager body.login #login p#backtoblog li > a:hover, body.login #login p#backtoblog .pager li > a:hover,
+.pager li > a:focus,
+.pager body.login #login p#nav li > a:focus,
+body.login #login p#nav .pager li > a:focus,
+.pager body.login #login p#backtoblog li > a:focus,
+body.login #login p#backtoblog .pager li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-.pager .next > a,
+.pager .next > a, .pager body.login #login p#nav .next > a, body.login #login p#nav .pager .next > a, .pager body.login #login p#backtoblog .next > a, body.login #login p#backtoblog .pager .next > a,
 .pager .next > span {
   float: right;
 }
-.pager .previous > a,
+.pager .previous > a, .pager body.login #login p#nav .previous > a, body.login #login p#nav .pager .previous > a, .pager body.login #login p#backtoblog .previous > a, body.login #login p#backtoblog .pager .previous > a,
 .pager .previous > span {
   float: left;
 }
-.pager .disabled > a,
+.pager .disabled > a, .pager body.login #login p#nav .disabled > a, body.login #login p#nav .pager .disabled > a, .pager body.login #login p#backtoblog .disabled > a, body.login #login p#backtoblog .pager .disabled > a,
 .pager .disabled > a:hover,
+.pager body.login #login p#nav .disabled > a:hover,
+body.login #login p#nav .pager .disabled > a:hover,
+.pager body.login #login p#backtoblog .disabled > a:hover,
+body.login #login p#backtoblog .pager .disabled > a:hover,
 .pager .disabled > a:focus,
+.pager body.login #login p#nav .disabled > a:focus,
+body.login #login p#nav .pager .disabled > a:focus,
+.pager body.login #login p#backtoblog .disabled > a:focus,
+body.login #login p#backtoblog .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #999999;
   background-color: white;
   cursor: not-allowed;
 }
 
-.label, .validation_message {
+.label, body.login #login p#nav a, body.login #login p#backtoblog a {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -5001,24 +4932,24 @@ tbody.collapse.in {
   vertical-align: baseline;
   border-radius: .25em;
 }
-.label:empty, .validation_message:empty {
+.label:empty, body.login #login p#nav a:empty, body.login #login p#backtoblog a:empty {
   display: none;
 }
-.btn .label, .gform_next_button .label, .gform_previous_button .label, .gform_button .label, .btn .validation_message, .gform_next_button .validation_message, .gform_previous_button .validation_message, .gform_button .validation_message {
+.btn .label, body.login #login form p.submit #wp-submit .label, .btn body.login #login p#nav a, body.login #login p#nav .btn a, body.login #login form p.submit #wp-submit p#nav a, body.login #login p#nav form p.submit #wp-submit a, .btn body.login #login p#backtoblog a, body.login #login p#backtoblog .btn a, body.login #login form p.submit #wp-submit p#backtoblog a, body.login #login p#backtoblog form p.submit #wp-submit a {
   position: relative;
   top: -1px;
 }
 
-a.label:hover, a.validation_message:hover, a.label:focus, a.validation_message:focus {
+a.label:hover, body.login #login p#nav a:hover, body.login #login p#backtoblog a:hover, a.label:focus, body.login #login p#nav a:focus, body.login #login p#backtoblog a:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-.label-default {
+.label-default, body.login #login p#nav a, body.login #login p#backtoblog a {
   background-color: #999999;
 }
-.label-default[href]:hover, .label-default[href]:focus {
+.label-default[href]:hover, body.login #login p#nav a[href]:hover, body.login #login p#backtoblog a[href]:hover, .label-default[href]:focus, body.login #login p#nav a[href]:focus, body.login #login p#backtoblog a[href]:focus {
   background-color: gray;
 }
 
@@ -5050,10 +4981,10 @@ a.label:hover, a.validation_message:hover, a.label:focus, a.validation_message:f
   background-color: #ec971f;
 }
 
-.label-danger, .validation_message {
+.label-danger {
   background-color: #d9534f;
 }
-.label-danger[href]:hover, [href].validation_message:hover, .label-danger[href]:focus, [href].validation_message:focus {
+.label-danger[href]:hover, .label-danger[href]:focus {
   background-color: #c9302c;
 }
 
@@ -5074,23 +5005,23 @@ a.label:hover, a.validation_message:hover, a.label:focus, a.validation_message:f
 .badge:empty {
   display: none;
 }
-.btn .badge, .gform_next_button .badge, .gform_previous_button .badge, .gform_button .badge {
+.btn .badge, body.login #login form p.submit #wp-submit .badge {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, .btn-group-xs > .gform_next_button .badge, .btn-group-xs > .gform_previous_button .badge, .btn-group-xs > .gform_button .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, body.login #login form p.submit .btn-group-xs > #wp-submit .badge {
   top: 0;
   padding: 1px 5px;
 }
-a.list-group-item.active > .badge, .nav-pills > .active > a > .badge, .main-navigation-list > .active > a > .badge {
+a.list-group-item.active > .badge, body.login #login p#nav a.list-group-item.active > .badge, body.login #login p#backtoblog a.list-group-item.active > .badge, .nav-pills > .active > a > .badge, body.login #login p#nav .nav-pills > .active > a > .badge, body.login #login p#backtoblog .nav-pills > .active > a > .badge {
   color: #0066cc;
   background-color: white;
 }
-.nav-pills > li > a > .badge, .main-navigation-list > li > a > .badge {
+.nav-pills > li > a > .badge, body.login #login p#nav .nav-pills > li > a > .badge, body.login #login p#backtoblog .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
 
-a.badge:hover, a.badge:focus {
+a.badge:hover, body.login #login p#nav a.badge:hover, body.login #login p#backtoblog a.badge:hover, a.badge:focus, body.login #login p#nav a.badge:focus, body.login #login p#backtoblog a.badge:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
@@ -5114,10 +5045,10 @@ a.badge:hover, a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron, .site-content .jumbotron {
+.container .jumbotron {
   border-radius: 6px;
 }
-.jumbotron .container, .jumbotron .header-inner, .jumbotron .footer-inner, .jumbotron .site-content {
+.jumbotron .container {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -5125,7 +5056,7 @@ a.badge:hover, a.badge:focus {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron, .header-inner .jumbotron, .footer-inner .jumbotron, .site-content .jumbotron {
+  .container .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -5148,7 +5079,11 @@ a.badge:hover, a.badge:focus {
   transition: all 0.2s ease-in-out;
 }
 .thumbnail > img,
-.thumbnail a > img {
+.thumbnail a > img,
+.thumbnail body.login #login p#nav a > img,
+body.login #login p#nav .thumbnail a > img,
+.thumbnail body.login #login p#backtoblog a > img,
+body.login #login p#backtoblog .thumbnail a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -5160,31 +5095,36 @@ a.badge:hover, a.badge:focus {
   color: #333333;
 }
 
-a.thumbnail:hover,
+a.thumbnail:hover, body.login #login p#nav a.thumbnail:hover, body.login #login p#backtoblog a.thumbnail:hover,
 a.thumbnail:focus,
-a.thumbnail.active {
+body.login #login p#nav a.thumbnail:focus,
+body.login #login p#backtoblog a.thumbnail:focus,
+a.thumbnail.active,
+body.login #login p#nav a.thumbnail.active,
+body.login #login p#backtoblog a.thumbnail.active {
   border-color: #0066cc;
 }
 
-.alert, .validation_error {
+.alert, body.login #login #login_error, body.login #login .message {
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4, .validation_error h4 {
+.alert h4, body.login #login #login_error h4, body.login #login .message h4 {
   margin-top: 0;
   color: inherit;
 }
-.alert .alert-link, .validation_error .alert-link {
+.alert .alert-link, body.login #login #login_error .alert-link, body.login #login .message .alert-link {
   font-weight: bold;
 }
-.alert > p, .validation_error > p,
+.alert > p, body.login #login #login_error > p, body.login #login .message > p,
 .alert > ul,
-.validation_error > ul {
+body.login #login #login_error > ul,
+body.login #login .message > ul {
   margin-bottom: 0;
 }
-.alert > p + p, .validation_error > p + p {
+.alert > p + p, body.login #login #login_error > p + p, body.login #login .message > p + p {
   margin-top: 5px;
 }
 
@@ -5210,15 +5150,15 @@ a.thumbnail.active {
   color: #2b542c;
 }
 
-.alert-info {
+.alert-info, body.login #login .message {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #31708f;
 }
-.alert-info hr {
+.alert-info hr, body.login #login .message hr {
   border-top-color: #a6e1ec;
 }
-.alert-info .alert-link {
+.alert-info .alert-link, body.login #login .message .alert-link {
   color: #245269;
 }
 
@@ -5234,15 +5174,15 @@ a.thumbnail.active {
   color: #66512c;
 }
 
-.alert-danger, .validation_error {
+.alert-danger, body.login #login #login_error {
   background-color: #f2dede;
   border-color: #ebccd1;
   color: #a94442;
 }
-.alert-danger hr, .validation_error hr {
+.alert-danger hr, body.login #login #login_error hr {
   border-top-color: #e4b9c0;
 }
-.alert-danger .alert-link, .validation_error .alert-link {
+.alert-danger .alert-link, body.login #login #login_error .alert-link {
   color: #843534;
 }
 
@@ -5255,7 +5195,7 @@ a.thumbnail.active {
     background-position: 0 0;
   }
 }
-.progress, .gf_progressbar {
+.progress {
   overflow: hidden;
   height: 20px;
   margin-bottom: 20px;
@@ -5265,7 +5205,7 @@ a.thumbnail.active {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.progress-bar, .gf_progressbar_percentage {
+.progress-bar {
   float: left;
   width: 0%;
   height: 100%;
@@ -5281,23 +5221,23 @@ a.thumbnail.active {
   transition: width 0.6s ease;
 }
 
-.progress-striped .progress-bar, .progress-striped .gf_progressbar_percentage {
+.progress-striped .progress-bar {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-size: 40px 40px;
 }
 
-.progress.active .progress-bar, .active.gf_progressbar .progress-bar, .progress.active .gf_progressbar_percentage, .active.gf_progressbar .gf_progressbar_percentage {
+.progress.active .progress-bar {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite;
 }
 
-.progress-bar[aria-valuenow="1"], [aria-valuenow="1"].gf_progressbar_percentage, .progress-bar[aria-valuenow="2"], [aria-valuenow="2"].gf_progressbar_percentage {
+.progress-bar[aria-valuenow="1"], .progress-bar[aria-valuenow="2"] {
   min-width: 30px;
 }
-.progress-bar[aria-valuenow="0"], [aria-valuenow="0"].gf_progressbar_percentage {
+.progress-bar[aria-valuenow="0"] {
   color: #999999;
   min-width: 30px;
   background-color: transparent;
@@ -5305,37 +5245,37 @@ a.thumbnail.active {
   box-shadow: none;
 }
 
-.progress-bar-success, .percentbar_green {
+.progress-bar-success {
   background-color: #5cb85c;
 }
-.progress-striped .progress-bar-success, .progress-striped .percentbar_green {
+.progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-.progress-bar-info, .percentbar_blue {
+.progress-bar-info {
   background-color: #157ab3;
 }
-.progress-striped .progress-bar-info, .progress-striped .percentbar_blue {
+.progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-.progress-bar-warning, .percentbar_orange {
+.progress-bar-warning {
   background-color: #f0ad4e;
 }
-.progress-striped .progress-bar-warning, .progress-striped .percentbar_orange {
+.progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-.progress-bar-danger, .percentbar_red {
+.progress-bar-danger {
   background-color: #d9534f;
 }
-.progress-striped .progress-bar-danger, .progress-striped .percentbar_red {
+.progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5364,10 +5304,10 @@ a.thumbnail.active {
   margin: 0 0 5px;
 }
 
-.media > .pull-left, .media > .gform_previous_button {
+.media > .pull-left {
   margin-right: 10px;
 }
-.media > .pull-right, .media > .gform_next_button, .media > .gform_button {
+.media > .pull-right {
   margin-left: 10px;
 }
 
@@ -5405,13 +5345,13 @@ a.thumbnail.active {
   margin-right: 5px;
 }
 
-a.list-group-item {
+a.list-group-item, body.login #login p#nav a.list-group-item, body.login #login p#backtoblog a.list-group-item {
   color: #555555;
 }
-a.list-group-item .list-group-item-heading {
+a.list-group-item .list-group-item-heading, body.login #login p#nav a.list-group-item .list-group-item-heading, body.login #login p#backtoblog a.list-group-item .list-group-item-heading {
   color: #333333;
 }
-a.list-group-item:hover, a.list-group-item:focus {
+a.list-group-item:hover, body.login #login p#nav a.list-group-item:hover, body.login #login p#backtoblog a.list-group-item:hover, a.list-group-item:focus, body.login #login p#nav a.list-group-item:focus, body.login #login p#backtoblog a.list-group-item:focus {
   text-decoration: none;
   color: #555555;
   background-color: whitesmoke;
@@ -5445,17 +5385,17 @@ a.list-group-item:hover, a.list-group-item:focus {
   background-color: #dff0d8;
 }
 
-a.list-group-item-success {
+a.list-group-item-success, body.login #login p#nav a.list-group-item-success, body.login #login p#backtoblog a.list-group-item-success {
   color: #3c763d;
 }
-a.list-group-item-success .list-group-item-heading {
+a.list-group-item-success .list-group-item-heading, body.login #login p#nav a.list-group-item-success .list-group-item-heading, body.login #login p#backtoblog a.list-group-item-success .list-group-item-heading {
   color: inherit;
 }
-a.list-group-item-success:hover, a.list-group-item-success:focus {
+a.list-group-item-success:hover, body.login #login p#nav a.list-group-item-success:hover, body.login #login p#backtoblog a.list-group-item-success:hover, a.list-group-item-success:focus, body.login #login p#nav a.list-group-item-success:focus, body.login #login p#backtoblog a.list-group-item-success:focus {
   color: #3c763d;
   background-color: #d0e9c6;
 }
-a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list-group-item-success.active:focus {
+a.list-group-item-success.active, body.login #login p#nav a.list-group-item-success.active, body.login #login p#backtoblog a.list-group-item-success.active, a.list-group-item-success.active:hover, body.login #login p#nav a.list-group-item-success.active:hover, body.login #login p#backtoblog a.list-group-item-success.active:hover, a.list-group-item-success.active:focus, body.login #login p#nav a.list-group-item-success.active:focus, body.login #login p#backtoblog a.list-group-item-success.active:focus {
   color: #fff;
   background-color: #3c763d;
   border-color: #3c763d;
@@ -5466,17 +5406,17 @@ a.list-group-item-success.active, a.list-group-item-success.active:hover, a.list
   background-color: #d9edf7;
 }
 
-a.list-group-item-info {
+a.list-group-item-info, body.login #login p#nav a.list-group-item-info, body.login #login p#backtoblog a.list-group-item-info {
   color: #31708f;
 }
-a.list-group-item-info .list-group-item-heading {
+a.list-group-item-info .list-group-item-heading, body.login #login p#nav a.list-group-item-info .list-group-item-heading, body.login #login p#backtoblog a.list-group-item-info .list-group-item-heading {
   color: inherit;
 }
-a.list-group-item-info:hover, a.list-group-item-info:focus {
+a.list-group-item-info:hover, body.login #login p#nav a.list-group-item-info:hover, body.login #login p#backtoblog a.list-group-item-info:hover, a.list-group-item-info:focus, body.login #login p#nav a.list-group-item-info:focus, body.login #login p#backtoblog a.list-group-item-info:focus {
   color: #31708f;
   background-color: #c4e3f3;
 }
-a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus {
+a.list-group-item-info.active, body.login #login p#nav a.list-group-item-info.active, body.login #login p#backtoblog a.list-group-item-info.active, a.list-group-item-info.active:hover, body.login #login p#nav a.list-group-item-info.active:hover, body.login #login p#backtoblog a.list-group-item-info.active:hover, a.list-group-item-info.active:focus, body.login #login p#nav a.list-group-item-info.active:focus, body.login #login p#backtoblog a.list-group-item-info.active:focus {
   color: #fff;
   background-color: #31708f;
   border-color: #31708f;
@@ -5487,17 +5427,17 @@ a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group
   background-color: #fcf8e3;
 }
 
-a.list-group-item-warning {
+a.list-group-item-warning, body.login #login p#nav a.list-group-item-warning, body.login #login p#backtoblog a.list-group-item-warning {
   color: #8a6d3b;
 }
-a.list-group-item-warning .list-group-item-heading {
+a.list-group-item-warning .list-group-item-heading, body.login #login p#nav a.list-group-item-warning .list-group-item-heading, body.login #login p#backtoblog a.list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
-a.list-group-item-warning:hover, a.list-group-item-warning:focus {
+a.list-group-item-warning:hover, body.login #login p#nav a.list-group-item-warning:hover, body.login #login p#backtoblog a.list-group-item-warning:hover, a.list-group-item-warning:focus, body.login #login p#nav a.list-group-item-warning:focus, body.login #login p#backtoblog a.list-group-item-warning:focus {
   color: #8a6d3b;
   background-color: #faf2cc;
 }
-a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus {
+a.list-group-item-warning.active, body.login #login p#nav a.list-group-item-warning.active, body.login #login p#backtoblog a.list-group-item-warning.active, a.list-group-item-warning.active:hover, body.login #login p#nav a.list-group-item-warning.active:hover, body.login #login p#backtoblog a.list-group-item-warning.active:hover, a.list-group-item-warning.active:focus, body.login #login p#nav a.list-group-item-warning.active:focus, body.login #login p#backtoblog a.list-group-item-warning.active:focus {
   color: #fff;
   background-color: #8a6d3b;
   border-color: #8a6d3b;
@@ -5508,17 +5448,17 @@ a.list-group-item-warning.active, a.list-group-item-warning.active:hover, a.list
   background-color: #f2dede;
 }
 
-a.list-group-item-danger {
+a.list-group-item-danger, body.login #login p#nav a.list-group-item-danger, body.login #login p#backtoblog a.list-group-item-danger {
   color: #a94442;
 }
-a.list-group-item-danger .list-group-item-heading {
+a.list-group-item-danger .list-group-item-heading, body.login #login p#nav a.list-group-item-danger .list-group-item-heading, body.login #login p#backtoblog a.list-group-item-danger .list-group-item-heading {
   color: inherit;
 }
-a.list-group-item-danger:hover, a.list-group-item-danger:focus {
+a.list-group-item-danger:hover, body.login #login p#nav a.list-group-item-danger:hover, body.login #login p#backtoblog a.list-group-item-danger:hover, a.list-group-item-danger:focus, body.login #login p#nav a.list-group-item-danger:focus, body.login #login p#backtoblog a.list-group-item-danger:focus {
   color: #a94442;
   background-color: #ebcccc;
 }
-a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
+a.list-group-item-danger.active, body.login #login p#nav a.list-group-item-danger.active, body.login #login p#backtoblog a.list-group-item-danger.active, a.list-group-item-danger.active:hover, body.login #login p#nav a.list-group-item-danger.active:hover, body.login #login p#backtoblog a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus, body.login #login p#nav a.list-group-item-danger.active:focus, body.login #login p#backtoblog a.list-group-item-danger.active:focus {
   color: #fff;
   background-color: #a94442;
   border-color: #a94442;
@@ -5570,7 +5510,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   font-size: 16px;
   color: inherit;
 }
-.panel-title > a {
+.panel-title > a, body.login #login p#nav .panel-title > a, body.login #login p#backtoblog .panel-title > a {
   color: inherit;
 }
 
@@ -6015,14 +5955,14 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer .gform_next_button + .btn, .modal-footer .gform_previous_button + .btn, .modal-footer .gform_button + .btn, .modal-footer .btn + .gform_next_button, .modal-footer .gform_next_button + .gform_next_button, .modal-footer .gform_previous_button + .gform_next_button, .modal-footer .gform_button + .gform_next_button, .modal-footer .btn + .gform_previous_button, .modal-footer .gform_next_button + .gform_previous_button, .modal-footer .gform_previous_button + .gform_previous_button, .modal-footer .gform_button + .gform_previous_button, .modal-footer .btn + .gform_button, .modal-footer .gform_next_button + .gform_button, .modal-footer .gform_previous_button + .gform_button, .modal-footer .gform_button + .gform_button {
+.modal-footer .btn + .btn, .modal-footer body.login #login form p.submit #wp-submit + .btn, body.login #login form p.submit .modal-footer #wp-submit + .btn, .modal-footer body.login #login form p.submit .btn + #wp-submit, body.login #login form p.submit .modal-footer .btn + #wp-submit, .modal-footer body.login #login form p.submit #wp-submit + #wp-submit, body.login #login form p.submit .modal-footer #wp-submit + #wp-submit {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .gform_next_button + .btn, .modal-footer .btn-group .gform_previous_button + .btn, .modal-footer .btn-group .gform_button + .btn, .modal-footer .btn-group .btn + .gform_next_button, .modal-footer .btn-group .gform_next_button + .gform_next_button, .modal-footer .btn-group .gform_previous_button + .gform_next_button, .modal-footer .btn-group .gform_button + .gform_next_button, .modal-footer .btn-group .btn + .gform_previous_button, .modal-footer .btn-group .gform_next_button + .gform_previous_button, .modal-footer .btn-group .gform_previous_button + .gform_previous_button, .modal-footer .btn-group .gform_button + .gform_previous_button, .modal-footer .btn-group .btn + .gform_button, .modal-footer .btn-group .gform_next_button + .gform_button, .modal-footer .btn-group .gform_previous_button + .gform_button, .modal-footer .btn-group .gform_button + .gform_button {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group body.login #login form p.submit #wp-submit + .btn, body.login #login form p.submit .modal-footer .btn-group #wp-submit + .btn, .modal-footer .btn-group body.login #login form p.submit .btn + #wp-submit, body.login #login form p.submit .modal-footer .btn-group .btn + #wp-submit, .modal-footer .btn-group body.login #login form p.submit #wp-submit + #wp-submit, body.login #login form p.submit .modal-footer .btn-group #wp-submit + #wp-submit {
   margin-left: -1px;
 }
-.modal-footer .btn-block + .btn-block {
+.modal-footer .btn-block + .btn-block, .modal-footer body.login #login form p.submit #wp-submit + .btn-block, body.login #login form p.submit .modal-footer #wp-submit + .btn-block, .modal-footer body.login #login form p.submit .btn-block + #wp-submit, body.login #login form p.submit .modal-footer .btn-block + #wp-submit, .modal-footer body.login #login form p.submit #wp-submit + #wp-submit, body.login #login form p.submit .modal-footer #wp-submit + #wp-submit {
   margin-left: 0;
 }
 
@@ -6298,7 +6238,9 @@ button.close {
   transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner > .item > a > img,
+body.login #login p#nav .carousel-inner > .item > a > img,
+body.login #login p#backtoblog .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -6446,7 +6388,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption .gform_next_button, .carousel-caption .gform_previous_button, .carousel-caption .gform_button {
+.carousel-caption .btn, .carousel-caption body.login #login form p.submit #wp-submit, body.login #login form p.submit .carousel-caption #wp-submit {
   text-shadow: none;
 }
 
@@ -6493,11 +6435,11 @@ button.close {
   margin-right: auto;
 }
 
-.pull-right, .gform_next_button, .gform_button {
+.pull-right {
   float: right !important;
 }
 
-.pull-left, .gform_previous_button {
+.pull-left {
   float: left !important;
 }
 
@@ -6847,18 +6789,18 @@ button.close {
   border-radius: .1em;
 }
 
-.pull-right, .gform_next_button, .gform_button {
+.pull-right {
   float: right;
 }
 
-.pull-left, .gform_previous_button {
+.pull-left {
   float: left;
 }
 
-.fa.pull-left, .fa.gform_previous_button {
+.fa.pull-left {
   margin-right: .3em;
 }
-.fa.pull-right, .fa.gform_next_button, .fa.gform_button {
+.fa.pull-right {
   margin-left: .3em;
 }
 
@@ -8513,366 +8455,66 @@ b, em {
   font-weight: 600;
 }
 
-.site-header {
-  width: 100%;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-}
-@media screen and (min-width: 768px) {
-  .site-header {
-    background-image: url("../img/header-multi-colors.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: bottom left;
-  }
-}
-@media print {
-  .site-header {
-    display: none;
-  }
-}
-
-.site-branding {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.site-branding:before, .site-branding:after {
-  content: " ";
-  display: table;
-}
-.site-branding:after {
-  clear: both;
-}
-
-.site-title {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  padding-top: 19%;
-  margin-left: 30px;
-  margin-right: 30px;
-  background-image: url("../img/header-tagline-logo.png");
-  background-size: contain;
+body.login {
+  background-image: url("../img/header-multi-colors.png");
+  background-position: bottom left;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50%;
 }
-@media (min-width: 768px) {
-  .site-title {
-    float: left;
-    width: 50%;
-  }
+body.login #login {
+  padding-top: 4%;
 }
-@media (min-width: 768px) {
-  .site-title {
-    margin-left: 50%;
-  }
+body.login #login h1 a, body.login #login h1 p#nav a, body.login #login p#nav h1 a, body.login #login h1 p#backtoblog a, body.login #login p#backtoblog h1 a {
+  background-image: url("../img/header-tagline-logo.png");
+  background-size: 320px 60.9205px;
+  width: 320px;
+  height: 60.9205px;
 }
-@media screen and (min-width: 768px) {
-  .site-title {
-    padding-top: 9.5%;
-  }
-}
-
-.site-footer {
-  color: white;
-  background-color: #157ab3;
-}
-@media print {
-  .site-footer {
-    display: none;
-  }
-}
-
-.footer-inner {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.footer-branding {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.footer-bottom {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.footer-bottom:before, .footer-bottom:after {
-  content: " ";
-  display: table;
-}
-.footer-bottom:after {
-  clear: both;
-}
-
-.footer-legal, .footer-follow {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .footer-legal, .footer-follow {
-    float: left;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-legal, .footer-follow {
-    text-align: inherit;
-  }
-}
-
-.copyright {
-  margin-right: 20px;
-}
-
-.main-navigation {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.main-navigation:before, .main-navigation:after {
-  content: " ";
-  display: table;
-}
-.main-navigation:after {
-  clear: both;
-}
-.main-navigation .menu {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-bottom: 10px;
-}
-@media (min-width: 768px) {
-  .main-navigation .menu {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 768px) {
-  .main-navigation .menu {
-    margin-left: 50%;
-  }
-}
-
-.main-navigation-list a {
-  font-weight: bold;
-}
-@media screen and (max-width: 767px) {
-  .main-navigation-list > li {
-    float: none;
-  }
-  .main-navigation-list > li + li {
-    margin-top: 2px;
-    margin-left: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .main-navigation-list {
-    float: right;
-    display: inline-block;
-  }
-  .main-navigation-list > li + li {
-    margin-left: 25px;
-  }
-}
-
-.nav-pills a, .main-navigation-list a {
-  background-color: #ccc;
-  color: #333333;
-}
-
-.menu-footer-list a, .footer-legal-menu a, .footer-follow-menu a {
-  color: white;
-}
-
-.menu-footer-list {
-  text-align: center;
-}
-
-.footer-legal-menu {
-  margin-top: 10px;
-}
-@media screen and (min-width: 768px) {
-  .footer-legal-menu {
-    display: inline-block;
-  }
-}
-
-.footer-follow-menu {
-  margin-top: 10px;
-}
-@media screen and (max-width: 767px) {
-  .footer-follow-menu {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-follow-menu {
-    float: right;
-  }
-}
-.footer-follow-menu a {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  vertical-align: top;
-  background-image: url("../img/follow.png");
-}
-.footer-follow-menu li {
-  height: 20px;
-}
-.footer-follow-menu li:last-child {
-  padding-left: 8px;
-  border-left: 1px solid white;
-}
-.footer-follow-menu li:first-child {
-  border: 0;
-}
-.footer-follow-menu li.linkedin a {
-  background-position: 0px top;
-}
-.footer-follow-menu li.linkedin a:hover, .footer-follow-menu li.linkedin a:active {
-  background-position: 0px bottom;
-}
-.footer-follow-menu li.youtube a {
-  background-position: 191px top;
-}
-.footer-follow-menu li.youtube a:hover, .footer-follow-menu li.youtube a:active {
-  background-position: 191px bottom;
-}
-.footer-follow-menu li.twitter a {
-  background-position: 171px top;
-}
-.footer-follow-menu li.twitter a:hover, .footer-follow-menu li.twitter a:active {
-  background-position: 171px bottom;
-}
-.footer-follow-menu li.xing a {
-  background-position: 151px top;
-}
-.footer-follow-menu li.xing a:hover, .footer-follow-menu li.xing a:active {
-  background-position: 151px bottom;
-}
-.footer-follow-menu li.facebook a {
-  background-position: 131px top;
-}
-.footer-follow-menu li.facebook a:hover, .footer-follow-menu li.facebook a:active {
-  background-position: 131px bottom;
-}
-.footer-follow-menu li.contact a {
-  width: 96px;
-  background-position: right top;
-}
-.footer-follow-menu li.contact a:hover, .footer-follow-menu li.contact a:active {
-  background-position: right bottom;
-}
-
-.page .content-area {
-  background-color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 1px;
+body.login #login form {
+  border-radius: 4px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  padding-left: 25px;
+  padding-right: 25px;
 }
-
-/* Forms */
-.gform_wrapper .gform_body ul #recaptcha_area {
-  margin: 0 auto;
-}
-
-.gfield:not(.captcha) {
-  margin-bottom: 10px;
-}
-
-.ginput_complex {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.ginput_complex:before, .ginput_complex:after {
-  content: " ";
-  display: table;
-}
-.ginput_complex:after {
-  clear: both;
-}
-.ginput_complex .ginput_left, .ginput_complex .ginput_right {
+body.login #login form p {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+body.login #login form p label {
+  width: 100%;
+}
+body.login #login form p .input {
+  margin: 0;
+  background: white;
+}
+body.login #login form p.submit {
+  margin-top: 20px;
   position: relative;
+  float: left;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 992px) {
-  .ginput_complex .ginput_left, .ginput_complex .ginput_right {
-    float: left;
-    width: 50%;
-  }
+body.login #login form p.submit #wp-submit {
+  height: auto;
+  border: 0;
 }
-.ginput_complex label {
-  font-weight: normal;
-  margin-bottom: 0;
+body.login #login form label {
+  color: #333333;
+  font-size: 14px;
 }
-.ginput_complex input:focus + label {
-  font-weight: bold;
-}
-
-.gfield_required {
-  color: #a94442;
-}
-
-.gfield_checkbox li label {
-  font-weight: normal;
-}
-.gfield_checkbox li input[type=checkbox]:checked + label {
-  font-weight: bold;
-}
-.gfield_checkbox li input[type=checkbox] {
-  margin-right: 5px;
-}
-
-.gform_validation_container {
-  display: none;
-}
-
-.gform_next_button, .gform_previous_button, .gform_button {
-  margin-bottom: 10px;
-}
-
-.gf_progressbar_title {
-  margin-top: 5px;
-}
-
-.launch-jumbotron, .launch-front-content, .launch-front-bottom {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.launch-front-content {
-  background-color: white;
+body.login #login p#nav, body.login #login p#backtoblog {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 14px;
 }

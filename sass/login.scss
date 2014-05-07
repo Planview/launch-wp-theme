@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+@import "variables";
+@import	"../vendor/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "../vendor/fontawesome/scss/font-awesome";
+
+@import "base";
+
+
+body.login {
+	background: {
+		image: url('../img/header-multi-colors.png');
+		position: bottom left;
+		repeat: no-repeat;
+		attachment: fixed;
+		size: 50%;
+	}
+	#login {
+		padding-top: 4%;
+		h1 a {
+			background: {
+				image: url('../img/header-tagline-logo.png');
+				size: 320px 320px*91px/478px;
+			}
+			width: 320px;
+			height: 320px * 91px / 478px;
+		}
+		#login_error {
+			@extend .alert, .alert-danger;
+		}
+		.message {
+			@extend .alert, .alert-info;
+		}
+		form {
+			border-radius: $border-radius-base;
+			p {
+				@include make-xs-column(12);
+				@extend .form-group;
+				label {
+					width: 100%;
+				}
+				.input {
+					@extend .form-control;
+					margin: 0;
+					background: white;
+				}
+			}
+			p.forgetmenot {
+				@extend .checkbox;
+			}
+			p.submit {
+				margin-top: 20px;
+				@include make-xs-column(12);
+				#wp-submit {
+					@extend .btn, .btn-block, .btn-primary;
+					height: auto;
+					border: 0;
+				}
+			}
+			padding: {
+				top: 40px;
+				bottom: 40px;
+				left: 25px;
+				right: 25px;
+			}
+			label {
+				color: $text-color;
+				font-size: $font-size-base;
+			}
+		}
+		p#nav, p#backtoblog {
+			padding: {
+				left: $grid-gutter-width / 2;
+				right: $grid-gutter-width / 2;
+				top: 0;
+				bottom: 0;
+			}
+			text-align: center;
+			font: {
+				size: $font-size-base;
+			}
+			a {
+				@extend a, .label, .label-default;
+			}
+		}
+	}
+}
