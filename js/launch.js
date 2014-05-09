@@ -30,10 +30,11 @@ jQuery(document).ready(function($) {
         controls: $el.data('controls'),
         pager: $el.data('pager'),
         onSliderLoad: function () {
-          console.log( $el.closest('.bx-viewport') );
-          if ( $el.hasClass('no-box') ) {
-            console.log("hello world");
+          if ( ! $el.data('boxShadow') ) {
             $el.closest('.bx-viewport').css('box-shadow', 'none').css('-webkit-box-shadow', 'none');
+          }
+          if ( $el.data('bgColor') ) {
+            $el.closest('.bx-viewport').css('background-color', $el.data('bgColor'));
           }
         }
       });
