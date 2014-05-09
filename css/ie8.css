@@ -8778,7 +8778,7 @@ b, em {
     display: inline-block;
   }
   .main-navigation-list > li + li {
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 
