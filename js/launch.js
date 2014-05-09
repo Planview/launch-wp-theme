@@ -26,9 +26,10 @@ jQuery(document).ready(function($) {
 
       $el.data('sliderOptions', {
         auto: !($el.data('auto') === 'false'),
-        speed: parseInt($el.data('speed') || 800),
+        speed: parseInt($el.data('speed') || 500),
         controls: $el.data('controls'),
         pager: $el.data('pager'),
+        pause: parseInt($el.data('pause') || 4000),
         onSliderLoad: function () {
           if ( $el.data('boxShadow') === false ) {
             $el.closest('.bx-viewport').css('box-shadow', 'none').css('-webkit-box-shadow', 'none');
