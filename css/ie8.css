@@ -8979,8 +8979,3 @@ b, em {
 .launch-front-content {
   background-color: white;
 }
-
-.bx-wrapper .bx-viewport.no-box {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
