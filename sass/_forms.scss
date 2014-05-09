@@ -67,11 +67,14 @@
   display: none;
 }
 .gform_next_button, .gform_previous_button, .gform_button {
-  @extend .btn, .btn-lg;
+  @extend .btn;
   margin-bottom: 10px;
 }
-.gform_next_button, .gform_button {
-  @extend .pull-right, .btn-success;
+.gform_button {
+  @extend .center-block, .btn-success;
+}
+.gform_next_button {
+  @extend .pull-right, .btn-primary;
 }
 .gform_previous_button {
   @extend .pull-left, .btn-default;
