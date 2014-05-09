@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
         controls: $el.data('controls'),
         pager: $el.data('pager'),
         onSliderLoad: function () {
-          if ( ! $el.data('boxShadow') ) {
+          if ( $el.data('boxShadow') === false ) {
             $el.closest('.bx-viewport').css('box-shadow', 'none').css('-webkit-box-shadow', 'none');
           }
           if ( $el.data('bgColor') ) {
