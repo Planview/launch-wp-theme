@@ -8796,6 +8796,14 @@ b, em {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
+.entry-content:before, .entry-content:after {
+  content: " ";
+  display: table;
+}
+.entry-content:after {
+  clear: both;
+}
+
 /* Forms */
 .gform_wrapper .gform_body ul #recaptcha_area {
   margin: 0 auto;
@@ -8875,4 +8883,9 @@ b, em {
 
 .launch-front-content {
   background-color: white;
+}
+
+.bx-wrapper .bx-viewport.no-box {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
