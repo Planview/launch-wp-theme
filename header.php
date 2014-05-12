@@ -39,7 +39,7 @@
 					'fallback_cb' => false,
 					'menu_class' => 'main-navigation-list',
 					'depth' => 2,
-					'walker' => new The_Bootstrap_Nav_Walker(),
+					'walker' => new Launch_Bootstrap_Nav_Walker(),
 				) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
