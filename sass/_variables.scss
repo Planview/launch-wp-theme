@@ -1,3 +1,7 @@
+$ie8: false !default;
+$fa-font-path: "../vendor/fontawesome/fonts";
+$single-line-text-inputs: 'input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"]';
+
 $body-bg: #efefef;
 
 $brand-primary: #0066cc;
@@ -7,3 +11,6 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 $headings-font-weight: 600;
 
 $nav-link-padding: 5px 15px;
+
+$font-size-h1: 32px;
+$font-size-h2: 28px;

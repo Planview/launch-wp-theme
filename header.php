@@ -23,10 +23,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header bg-size" role="banner">
 		<div class="header-inner">
 			<div class="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title bg-size"><?php bloginfo( 'name' ); ?></h1></a>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div>
 
@@ -39,10 +39,10 @@
 					'fallback_cb' => false,
 					'menu_class' => 'main-navigation-list',
 					'depth' => 2,
-					'walker' => new The_Bootstrap_Nav_Walker(),
+					'walker' => new Launch_Bootstrap_Nav_Walker(),
 				) ); ?>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="<?php echo ( is_front_page() ? 'front-content' : 'site-content' ); ?>">
