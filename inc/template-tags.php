@@ -152,4 +152,4 @@ function launch_ie_polyfills() { ?>
     <script src="<?php echo get_template_directory_uri() . '/vendor/respond/dest/respond.min.js' ?>"></script>
 <![endif]-->
 <?php }
-add_filter( 'wp_head', 'launch_ie_polyfills', 60 );
+add_action( 'wp_head', 'launch_ie_polyfills', 60 );
