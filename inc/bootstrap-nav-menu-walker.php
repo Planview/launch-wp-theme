@@ -7,7 +7,7 @@
  */
 
 
-class The_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
+class Launch_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 
 	/**
 	 * @see Walker_Nav_Menu::start_lvl()

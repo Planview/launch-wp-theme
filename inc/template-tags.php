@@ -142,3 +142,14 @@ function launch_ie_style_conditional($output, $handle) {
     return "<!--[if gt IE 8]><!-->\n" . $output . "<!--<![endif]-->\n";
 }
 add_filter( 'style_loader_tag', 'launch_ie_style_conditional', 10, 2 );
+
+/**
+ * Polyfills for IE8
+ */
+function launch_ie_polyfills() { ?>
+<!--[if lte IE 8]>
+    <style>.bg-size{-ms-behavior:url('<?php echo get_template_directory_uri() . '/vendor/background-size-polyfill/backgroundsize.min.htc' ?>')}</style>
+    <script src="<?php echo get_template_directory_uri() . '/vendor/respond/dest/respond.min.js' ?>"></script>
+<![endif]-->
+<?php }
+add_action( 'wp_head', 'launch_ie_polyfills', 60 );
