@@ -4,7 +4,7 @@
  */
 
 
-define( 'ACF_LITE' , true );
+if ( ! defined( 'ACF_LITE' )) define( 'ACF_LITE' , true );
 
 require ( get_template_directory() . '/vendor/advanced-custom-fields/acf.php' );
 require ( get_template_directory() . '/vendor/acf-repeater/acf-repeater.php' );
