@@ -43,3 +43,30 @@ jQuery(document).ready(function($) {
       $el.bxSlider($el.data('sliderOptions'));
     });
 });
+
+// Limelight Video
+jQuery(document).ready(function ($) {
+  $(window).on('resize', function(e) {
+    console.log("hello world");
+    $('.limelight-video-respond').each(function () {
+      var $wrapper = $(this),
+          $video = $(this).find('*[width]'),
+          controlsHeight = $(this).data('controlsHeight') || 51,
+          newHeight,
+          newWidth;
+
+      //  See if we have the aspect ratio already
+      if ( ! $wrapper.data('aspectRatio') ) {
+        var aspectRatio = ( $video.attr('height') - controlsHeight ) / $video.attr('width');
+        $wrapper.data('aspectRatio', aspectRatio );
+      }
+
+      newWidth = $wrapper.width();
+      newHeight = newWidth * $wrapper.data('aspectRatio') + controlsHeight;
+
+      $video.attr('height', newHeight);
+      $video.attr('width', newWidth)
+    });
+  });
+  $(window).trigger('resize');
+});
