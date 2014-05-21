@@ -87,3 +87,14 @@ function launch_setup_author() {
 	}
 }
 add_action( 'wp', 'launch_setup_author' );
+
+/**
+ * Maybe change the protocol on URL for HTTPS
+ */
+function launch_maybe_https( $url ) {
+	$url = trim( $url );
+	if ( is_ssl() ) {
+		$url = preg_replace( '/^http:/i', 'https:', $url );
+	}
+	return esc_url( $url );
+}
