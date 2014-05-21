@@ -47,7 +47,6 @@ jQuery(document).ready(function($) {
 // Limelight Video
 jQuery(document).ready(function ($) {
   $(window).on('resize', function(e) {
-    console.log("hello world");
     $('.limelight-video-respond').each(function () {
       var $wrapper = $(this),
           $video = $(this).find('*[width]'),
