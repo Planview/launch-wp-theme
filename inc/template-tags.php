@@ -153,19 +153,3 @@ function launch_ie_polyfills() { ?>
 <![endif]-->
 <?php }
 add_action( 'wp_head', 'launch_ie_polyfills', 60 );
-
-/**
- * Return a Font-awesome class based on resource type
- */
-function launch_icon_class( $type ) {
-	switch ($type) {
-		case 'pdf':
-			return 'fa-file-pdf-o';
-		case 'video':
-			return 'fa-film';
-		case 'slideshare':
-			return 'fa-bar-chart-o';
-		default:
-			return 'fa-external-link';
-	}
-}
