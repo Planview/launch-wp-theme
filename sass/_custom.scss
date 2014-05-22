@@ -2,35 +2,46 @@
 	font-style: italic;
 	margin-top: 5px;
 }
-.topics-area {
+.topics-area, .topics-below-video {
 	@include make-row();
 	margin: {
 		top: 20px;
 	}
 }
-.chat-wrapper {
-	@include make-md-column(5);
+.chat-wrapper, .topics-resources-wrapper {
+	@include make-md-column(4);
 }
-.chat-inner {
+.chat-wrapper {
+	@include make-md-column-pull(8);
+}
+.chat-inner, .topics-rep-inner, .topics-content-inner, .topics-resources-inner {
 	@extend .panel, .panel-default;
 }
-.chat-header {
+.chat-header, .topics-rep-header, .topics-content-header, .topics-resources-header {
 	@extend .panel-heading;
 }
-.chat-title {
+.chat-title, .topics-rep-title, .topics-content-title, .topics-resources-title {
 	@extend .panel-title;
 }
-.chat-body {
+.chat-body, .topics-rep-body, .topics-content-body, .topics-resources-body {
 	@extend .panel-body;
-	resize: vertical;
 }
-.topic-chat-iframe {
-	width: 100%;
-	min-height: 250px;
-	max-height: 600px;
-	height: 100%;
-	border:0;
+.topics-rep-body, .topics-content-body {
+	max-height: 500px;
+	overflow: auto;
+}
+.main-topic-outer, .topics-content-wrapper {
+	@include make-md-column(8);
 }
 .main-topic-outer {
-	@include make-md-column(7);
+	@include make-md-column-push(4);
+}
+.topics-rep-job-title {
+	margin-top: 5px;
+}
+.topic-rep-bio {
+	padding-top: 10px;
+}
+.topics-resources-list {
+	@extend .list-unstyled;
 }
