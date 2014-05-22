@@ -1,0 +1,36 @@
+.entry-header .subtitle {
+	font-style: italic;
+	margin-top: 5px;
+}
+.topics-area {
+	@include make-row();
+	margin: {
+		top: 20px;
+	}
+}
+.chat-wrapper {
+	@include make-md-column(5);
+}
+.chat-inner {
+	@extend .panel, .panel-default;
+}
+.chat-header {
+	@extend .panel-heading;
+}
+.chat-title {
+	@extend .panel-title;
+}
+.chat-body {
+	@extend .panel-body;
+	resize: vertical;
+}
+.topic-chat-iframe {
+	width: 100%;
+	min-height: 250px;
+	max-height: 600px;
+	height: 100%;
+	border:0;
+}
+.main-topic-outer {
+	@include make-md-column(7);
+}
