@@ -2,8 +2,10 @@
 	font-style: italic;
 	margin-top: 5px;
 }
-.topics-area, .topics-below-video {
+.topics-area, .presentations-area, .topics-below-video {
 	@include make-row();
+}
+.topics-below-video {
 	margin: {
 		top: 20px;
 	}
@@ -14,16 +16,37 @@
 .chat-wrapper {
 	@include make-md-column-pull(8);
 }
-.chat-inner, .topics-rep-inner, .topics-content-inner, .topics-resources-inner {
+.chat-inner,
+.topics-rep-inner,
+.topics-content-inner,
+.topics-resources-inner,
+.topics-resources-inner,
+.presentations-content-inner,
+.presentations-resources-inner {
 	@extend .panel, .panel-default;
 }
-.chat-header, .topics-rep-header, .topics-content-header, .topics-resources-header {
+.chat-header,
+.topics-rep-header,
+.topics-content-header,
+.topics-resources-header,
+.presentations-content-header,
+.presentations-resources-header {
 	@extend .panel-heading;
 }
-.chat-title, .topics-rep-title, .topics-content-title, .topics-resources-title {
+.chat-title,
+.topics-rep-title,
+.topics-content-title,
+.topics-resources-title,
+.presentations-content-title,
+.presentations-resources-title {
 	@extend .panel-title;
 }
-.chat-body, .topics-rep-body, .topics-content-body, .topics-resources-body {
+.chat-body,
+.topics-rep-body,
+.topics-content-body,
+.topics-resources-body,
+.presentations-content-body,
+.presentations-resources-body {
 	@extend .panel-body;
 }
 .topics-rep-body, .topics-content-body {
@@ -42,6 +65,38 @@
 .topic-rep-bio {
 	padding-top: 10px;
 }
-.topics-resources-list {
+.topics-resources-list, .presentations-resources-list {
 	@extend .list-unstyled;
+}
+.main-presentation-outer {
+	@include make-md-column(9);
+	@include make-md-column-push(3);
+}
+.presentations-sidebar {
+	@include make-md-column(3);
+	@include make-md-column-pull(9);
+}
+.presentation-question-wrapper {
+	padding: {
+		top: 20px;
+		bottom: 20px;
+	}
+	label {
+		@extend .sr-only;
+	}
+	.gform_body {
+		@include make-sm-column(10);
+	}
+	.gform_footer {
+		@include make-sm-column(2);
+		.button {
+			@extend .btn-block;
+		}
+	}
+	#gforms_confirmation_message {
+		@include make-sm-column(12);
+	}
+}
+.presentation-question-inner {
+	@include make-row();
 }

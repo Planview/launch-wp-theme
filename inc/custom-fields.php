@@ -8,7 +8,7 @@ if ( ! defined( 'ACF_LITE' )) define( 'ACF_LITE' , true );
 
 require ( get_template_directory() . '/vendor/advanced-custom-fields/acf.php' );
 require ( get_template_directory() . '/vendor/acf-repeater/acf-repeater.php' );
-require ( get_template_directory() . '/vendor/acf-options-page/acf-options-page.php' );
+if ( ! class_exists('acf_options_page_plugin' ) ) require ( get_template_directory() . '/vendor/acf-options-page/acf-options-page.php' );
 
 if ( function_exists( "acf_add_options_sub_page" ) ) {
 	    acf_add_options_sub_page(array(
