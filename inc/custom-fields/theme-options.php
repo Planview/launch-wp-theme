@@ -19,6 +19,18 @@ register_field_group(array (
             'rows' => '',
             'formatting' => 'html',
         ),
+        array (
+            'key' => 'field_537e48c52f01a',
+            'label' => 'Unsupported Browser Message',
+            'name' => 'launch_unsupported_browser',
+            'type' => 'textarea',
+            'instructions' => 'This can be plain text or valid HTML',
+            'default_value' => '',
+            'placeholder' => '',
+            'maxlength' => '',
+            'rows' => '',
+            'formatting' => 'html',
+        ),
     ),
     'location' => array (
         array (

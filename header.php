@@ -21,6 +21,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!--[if lt IE 8]>
+<div class="alert alert-danger">
+	<?php the_field('launch_unsupported_browser', 'option'); ?>
+</div>
+<![endif]-->
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header bg-size" role="banner">
