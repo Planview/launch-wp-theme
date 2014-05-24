@@ -55,6 +55,8 @@ function launch_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'launch' ),
 		'footer' => __( 'Footer Menu', 'launch' ),
+		'primary_logged_in' => __( 'Primary Menu (Logged In)', 'launch' ),
+		'footer_logged_in' => __( 'Footer Menu (Logged In)', 'launch' ),
 		'legal' => __( 'Legal Pages Menu (Footer)', 'launch' ),
 		'follow' => __( 'Follow Links (Footer)', 'launch' ),
 	) );
@@ -166,3 +168,8 @@ require get_template_directory() . '/inc/editor.php';
  * Load custom login settings
  */
 require get_template_directory() . '/inc/admin-login.php';
+
+/**
+ * Load the functionality for the library
+ */
+require get_template_directory() . '/inc/library.php';

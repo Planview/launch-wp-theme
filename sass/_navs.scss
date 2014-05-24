@@ -1,8 +1,14 @@
+.nav-pills .dropdown-menu a {
+	background-color: #fff;
+}
+.nav-pills .dropdown-menu > .active > a {
+	background-color: $brand-primary;
+}
+
 .main-navigation {
-	@include make-row();
+	@include clearfix();
 	.menu {
-		@include make-sm-column(6);
-		@include make-sm-column-offset(6);
+		@include clearfix();
 		margin-bottom: 10px;
 	}
 }

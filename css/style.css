@@ -5531,6 +5531,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel, .chat-inner,
 .topics-rep-inner,
+.presentations-rep-inner,
 .topics-content-inner,
 .topics-resources-inner,
 .presentations-content-inner,
@@ -5545,6 +5546,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-body, .chat-body,
 .topics-rep-body,
+.presentations-rep-body,
 .topics-content-body,
 .topics-resources-body,
 .presentations-content-body,
@@ -5553,11 +5555,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-body:before, .chat-body:before,
 .topics-rep-body:before,
+.presentations-rep-body:before,
 .topics-content-body:before,
 .topics-resources-body:before,
 .presentations-content-body:before,
 .presentations-resources-body:before, .panel-body:after, .chat-body:after,
 .topics-rep-body:after,
+.presentations-rep-body:after,
 .topics-content-body:after,
 .topics-resources-body:after,
 .presentations-content-body:after,
@@ -5567,6 +5571,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-body:after, .chat-body:after,
 .topics-rep-body:after,
+.presentations-rep-body:after,
 .topics-content-body:after,
 .topics-resources-body:after,
 .presentations-content-body:after,
@@ -5576,6 +5581,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-heading, .chat-header,
 .topics-rep-header,
+.presentations-rep-header,
 .topics-content-header,
 .topics-resources-header,
 .presentations-content-header,
@@ -5587,6 +5593,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-heading > .dropdown .dropdown-toggle, .chat-header > .dropdown .dropdown-toggle,
 .topics-rep-header > .dropdown .dropdown-toggle,
+.presentations-rep-header > .dropdown .dropdown-toggle,
 .topics-content-header > .dropdown .dropdown-toggle,
 .topics-resources-header > .dropdown .dropdown-toggle,
 .presentations-content-header > .dropdown .dropdown-toggle,
@@ -5596,6 +5603,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-title, .chat-title,
 .topics-rep-title,
+.presentations-rep-title,
 .topics-content-title,
 .topics-resources-title,
 .presentations-content-title,
@@ -5607,6 +5615,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-title > a, .chat-title > a,
 .topics-rep-title > a,
+.presentations-rep-title > a,
 .topics-content-title > a,
 .topics-resources-title > a,
 .presentations-content-title > a,
@@ -5624,6 +5633,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel > .list-group, .chat-inner > .list-group,
 .topics-rep-inner > .list-group,
+.presentations-rep-inner > .list-group,
 .topics-content-inner > .list-group,
 .topics-resources-inner > .list-group,
 .presentations-content-inner > .list-group,
@@ -5632,6 +5642,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .list-group .list-group-item, .chat-inner > .list-group .list-group-item,
 .topics-rep-inner > .list-group .list-group-item,
+.presentations-rep-inner > .list-group .list-group-item,
 .topics-content-inner > .list-group .list-group-item,
 .topics-resources-inner > .list-group .list-group-item,
 .presentations-content-inner > .list-group .list-group-item,
@@ -5641,6 +5652,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .list-group:first-child .list-group-item:first-child, .chat-inner > .list-group:first-child .list-group-item:first-child,
 .topics-rep-inner > .list-group:first-child .list-group-item:first-child,
+.presentations-rep-inner > .list-group:first-child .list-group-item:first-child,
 .topics-content-inner > .list-group:first-child .list-group-item:first-child,
 .topics-resources-inner > .list-group:first-child .list-group-item:first-child,
 .presentations-content-inner > .list-group:first-child .list-group-item:first-child,
@@ -5651,6 +5663,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .list-group:last-child .list-group-item:last-child, .chat-inner > .list-group:last-child .list-group-item:last-child,
 .topics-rep-inner > .list-group:last-child .list-group-item:last-child,
+.presentations-rep-inner > .list-group:last-child .list-group-item:last-child,
 .topics-content-inner > .list-group:last-child .list-group-item:last-child,
 .topics-resources-inner > .list-group:last-child .list-group-item:last-child,
 .presentations-content-inner > .list-group:last-child .list-group-item:last-child,
@@ -5662,6 +5675,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-heading + .list-group .list-group-item:first-child, .chat-header + .list-group .list-group-item:first-child,
 .topics-rep-header + .list-group .list-group-item:first-child,
+.presentations-rep-header + .list-group .list-group-item:first-child,
 .topics-content-header + .list-group .list-group-item:first-child,
 .topics-resources-header + .list-group .list-group-item:first-child,
 .presentations-content-header + .list-group .list-group-item:first-child,
@@ -5671,6 +5685,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel > .table, .chat-inner > .table,
 .topics-rep-inner > .table,
+.presentations-rep-inner > .table,
 .topics-content-inner > .table,
 .topics-resources-inner > .table,
 .presentations-content-inner > .table,
@@ -5678,6 +5693,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table,
 .chat-inner > .table-responsive > .table,
 .topics-rep-inner > .table-responsive > .table,
+.presentations-rep-inner > .table-responsive > .table,
 .topics-content-inner > .table-responsive > .table,
 .topics-resources-inner > .table-responsive > .table,
 .presentations-content-inner > .table-responsive > .table,
@@ -5686,6 +5702,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:first-child, .chat-inner > .table:first-child,
 .topics-rep-inner > .table:first-child,
+.presentations-rep-inner > .table:first-child,
 .topics-content-inner > .table:first-child,
 .topics-resources-inner > .table:first-child,
 .presentations-content-inner > .table:first-child,
@@ -5693,6 +5710,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child,
 .chat-inner > .table-responsive:first-child > .table:first-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child,
@@ -5702,6 +5720,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .chat-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-rep-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.presentations-rep-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-content-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-resources-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .presentations-content-inner > .table:first-child > thead:first-child > tr:first-child td:first-child,
@@ -5709,6 +5728,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .chat-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-rep-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.presentations-rep-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-content-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-resources-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .presentations-content-inner > .table:first-child > thead:first-child > tr:first-child th:first-child,
@@ -5716,6 +5736,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .chat-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-rep-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.presentations-rep-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-content-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-resources-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .presentations-content-inner > .table:first-child > tbody:first-child > tr:first-child td:first-child,
@@ -5723,6 +5744,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .chat-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-rep-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.presentations-rep-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-content-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-resources-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .presentations-content-inner > .table:first-child > tbody:first-child > tr:first-child th:first-child,
@@ -5730,6 +5752,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
@@ -5737,6 +5760,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
@@ -5744,6 +5768,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
@@ -5751,6 +5776,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
@@ -5759,6 +5785,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .chat-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-rep-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.presentations-rep-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-content-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-resources-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .presentations-content-inner > .table:first-child > thead:first-child > tr:first-child td:last-child,
@@ -5766,6 +5793,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .chat-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-rep-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.presentations-rep-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-content-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-resources-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .presentations-content-inner > .table:first-child > thead:first-child > tr:first-child th:last-child,
@@ -5773,6 +5801,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .chat-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-rep-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.presentations-rep-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-content-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-resources-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .presentations-content-inner > .table:first-child > tbody:first-child > tr:first-child td:last-child,
@@ -5780,6 +5809,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .chat-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-rep-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.presentations-rep-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-content-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-resources-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .presentations-content-inner > .table:first-child > tbody:first-child > tr:first-child th:last-child,
@@ -5787,6 +5817,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
@@ -5794,6 +5825,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
@@ -5801,6 +5833,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
@@ -5808,6 +5841,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .chat-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.presentations-rep-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .topics-resources-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .presentations-content-inner > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
@@ -5816,6 +5850,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:last-child, .chat-inner > .table:last-child,
 .topics-rep-inner > .table:last-child,
+.presentations-rep-inner > .table:last-child,
 .topics-content-inner > .table:last-child,
 .topics-resources-inner > .table:last-child,
 .presentations-content-inner > .table:last-child,
@@ -5823,6 +5858,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child,
 .chat-inner > .table-responsive:last-child > .table:last-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child,
@@ -5832,6 +5868,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .chat-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-rep-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.presentations-rep-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-content-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-resources-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .presentations-content-inner > .table:last-child > tbody:last-child > tr:last-child td:first-child,
@@ -5839,6 +5876,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .chat-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-rep-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.presentations-rep-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-content-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-resources-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .presentations-content-inner > .table:last-child > tbody:last-child > tr:last-child th:first-child,
@@ -5846,6 +5884,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .chat-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-rep-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.presentations-rep-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-content-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-resources-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .presentations-content-inner > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
@@ -5853,6 +5892,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .chat-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-rep-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.presentations-rep-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-content-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-resources-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .presentations-content-inner > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
@@ -5860,6 +5900,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
@@ -5867,6 +5908,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
@@ -5874,6 +5916,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
@@ -5881,6 +5924,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
@@ -5889,6 +5933,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .chat-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-rep-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.presentations-rep-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-content-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-resources-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .presentations-content-inner > .table:last-child > tbody:last-child > tr:last-child td:last-child,
@@ -5896,6 +5941,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .chat-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-rep-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.presentations-rep-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-content-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-resources-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .presentations-content-inner > .table:last-child > tbody:last-child > tr:last-child th:last-child,
@@ -5903,6 +5949,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .chat-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-rep-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.presentations-rep-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-content-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-resources-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .presentations-content-inner > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
@@ -5910,6 +5957,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .chat-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-rep-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.presentations-rep-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-content-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-resources-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .presentations-content-inner > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
@@ -5917,6 +5965,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
@@ -5924,6 +5973,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
@@ -5931,6 +5981,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
@@ -5938,6 +5989,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .chat-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.presentations-rep-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .topics-resources-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .presentations-content-inner > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
@@ -5946,11 +5998,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .panel-body + .table, .chat-inner > .panel-body + .table,
 .topics-rep-inner > .panel-body + .table,
+.presentations-rep-inner > .panel-body + .table,
 .topics-content-inner > .panel-body + .table,
 .topics-resources-inner > .panel-body + .table,
 .presentations-content-inner > .panel-body + .table,
 .presentations-resources-inner > .panel-body + .table, .panel > .chat-body + .table, .chat-inner > .chat-body + .table,
 .topics-rep-inner > .chat-body + .table,
+.presentations-rep-inner > .chat-body + .table,
 .topics-content-inner > .chat-body + .table,
 .topics-resources-inner > .chat-body + .table,
 .presentations-content-inner > .chat-body + .table,
@@ -5958,13 +6012,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .topics-rep-body + .table,
 .chat-inner > .topics-rep-body + .table,
 .topics-rep-inner > .topics-rep-body + .table,
+.presentations-rep-inner > .topics-rep-body + .table,
 .topics-content-inner > .topics-rep-body + .table,
 .topics-resources-inner > .topics-rep-body + .table,
 .presentations-content-inner > .topics-rep-body + .table,
 .presentations-resources-inner > .topics-rep-body + .table,
+.panel > .presentations-rep-body + .table,
+.chat-inner > .presentations-rep-body + .table,
+.topics-rep-inner > .presentations-rep-body + .table,
+.presentations-rep-inner > .presentations-rep-body + .table,
+.topics-content-inner > .presentations-rep-body + .table,
+.topics-resources-inner > .presentations-rep-body + .table,
+.presentations-content-inner > .presentations-rep-body + .table,
+.presentations-resources-inner > .presentations-rep-body + .table,
 .panel > .topics-content-body + .table,
 .chat-inner > .topics-content-body + .table,
 .topics-rep-inner > .topics-content-body + .table,
+.presentations-rep-inner > .topics-content-body + .table,
 .topics-content-inner > .topics-content-body + .table,
 .topics-resources-inner > .topics-content-body + .table,
 .presentations-content-inner > .topics-content-body + .table,
@@ -5972,6 +6036,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .topics-resources-body + .table,
 .chat-inner > .topics-resources-body + .table,
 .topics-rep-inner > .topics-resources-body + .table,
+.presentations-rep-inner > .topics-resources-body + .table,
 .topics-content-inner > .topics-resources-body + .table,
 .topics-resources-inner > .topics-resources-body + .table,
 .presentations-content-inner > .topics-resources-body + .table,
@@ -5979,6 +6044,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .presentations-content-body + .table,
 .chat-inner > .presentations-content-body + .table,
 .topics-rep-inner > .presentations-content-body + .table,
+.presentations-rep-inner > .presentations-content-body + .table,
 .topics-content-inner > .presentations-content-body + .table,
 .topics-resources-inner > .presentations-content-body + .table,
 .presentations-content-inner > .presentations-content-body + .table,
@@ -5986,6 +6052,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .presentations-resources-body + .table,
 .chat-inner > .presentations-resources-body + .table,
 .topics-rep-inner > .presentations-resources-body + .table,
+.presentations-rep-inner > .presentations-resources-body + .table,
 .topics-content-inner > .presentations-resources-body + .table,
 .topics-resources-inner > .presentations-resources-body + .table,
 .presentations-content-inner > .presentations-resources-body + .table,
@@ -5993,6 +6060,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .panel-body + .table-responsive,
 .chat-inner > .panel-body + .table-responsive,
 .topics-rep-inner > .panel-body + .table-responsive,
+.presentations-rep-inner > .panel-body + .table-responsive,
 .topics-content-inner > .panel-body + .table-responsive,
 .topics-resources-inner > .panel-body + .table-responsive,
 .presentations-content-inner > .panel-body + .table-responsive,
@@ -6000,6 +6068,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .chat-body + .table-responsive,
 .chat-inner > .chat-body + .table-responsive,
 .topics-rep-inner > .chat-body + .table-responsive,
+.presentations-rep-inner > .chat-body + .table-responsive,
 .topics-content-inner > .chat-body + .table-responsive,
 .topics-resources-inner > .chat-body + .table-responsive,
 .presentations-content-inner > .chat-body + .table-responsive,
@@ -6007,13 +6076,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .topics-rep-body + .table-responsive,
 .chat-inner > .topics-rep-body + .table-responsive,
 .topics-rep-inner > .topics-rep-body + .table-responsive,
+.presentations-rep-inner > .topics-rep-body + .table-responsive,
 .topics-content-inner > .topics-rep-body + .table-responsive,
 .topics-resources-inner > .topics-rep-body + .table-responsive,
 .presentations-content-inner > .topics-rep-body + .table-responsive,
 .presentations-resources-inner > .topics-rep-body + .table-responsive,
+.panel > .presentations-rep-body + .table-responsive,
+.chat-inner > .presentations-rep-body + .table-responsive,
+.topics-rep-inner > .presentations-rep-body + .table-responsive,
+.presentations-rep-inner > .presentations-rep-body + .table-responsive,
+.topics-content-inner > .presentations-rep-body + .table-responsive,
+.topics-resources-inner > .presentations-rep-body + .table-responsive,
+.presentations-content-inner > .presentations-rep-body + .table-responsive,
+.presentations-resources-inner > .presentations-rep-body + .table-responsive,
 .panel > .topics-content-body + .table-responsive,
 .chat-inner > .topics-content-body + .table-responsive,
 .topics-rep-inner > .topics-content-body + .table-responsive,
+.presentations-rep-inner > .topics-content-body + .table-responsive,
 .topics-content-inner > .topics-content-body + .table-responsive,
 .topics-resources-inner > .topics-content-body + .table-responsive,
 .presentations-content-inner > .topics-content-body + .table-responsive,
@@ -6021,6 +6100,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .topics-resources-body + .table-responsive,
 .chat-inner > .topics-resources-body + .table-responsive,
 .topics-rep-inner > .topics-resources-body + .table-responsive,
+.presentations-rep-inner > .topics-resources-body + .table-responsive,
 .topics-content-inner > .topics-resources-body + .table-responsive,
 .topics-resources-inner > .topics-resources-body + .table-responsive,
 .presentations-content-inner > .topics-resources-body + .table-responsive,
@@ -6028,6 +6108,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .presentations-content-body + .table-responsive,
 .chat-inner > .presentations-content-body + .table-responsive,
 .topics-rep-inner > .presentations-content-body + .table-responsive,
+.presentations-rep-inner > .presentations-content-body + .table-responsive,
 .topics-content-inner > .presentations-content-body + .table-responsive,
 .topics-resources-inner > .presentations-content-body + .table-responsive,
 .presentations-content-inner > .presentations-content-body + .table-responsive,
@@ -6035,6 +6116,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .presentations-resources-body + .table-responsive,
 .chat-inner > .presentations-resources-body + .table-responsive,
 .topics-rep-inner > .presentations-resources-body + .table-responsive,
+.presentations-rep-inner > .presentations-resources-body + .table-responsive,
 .topics-content-inner > .presentations-resources-body + .table-responsive,
 .topics-resources-inner > .presentations-resources-body + .table-responsive,
 .presentations-content-inner > .presentations-resources-body + .table-responsive,
@@ -6043,6 +6125,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table > tbody:first-child > tr:first-child th, .chat-inner > .table > tbody:first-child > tr:first-child th,
 .topics-rep-inner > .table > tbody:first-child > tr:first-child th,
+.presentations-rep-inner > .table > tbody:first-child > tr:first-child th,
 .topics-content-inner > .table > tbody:first-child > tr:first-child th,
 .topics-resources-inner > .table > tbody:first-child > tr:first-child th,
 .presentations-content-inner > .table > tbody:first-child > tr:first-child th,
@@ -6050,6 +6133,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table > tbody:first-child > tr:first-child td,
 .chat-inner > .table > tbody:first-child > tr:first-child td,
 .topics-rep-inner > .table > tbody:first-child > tr:first-child td,
+.presentations-rep-inner > .table > tbody:first-child > tr:first-child td,
 .topics-content-inner > .table > tbody:first-child > tr:first-child td,
 .topics-resources-inner > .table > tbody:first-child > tr:first-child td,
 .presentations-content-inner > .table > tbody:first-child > tr:first-child td,
@@ -6058,6 +6142,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-bordered, .chat-inner > .table-bordered,
 .topics-rep-inner > .table-bordered,
+.presentations-rep-inner > .table-bordered,
 .topics-content-inner > .table-bordered,
 .topics-resources-inner > .table-bordered,
 .presentations-content-inner > .table-bordered,
@@ -6065,6 +6150,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered,
 .chat-inner > .table-responsive > .table-bordered,
 .topics-rep-inner > .table-responsive > .table-bordered,
+.presentations-rep-inner > .table-responsive > .table-bordered,
 .topics-content-inner > .table-responsive > .table-bordered,
 .topics-resources-inner > .table-responsive > .table-bordered,
 .presentations-content-inner > .table-responsive > .table-bordered,
@@ -6073,6 +6159,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-bordered > thead > tr > th:first-child, .chat-inner > .table-bordered > thead > tr > th:first-child,
 .topics-rep-inner > .table-bordered > thead > tr > th:first-child,
+.presentations-rep-inner > .table-bordered > thead > tr > th:first-child,
 .topics-content-inner > .table-bordered > thead > tr > th:first-child,
 .topics-resources-inner > .table-bordered > thead > tr > th:first-child,
 .presentations-content-inner > .table-bordered > thead > tr > th:first-child,
@@ -6080,6 +6167,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > thead > tr > td:first-child,
 .chat-inner > .table-bordered > thead > tr > td:first-child,
 .topics-rep-inner > .table-bordered > thead > tr > td:first-child,
+.presentations-rep-inner > .table-bordered > thead > tr > td:first-child,
 .topics-content-inner > .table-bordered > thead > tr > td:first-child,
 .topics-resources-inner > .table-bordered > thead > tr > td:first-child,
 .presentations-content-inner > .table-bordered > thead > tr > td:first-child,
@@ -6087,6 +6175,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr > th:first-child,
 .chat-inner > .table-bordered > tbody > tr > th:first-child,
 .topics-rep-inner > .table-bordered > tbody > tr > th:first-child,
+.presentations-rep-inner > .table-bordered > tbody > tr > th:first-child,
 .topics-content-inner > .table-bordered > tbody > tr > th:first-child,
 .topics-resources-inner > .table-bordered > tbody > tr > th:first-child,
 .presentations-content-inner > .table-bordered > tbody > tr > th:first-child,
@@ -6094,6 +6183,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr > td:first-child,
 .chat-inner > .table-bordered > tbody > tr > td:first-child,
 .topics-rep-inner > .table-bordered > tbody > tr > td:first-child,
+.presentations-rep-inner > .table-bordered > tbody > tr > td:first-child,
 .topics-content-inner > .table-bordered > tbody > tr > td:first-child,
 .topics-resources-inner > .table-bordered > tbody > tr > td:first-child,
 .presentations-content-inner > .table-bordered > tbody > tr > td:first-child,
@@ -6101,6 +6191,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr > th:first-child,
 .chat-inner > .table-bordered > tfoot > tr > th:first-child,
 .topics-rep-inner > .table-bordered > tfoot > tr > th:first-child,
+.presentations-rep-inner > .table-bordered > tfoot > tr > th:first-child,
 .topics-content-inner > .table-bordered > tfoot > tr > th:first-child,
 .topics-resources-inner > .table-bordered > tfoot > tr > th:first-child,
 .presentations-content-inner > .table-bordered > tfoot > tr > th:first-child,
@@ -6108,6 +6199,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr > td:first-child,
 .chat-inner > .table-bordered > tfoot > tr > td:first-child,
 .topics-rep-inner > .table-bordered > tfoot > tr > td:first-child,
+.presentations-rep-inner > .table-bordered > tfoot > tr > td:first-child,
 .topics-content-inner > .table-bordered > tfoot > tr > td:first-child,
 .topics-resources-inner > .table-bordered > tfoot > tr > td:first-child,
 .presentations-content-inner > .table-bordered > tfoot > tr > td:first-child,
@@ -6115,6 +6207,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .chat-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr > th:first-child,
@@ -6122,6 +6215,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .chat-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr > td:first-child,
@@ -6129,6 +6223,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr > th:first-child,
@@ -6136,6 +6231,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr > td:first-child,
@@ -6143,6 +6239,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
@@ -6150,6 +6247,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
@@ -6158,6 +6256,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-bordered > thead > tr > th:last-child, .chat-inner > .table-bordered > thead > tr > th:last-child,
 .topics-rep-inner > .table-bordered > thead > tr > th:last-child,
+.presentations-rep-inner > .table-bordered > thead > tr > th:last-child,
 .topics-content-inner > .table-bordered > thead > tr > th:last-child,
 .topics-resources-inner > .table-bordered > thead > tr > th:last-child,
 .presentations-content-inner > .table-bordered > thead > tr > th:last-child,
@@ -6165,6 +6264,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > thead > tr > td:last-child,
 .chat-inner > .table-bordered > thead > tr > td:last-child,
 .topics-rep-inner > .table-bordered > thead > tr > td:last-child,
+.presentations-rep-inner > .table-bordered > thead > tr > td:last-child,
 .topics-content-inner > .table-bordered > thead > tr > td:last-child,
 .topics-resources-inner > .table-bordered > thead > tr > td:last-child,
 .presentations-content-inner > .table-bordered > thead > tr > td:last-child,
@@ -6172,6 +6272,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr > th:last-child,
 .chat-inner > .table-bordered > tbody > tr > th:last-child,
 .topics-rep-inner > .table-bordered > tbody > tr > th:last-child,
+.presentations-rep-inner > .table-bordered > tbody > tr > th:last-child,
 .topics-content-inner > .table-bordered > tbody > tr > th:last-child,
 .topics-resources-inner > .table-bordered > tbody > tr > th:last-child,
 .presentations-content-inner > .table-bordered > tbody > tr > th:last-child,
@@ -6179,6 +6280,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr > td:last-child,
 .chat-inner > .table-bordered > tbody > tr > td:last-child,
 .topics-rep-inner > .table-bordered > tbody > tr > td:last-child,
+.presentations-rep-inner > .table-bordered > tbody > tr > td:last-child,
 .topics-content-inner > .table-bordered > tbody > tr > td:last-child,
 .topics-resources-inner > .table-bordered > tbody > tr > td:last-child,
 .presentations-content-inner > .table-bordered > tbody > tr > td:last-child,
@@ -6186,6 +6288,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr > th:last-child,
 .chat-inner > .table-bordered > tfoot > tr > th:last-child,
 .topics-rep-inner > .table-bordered > tfoot > tr > th:last-child,
+.presentations-rep-inner > .table-bordered > tfoot > tr > th:last-child,
 .topics-content-inner > .table-bordered > tfoot > tr > th:last-child,
 .topics-resources-inner > .table-bordered > tfoot > tr > th:last-child,
 .presentations-content-inner > .table-bordered > tfoot > tr > th:last-child,
@@ -6193,6 +6296,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr > td:last-child,
 .chat-inner > .table-bordered > tfoot > tr > td:last-child,
 .topics-rep-inner > .table-bordered > tfoot > tr > td:last-child,
+.presentations-rep-inner > .table-bordered > tfoot > tr > td:last-child,
 .topics-content-inner > .table-bordered > tfoot > tr > td:last-child,
 .topics-resources-inner > .table-bordered > tfoot > tr > td:last-child,
 .presentations-content-inner > .table-bordered > tfoot > tr > td:last-child,
@@ -6200,6 +6304,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .chat-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr > th:last-child,
@@ -6207,6 +6312,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .chat-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr > td:last-child,
@@ -6214,6 +6320,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr > th:last-child,
@@ -6221,6 +6328,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr > td:last-child,
@@ -6228,6 +6336,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
@@ -6235,6 +6344,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
@@ -6243,6 +6353,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-bordered > thead > tr:first-child > td, .chat-inner > .table-bordered > thead > tr:first-child > td,
 .topics-rep-inner > .table-bordered > thead > tr:first-child > td,
+.presentations-rep-inner > .table-bordered > thead > tr:first-child > td,
 .topics-content-inner > .table-bordered > thead > tr:first-child > td,
 .topics-resources-inner > .table-bordered > thead > tr:first-child > td,
 .presentations-content-inner > .table-bordered > thead > tr:first-child > td,
@@ -6250,6 +6361,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > thead > tr:first-child > th,
 .chat-inner > .table-bordered > thead > tr:first-child > th,
 .topics-rep-inner > .table-bordered > thead > tr:first-child > th,
+.presentations-rep-inner > .table-bordered > thead > tr:first-child > th,
 .topics-content-inner > .table-bordered > thead > tr:first-child > th,
 .topics-resources-inner > .table-bordered > thead > tr:first-child > th,
 .presentations-content-inner > .table-bordered > thead > tr:first-child > th,
@@ -6257,6 +6369,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr:first-child > td,
 .chat-inner > .table-bordered > tbody > tr:first-child > td,
 .topics-rep-inner > .table-bordered > tbody > tr:first-child > td,
+.presentations-rep-inner > .table-bordered > tbody > tr:first-child > td,
 .topics-content-inner > .table-bordered > tbody > tr:first-child > td,
 .topics-resources-inner > .table-bordered > tbody > tr:first-child > td,
 .presentations-content-inner > .table-bordered > tbody > tr:first-child > td,
@@ -6264,6 +6377,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr:first-child > th,
 .chat-inner > .table-bordered > tbody > tr:first-child > th,
 .topics-rep-inner > .table-bordered > tbody > tr:first-child > th,
+.presentations-rep-inner > .table-bordered > tbody > tr:first-child > th,
 .topics-content-inner > .table-bordered > tbody > tr:first-child > th,
 .topics-resources-inner > .table-bordered > tbody > tr:first-child > th,
 .presentations-content-inner > .table-bordered > tbody > tr:first-child > th,
@@ -6271,6 +6385,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .chat-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr:first-child > td,
@@ -6278,6 +6393,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .chat-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .topics-rep-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.presentations-rep-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .topics-content-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .topics-resources-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .presentations-content-inner > .table-responsive > .table-bordered > thead > tr:first-child > th,
@@ -6285,6 +6401,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr:first-child > td,
@@ -6292,6 +6409,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr:first-child > th,
@@ -6300,6 +6418,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-bordered > tbody > tr:last-child > td, .chat-inner > .table-bordered > tbody > tr:last-child > td,
 .topics-rep-inner > .table-bordered > tbody > tr:last-child > td,
+.presentations-rep-inner > .table-bordered > tbody > tr:last-child > td,
 .topics-content-inner > .table-bordered > tbody > tr:last-child > td,
 .topics-resources-inner > .table-bordered > tbody > tr:last-child > td,
 .presentations-content-inner > .table-bordered > tbody > tr:last-child > td,
@@ -6307,6 +6426,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tbody > tr:last-child > th,
 .chat-inner > .table-bordered > tbody > tr:last-child > th,
 .topics-rep-inner > .table-bordered > tbody > tr:last-child > th,
+.presentations-rep-inner > .table-bordered > tbody > tr:last-child > th,
 .topics-content-inner > .table-bordered > tbody > tr:last-child > th,
 .topics-resources-inner > .table-bordered > tbody > tr:last-child > th,
 .presentations-content-inner > .table-bordered > tbody > tr:last-child > th,
@@ -6314,6 +6434,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr:last-child > td,
 .chat-inner > .table-bordered > tfoot > tr:last-child > td,
 .topics-rep-inner > .table-bordered > tfoot > tr:last-child > td,
+.presentations-rep-inner > .table-bordered > tfoot > tr:last-child > td,
 .topics-content-inner > .table-bordered > tfoot > tr:last-child > td,
 .topics-resources-inner > .table-bordered > tfoot > tr:last-child > td,
 .presentations-content-inner > .table-bordered > tfoot > tr:last-child > td,
@@ -6321,6 +6442,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-bordered > tfoot > tr:last-child > th,
 .chat-inner > .table-bordered > tfoot > tr:last-child > th,
 .topics-rep-inner > .table-bordered > tfoot > tr:last-child > th,
+.presentations-rep-inner > .table-bordered > tfoot > tr:last-child > th,
 .topics-content-inner > .table-bordered > tfoot > tr:last-child > th,
 .topics-resources-inner > .table-bordered > tfoot > tr:last-child > th,
 .presentations-content-inner > .table-bordered > tfoot > tr:last-child > th,
@@ -6328,6 +6450,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr:last-child > td,
@@ -6335,6 +6458,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .chat-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .topics-rep-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.presentations-rep-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .topics-content-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .topics-resources-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .presentations-content-inner > .table-responsive > .table-bordered > tbody > tr:last-child > th,
@@ -6342,6 +6466,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
@@ -6349,6 +6474,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .chat-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .topics-rep-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+.presentations-rep-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .topics-content-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .topics-resources-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .presentations-content-inner > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
@@ -6357,6 +6483,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel > .table-responsive, .chat-inner > .table-responsive,
 .topics-rep-inner > .table-responsive,
+.presentations-rep-inner > .table-responsive,
 .topics-content-inner > .table-responsive,
 .topics-resources-inner > .table-responsive,
 .presentations-content-inner > .table-responsive,
@@ -6370,6 +6497,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-group .panel, .panel-group .chat-inner,
 .panel-group .topics-rep-inner,
+.panel-group .presentations-rep-inner,
 .panel-group .topics-content-inner,
 .panel-group .topics-resources-inner,
 .panel-group .presentations-content-inner,
@@ -6379,11 +6507,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-group .panel + .panel, .panel-group .chat-inner + .panel,
 .panel-group .topics-rep-inner + .panel,
+.panel-group .presentations-rep-inner + .panel,
 .panel-group .topics-content-inner + .panel,
 .panel-group .topics-resources-inner + .panel,
 .panel-group .presentations-content-inner + .panel,
 .panel-group .presentations-resources-inner + .panel, .panel-group .panel + .chat-inner, .panel-group .chat-inner + .chat-inner,
 .panel-group .topics-rep-inner + .chat-inner,
+.panel-group .presentations-rep-inner + .chat-inner,
 .panel-group .topics-content-inner + .chat-inner,
 .panel-group .topics-resources-inner + .chat-inner,
 .panel-group .presentations-content-inner + .chat-inner,
@@ -6391,13 +6521,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel + .topics-rep-inner,
 .panel-group .chat-inner + .topics-rep-inner,
 .panel-group .topics-rep-inner + .topics-rep-inner,
+.panel-group .presentations-rep-inner + .topics-rep-inner,
 .panel-group .topics-content-inner + .topics-rep-inner,
 .panel-group .topics-resources-inner + .topics-rep-inner,
 .panel-group .presentations-content-inner + .topics-rep-inner,
 .panel-group .presentations-resources-inner + .topics-rep-inner,
+.panel-group .panel + .presentations-rep-inner,
+.panel-group .chat-inner + .presentations-rep-inner,
+.panel-group .topics-rep-inner + .presentations-rep-inner,
+.panel-group .presentations-rep-inner + .presentations-rep-inner,
+.panel-group .topics-content-inner + .presentations-rep-inner,
+.panel-group .topics-resources-inner + .presentations-rep-inner,
+.panel-group .presentations-content-inner + .presentations-rep-inner,
+.panel-group .presentations-resources-inner + .presentations-rep-inner,
 .panel-group .panel + .topics-content-inner,
 .panel-group .chat-inner + .topics-content-inner,
 .panel-group .topics-rep-inner + .topics-content-inner,
+.panel-group .presentations-rep-inner + .topics-content-inner,
 .panel-group .topics-content-inner + .topics-content-inner,
 .panel-group .topics-resources-inner + .topics-content-inner,
 .panel-group .presentations-content-inner + .topics-content-inner,
@@ -6405,6 +6545,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel + .topics-resources-inner,
 .panel-group .chat-inner + .topics-resources-inner,
 .panel-group .topics-rep-inner + .topics-resources-inner,
+.panel-group .presentations-rep-inner + .topics-resources-inner,
 .panel-group .topics-content-inner + .topics-resources-inner,
 .panel-group .topics-resources-inner + .topics-resources-inner,
 .panel-group .presentations-content-inner + .topics-resources-inner,
@@ -6412,6 +6553,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel + .presentations-content-inner,
 .panel-group .chat-inner + .presentations-content-inner,
 .panel-group .topics-rep-inner + .presentations-content-inner,
+.panel-group .presentations-rep-inner + .presentations-content-inner,
 .panel-group .topics-content-inner + .presentations-content-inner,
 .panel-group .topics-resources-inner + .presentations-content-inner,
 .panel-group .presentations-content-inner + .presentations-content-inner,
@@ -6419,6 +6561,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel + .presentations-resources-inner,
 .panel-group .chat-inner + .presentations-resources-inner,
 .panel-group .topics-rep-inner + .presentations-resources-inner,
+.panel-group .presentations-rep-inner + .presentations-resources-inner,
 .panel-group .topics-content-inner + .presentations-resources-inner,
 .panel-group .topics-resources-inner + .presentations-resources-inner,
 .panel-group .presentations-content-inner + .presentations-resources-inner,
@@ -6427,6 +6570,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-group .panel-heading, .panel-group .chat-header,
 .panel-group .topics-rep-header,
+.panel-group .presentations-rep-header,
 .panel-group .topics-content-header,
 .panel-group .topics-resources-header,
 .panel-group .presentations-content-header,
@@ -6435,11 +6579,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-group .panel-heading + .panel-collapse .panel-body, .panel-group .chat-header + .panel-collapse .panel-body,
 .panel-group .topics-rep-header + .panel-collapse .panel-body,
+.panel-group .presentations-rep-header + .panel-collapse .panel-body,
 .panel-group .topics-content-header + .panel-collapse .panel-body,
 .panel-group .topics-resources-header + .panel-collapse .panel-body,
 .panel-group .presentations-content-header + .panel-collapse .panel-body,
 .panel-group .presentations-resources-header + .panel-collapse .panel-body, .panel-group .panel-heading + .panel-collapse .chat-body, .panel-group .chat-header + .panel-collapse .chat-body,
 .panel-group .topics-rep-header + .panel-collapse .chat-body,
+.panel-group .presentations-rep-header + .panel-collapse .chat-body,
 .panel-group .topics-content-header + .panel-collapse .chat-body,
 .panel-group .topics-resources-header + .panel-collapse .chat-body,
 .panel-group .presentations-content-header + .panel-collapse .chat-body,
@@ -6447,13 +6593,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel-heading + .panel-collapse .topics-rep-body,
 .panel-group .chat-header + .panel-collapse .topics-rep-body,
 .panel-group .topics-rep-header + .panel-collapse .topics-rep-body,
+.panel-group .presentations-rep-header + .panel-collapse .topics-rep-body,
 .panel-group .topics-content-header + .panel-collapse .topics-rep-body,
 .panel-group .topics-resources-header + .panel-collapse .topics-rep-body,
 .panel-group .presentations-content-header + .panel-collapse .topics-rep-body,
 .panel-group .presentations-resources-header + .panel-collapse .topics-rep-body,
+.panel-group .panel-heading + .panel-collapse .presentations-rep-body,
+.panel-group .chat-header + .panel-collapse .presentations-rep-body,
+.panel-group .topics-rep-header + .panel-collapse .presentations-rep-body,
+.panel-group .presentations-rep-header + .panel-collapse .presentations-rep-body,
+.panel-group .topics-content-header + .panel-collapse .presentations-rep-body,
+.panel-group .topics-resources-header + .panel-collapse .presentations-rep-body,
+.panel-group .presentations-content-header + .panel-collapse .presentations-rep-body,
+.panel-group .presentations-resources-header + .panel-collapse .presentations-rep-body,
 .panel-group .panel-heading + .panel-collapse .topics-content-body,
 .panel-group .chat-header + .panel-collapse .topics-content-body,
 .panel-group .topics-rep-header + .panel-collapse .topics-content-body,
+.panel-group .presentations-rep-header + .panel-collapse .topics-content-body,
 .panel-group .topics-content-header + .panel-collapse .topics-content-body,
 .panel-group .topics-resources-header + .panel-collapse .topics-content-body,
 .panel-group .presentations-content-header + .panel-collapse .topics-content-body,
@@ -6461,6 +6617,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel-heading + .panel-collapse .topics-resources-body,
 .panel-group .chat-header + .panel-collapse .topics-resources-body,
 .panel-group .topics-rep-header + .panel-collapse .topics-resources-body,
+.panel-group .presentations-rep-header + .panel-collapse .topics-resources-body,
 .panel-group .topics-content-header + .panel-collapse .topics-resources-body,
 .panel-group .topics-resources-header + .panel-collapse .topics-resources-body,
 .panel-group .presentations-content-header + .panel-collapse .topics-resources-body,
@@ -6468,6 +6625,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel-heading + .panel-collapse .presentations-content-body,
 .panel-group .chat-header + .panel-collapse .presentations-content-body,
 .panel-group .topics-rep-header + .panel-collapse .presentations-content-body,
+.panel-group .presentations-rep-header + .panel-collapse .presentations-content-body,
 .panel-group .topics-content-header + .panel-collapse .presentations-content-body,
 .panel-group .topics-resources-header + .panel-collapse .presentations-content-body,
 .panel-group .presentations-content-header + .panel-collapse .presentations-content-body,
@@ -6475,6 +6633,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel-heading + .panel-collapse .presentations-resources-body,
 .panel-group .chat-header + .panel-collapse .presentations-resources-body,
 .panel-group .topics-rep-header + .panel-collapse .presentations-resources-body,
+.panel-group .presentations-rep-header + .panel-collapse .presentations-resources-body,
 .panel-group .topics-content-header + .panel-collapse .presentations-resources-body,
 .panel-group .topics-resources-header + .panel-collapse .presentations-resources-body,
 .panel-group .presentations-content-header + .panel-collapse .presentations-resources-body,
@@ -6486,6 +6645,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-group .panel-footer + .panel-collapse .panel-body, .panel-group .panel-footer + .panel-collapse .chat-body,
 .panel-group .panel-footer + .panel-collapse .topics-rep-body,
+.panel-group .panel-footer + .panel-collapse .presentations-rep-body,
 .panel-group .panel-footer + .panel-collapse .topics-content-body,
 .panel-group .panel-footer + .panel-collapse .topics-resources-body,
 .panel-group .panel-footer + .panel-collapse .presentations-content-body,
@@ -6495,6 +6655,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 
 .panel-default, .chat-inner,
 .topics-rep-inner,
+.presentations-rep-inner,
 .topics-content-inner,
 .topics-resources-inner,
 .presentations-content-inner,
@@ -6503,11 +6664,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-default > .panel-heading, .chat-inner > .panel-heading,
 .topics-rep-inner > .panel-heading,
+.presentations-rep-inner > .panel-heading,
 .topics-content-inner > .panel-heading,
 .topics-resources-inner > .panel-heading,
 .presentations-content-inner > .panel-heading,
 .presentations-resources-inner > .panel-heading, .panel-default > .chat-header, .chat-inner > .chat-header,
 .topics-rep-inner > .chat-header,
+.presentations-rep-inner > .chat-header,
 .topics-content-inner > .chat-header,
 .topics-resources-inner > .chat-header,
 .presentations-content-inner > .chat-header,
@@ -6515,13 +6678,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header,
 .chat-inner > .topics-rep-header,
 .topics-rep-inner > .topics-rep-header,
+.presentations-rep-inner > .topics-rep-header,
 .topics-content-inner > .topics-rep-header,
 .topics-resources-inner > .topics-rep-header,
 .presentations-content-inner > .topics-rep-header,
 .presentations-resources-inner > .topics-rep-header,
+.panel-default > .presentations-rep-header,
+.chat-inner > .presentations-rep-header,
+.topics-rep-inner > .presentations-rep-header,
+.presentations-rep-inner > .presentations-rep-header,
+.topics-content-inner > .presentations-rep-header,
+.topics-resources-inner > .presentations-rep-header,
+.presentations-content-inner > .presentations-rep-header,
+.presentations-resources-inner > .presentations-rep-header,
 .panel-default > .topics-content-header,
 .chat-inner > .topics-content-header,
 .topics-rep-inner > .topics-content-header,
+.presentations-rep-inner > .topics-content-header,
 .topics-content-inner > .topics-content-header,
 .topics-resources-inner > .topics-content-header,
 .presentations-content-inner > .topics-content-header,
@@ -6529,6 +6702,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header,
 .chat-inner > .topics-resources-header,
 .topics-rep-inner > .topics-resources-header,
+.presentations-rep-inner > .topics-resources-header,
 .topics-content-inner > .topics-resources-header,
 .topics-resources-inner > .topics-resources-header,
 .presentations-content-inner > .topics-resources-header,
@@ -6536,6 +6710,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header,
 .chat-inner > .presentations-content-header,
 .topics-rep-inner > .presentations-content-header,
+.presentations-rep-inner > .presentations-content-header,
 .topics-content-inner > .presentations-content-header,
 .topics-resources-inner > .presentations-content-header,
 .presentations-content-inner > .presentations-content-header,
@@ -6543,6 +6718,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header,
 .chat-inner > .presentations-resources-header,
 .topics-rep-inner > .presentations-resources-header,
+.presentations-rep-inner > .presentations-resources-header,
 .topics-content-inner > .presentations-resources-header,
 .topics-resources-inner > .presentations-resources-header,
 .presentations-content-inner > .presentations-resources-header,
@@ -6553,11 +6729,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body, .chat-inner > .panel-heading + .panel-collapse > .panel-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .panel-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .panel-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .panel-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .panel-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .panel-body,
 .presentations-resources-inner > .panel-heading + .panel-collapse > .panel-body, .panel-default > .chat-header + .panel-collapse > .panel-body, .chat-inner > .chat-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .panel-body,
 .topics-content-inner > .chat-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .panel-body,
@@ -6565,13 +6743,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .panel-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .panel-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .panel-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .panel-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .panel-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-default > .topics-content-header + .panel-collapse > .panel-body,
 .chat-inner > .topics-content-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .panel-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .panel-body,
@@ -6579,6 +6767,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .panel-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .panel-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .panel-body,
@@ -6586,6 +6775,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .panel-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .panel-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .panel-body,
@@ -6593,16 +6783,19 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .panel-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .panel-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .panel-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .panel-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .panel-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .panel-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .panel-body,
 .presentations-resources-inner > .presentations-resources-header + .panel-collapse > .panel-body, .panel-default > .panel-heading + .panel-collapse > .chat-body, .chat-inner > .panel-heading + .panel-collapse > .chat-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .chat-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .chat-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .chat-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .chat-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .chat-body,
 .presentations-resources-inner > .panel-heading + .panel-collapse > .chat-body, .panel-default > .chat-header + .panel-collapse > .chat-body, .chat-inner > .chat-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .chat-body,
 .topics-content-inner > .chat-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .chat-body,
@@ -6610,13 +6803,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .chat-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .chat-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .chat-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .chat-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .chat-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-default > .topics-content-header + .panel-collapse > .chat-body,
 .chat-inner > .topics-content-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .chat-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .chat-body,
@@ -6624,6 +6827,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .chat-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .chat-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .chat-body,
@@ -6631,6 +6835,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .chat-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .chat-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .chat-body,
@@ -6638,6 +6843,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .chat-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .chat-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .chat-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .chat-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .chat-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .chat-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .chat-body,
@@ -6645,6 +6851,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-heading + .panel-collapse > .topics-rep-body,
 .chat-inner > .panel-heading + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .topics-rep-body,
@@ -6652,6 +6859,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .chat-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .chat-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .chat-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .topics-rep-body,
@@ -6659,13 +6867,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-default > .topics-content-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .topics-rep-body,
@@ -6673,6 +6891,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .topics-rep-body,
@@ -6680,6 +6899,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .topics-rep-body,
@@ -6687,13 +6907,79 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
 .presentations-resources-inner > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-default > .panel-heading + .panel-collapse > .presentations-rep-body,
+.chat-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-default > .chat-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-default > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.chat-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-default > .panel-heading + .panel-collapse > .topics-content-body,
 .chat-inner > .panel-heading + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .topics-content-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .topics-content-body,
@@ -6701,6 +6987,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .chat-header + .panel-collapse > .topics-content-body,
 .chat-inner > .chat-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .chat-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .topics-content-body,
@@ -6708,13 +6995,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .topics-content-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-default > .topics-content-header + .panel-collapse > .topics-content-body,
 .chat-inner > .topics-content-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .topics-content-body,
@@ -6722,6 +7019,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .topics-content-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .topics-content-body,
@@ -6729,6 +7027,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .topics-content-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -6736,6 +7035,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .topics-content-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .topics-content-body,
@@ -6743,6 +7043,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-heading + .panel-collapse > .topics-resources-body,
 .chat-inner > .panel-heading + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .topics-resources-body,
@@ -6750,6 +7051,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .chat-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .chat-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .chat-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .topics-resources-body,
@@ -6757,13 +7059,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-default > .topics-content-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .topics-resources-body,
@@ -6771,6 +7083,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .topics-resources-body,
@@ -6778,6 +7091,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -6785,6 +7099,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .topics-resources-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .topics-resources-body,
@@ -6792,6 +7107,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-heading + .panel-collapse > .presentations-content-body,
 .chat-inner > .panel-heading + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .presentations-content-body,
@@ -6799,6 +7115,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .chat-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .chat-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .chat-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .presentations-content-body,
@@ -6806,13 +7123,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-default > .topics-content-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .presentations-content-body,
@@ -6820,6 +7147,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .presentations-content-body,
@@ -6827,6 +7155,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -6834,6 +7163,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .presentations-content-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .presentations-content-body,
@@ -6841,6 +7171,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-heading + .panel-collapse > .presentations-resources-body,
 .chat-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .panel-heading + .panel-collapse > .presentations-resources-body,
@@ -6848,6 +7179,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .chat-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .chat-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .chat-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .chat-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .chat-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .chat-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .chat-header + .panel-collapse > .presentations-resources-body,
@@ -6855,13 +7187,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
 .presentations-resources-inner > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-default > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.chat-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.topics-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.topics-content-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.topics-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.presentations-content-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
+.presentations-resources-inner > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-default > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .topics-content-header + .panel-collapse > .presentations-resources-body,
@@ -6869,6 +7211,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .topics-resources-header + .panel-collapse > .presentations-resources-body,
@@ -6876,6 +7219,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-content-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -6883,6 +7227,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
 .chat-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .presentations-resources-header + .panel-collapse > .presentations-resources-body,
@@ -6891,11 +7236,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-default > .panel-footer + .panel-collapse > .panel-body, .chat-inner > .panel-footer + .panel-collapse > .panel-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .panel-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .panel-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .panel-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .panel-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .panel-body,
 .presentations-resources-inner > .panel-footer + .panel-collapse > .panel-body, .panel-default > .panel-footer + .panel-collapse > .chat-body, .chat-inner > .panel-footer + .panel-collapse > .chat-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .chat-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .chat-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .chat-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .chat-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .chat-body,
@@ -6903,13 +7250,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-footer + .panel-collapse > .topics-rep-body,
 .chat-inner > .panel-footer + .panel-collapse > .topics-rep-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .topics-rep-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .topics-rep-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .topics-rep-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .topics-rep-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .topics-rep-body,
 .presentations-resources-inner > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-default > .panel-footer + .panel-collapse > .presentations-rep-body,
+.chat-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.topics-rep-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.topics-content-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.topics-resources-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.presentations-content-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
+.presentations-resources-inner > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-default > .panel-footer + .panel-collapse > .topics-content-body,
 .chat-inner > .panel-footer + .panel-collapse > .topics-content-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .topics-content-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .topics-content-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .topics-content-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .topics-content-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .topics-content-body,
@@ -6917,6 +7274,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-footer + .panel-collapse > .topics-resources-body,
 .chat-inner > .panel-footer + .panel-collapse > .topics-resources-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .topics-resources-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .topics-resources-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .topics-resources-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .topics-resources-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .topics-resources-body,
@@ -6924,6 +7282,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-footer + .panel-collapse > .presentations-content-body,
 .chat-inner > .panel-footer + .panel-collapse > .presentations-content-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .presentations-content-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .presentations-content-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .presentations-content-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .presentations-content-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -6931,6 +7290,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default > .panel-footer + .panel-collapse > .presentations-resources-body,
 .chat-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
 .topics-rep-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
+.presentations-rep-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
 .topics-content-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
 .topics-resources-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
 .presentations-content-inner > .panel-footer + .panel-collapse > .presentations-resources-body,
@@ -6943,6 +7303,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-primary > .panel-heading, .panel-primary > .chat-header,
 .panel-primary > .topics-rep-header,
+.panel-primary > .presentations-rep-header,
 .panel-primary > .topics-content-header,
 .panel-primary > .topics-resources-header,
 .panel-primary > .presentations-content-header,
@@ -6953,11 +7314,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body, .panel-primary > .chat-header + .panel-collapse > .panel-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-primary > .topics-content-header + .panel-collapse > .panel-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .panel-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .panel-body,
 .panel-primary > .presentations-resources-header + .panel-collapse > .panel-body, .panel-primary > .panel-heading + .panel-collapse > .chat-body, .panel-primary > .chat-header + .panel-collapse > .chat-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-primary > .topics-content-header + .panel-collapse > .chat-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .chat-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .chat-body,
@@ -6965,13 +7328,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-primary > .panel-heading + .panel-collapse > .topics-rep-body,
 .panel-primary > .chat-header + .panel-collapse > .topics-rep-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-primary > .topics-content-header + .panel-collapse > .topics-rep-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .panel-primary > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-primary > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-primary > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-primary > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-primary > .panel-heading + .panel-collapse > .topics-content-body,
 .panel-primary > .chat-header + .panel-collapse > .topics-content-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-primary > .topics-content-header + .panel-collapse > .topics-content-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .topics-content-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -6979,6 +7352,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-primary > .panel-heading + .panel-collapse > .topics-resources-body,
 .panel-primary > .chat-header + .panel-collapse > .topics-resources-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-primary > .topics-content-header + .panel-collapse > .topics-resources-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -6986,6 +7360,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-primary > .panel-heading + .panel-collapse > .presentations-content-body,
 .panel-primary > .chat-header + .panel-collapse > .presentations-content-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-primary > .topics-content-header + .panel-collapse > .presentations-content-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -6993,6 +7368,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-primary > .panel-heading + .panel-collapse > .presentations-resources-body,
 .panel-primary > .chat-header + .panel-collapse > .presentations-resources-body,
 .panel-primary > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-primary > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-primary > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .panel-primary > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .panel-primary > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -7001,6 +7377,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body, .panel-primary > .panel-footer + .panel-collapse > .chat-body,
 .panel-primary > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-primary > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-primary > .panel-footer + .panel-collapse > .topics-content-body,
 .panel-primary > .panel-footer + .panel-collapse > .topics-resources-body,
 .panel-primary > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -7013,6 +7390,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-success > .panel-heading, .panel-success > .chat-header,
 .panel-success > .topics-rep-header,
+.panel-success > .presentations-rep-header,
 .panel-success > .topics-content-header,
 .panel-success > .topics-resources-header,
 .panel-success > .presentations-content-header,
@@ -7023,11 +7401,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-success > .panel-heading + .panel-collapse > .panel-body, .panel-success > .chat-header + .panel-collapse > .panel-body,
 .panel-success > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-success > .topics-content-header + .panel-collapse > .panel-body,
 .panel-success > .topics-resources-header + .panel-collapse > .panel-body,
 .panel-success > .presentations-content-header + .panel-collapse > .panel-body,
 .panel-success > .presentations-resources-header + .panel-collapse > .panel-body, .panel-success > .panel-heading + .panel-collapse > .chat-body, .panel-success > .chat-header + .panel-collapse > .chat-body,
 .panel-success > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-success > .topics-content-header + .panel-collapse > .chat-body,
 .panel-success > .topics-resources-header + .panel-collapse > .chat-body,
 .panel-success > .presentations-content-header + .panel-collapse > .chat-body,
@@ -7035,13 +7415,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-success > .panel-heading + .panel-collapse > .topics-rep-body,
 .panel-success > .chat-header + .panel-collapse > .topics-rep-body,
 .panel-success > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-success > .topics-content-header + .panel-collapse > .topics-rep-body,
 .panel-success > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .panel-success > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .panel-success > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-success > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-success > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-success > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-success > .panel-heading + .panel-collapse > .topics-content-body,
 .panel-success > .chat-header + .panel-collapse > .topics-content-body,
 .panel-success > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-success > .topics-content-header + .panel-collapse > .topics-content-body,
 .panel-success > .topics-resources-header + .panel-collapse > .topics-content-body,
 .panel-success > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -7049,6 +7439,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-success > .panel-heading + .panel-collapse > .topics-resources-body,
 .panel-success > .chat-header + .panel-collapse > .topics-resources-body,
 .panel-success > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-success > .topics-content-header + .panel-collapse > .topics-resources-body,
 .panel-success > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .panel-success > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -7056,6 +7447,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-success > .panel-heading + .panel-collapse > .presentations-content-body,
 .panel-success > .chat-header + .panel-collapse > .presentations-content-body,
 .panel-success > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-success > .topics-content-header + .panel-collapse > .presentations-content-body,
 .panel-success > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .panel-success > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -7063,6 +7455,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-success > .panel-heading + .panel-collapse > .presentations-resources-body,
 .panel-success > .chat-header + .panel-collapse > .presentations-resources-body,
 .panel-success > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-success > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-success > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .panel-success > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .panel-success > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -7071,6 +7464,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-success > .panel-footer + .panel-collapse > .panel-body, .panel-success > .panel-footer + .panel-collapse > .chat-body,
 .panel-success > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-success > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-success > .panel-footer + .panel-collapse > .topics-content-body,
 .panel-success > .panel-footer + .panel-collapse > .topics-resources-body,
 .panel-success > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -7083,6 +7477,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-info > .panel-heading, .panel-info > .chat-header,
 .panel-info > .topics-rep-header,
+.panel-info > .presentations-rep-header,
 .panel-info > .topics-content-header,
 .panel-info > .topics-resources-header,
 .panel-info > .presentations-content-header,
@@ -7093,11 +7488,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body, .panel-info > .chat-header + .panel-collapse > .panel-body,
 .panel-info > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-info > .topics-content-header + .panel-collapse > .panel-body,
 .panel-info > .topics-resources-header + .panel-collapse > .panel-body,
 .panel-info > .presentations-content-header + .panel-collapse > .panel-body,
 .panel-info > .presentations-resources-header + .panel-collapse > .panel-body, .panel-info > .panel-heading + .panel-collapse > .chat-body, .panel-info > .chat-header + .panel-collapse > .chat-body,
 .panel-info > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-info > .topics-content-header + .panel-collapse > .chat-body,
 .panel-info > .topics-resources-header + .panel-collapse > .chat-body,
 .panel-info > .presentations-content-header + .panel-collapse > .chat-body,
@@ -7105,13 +7502,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-info > .panel-heading + .panel-collapse > .topics-rep-body,
 .panel-info > .chat-header + .panel-collapse > .topics-rep-body,
 .panel-info > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-info > .topics-content-header + .panel-collapse > .topics-rep-body,
 .panel-info > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .panel-info > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .panel-info > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-info > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-info > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-info > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-info > .panel-heading + .panel-collapse > .topics-content-body,
 .panel-info > .chat-header + .panel-collapse > .topics-content-body,
 .panel-info > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-info > .topics-content-header + .panel-collapse > .topics-content-body,
 .panel-info > .topics-resources-header + .panel-collapse > .topics-content-body,
 .panel-info > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -7119,6 +7526,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-info > .panel-heading + .panel-collapse > .topics-resources-body,
 .panel-info > .chat-header + .panel-collapse > .topics-resources-body,
 .panel-info > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-info > .topics-content-header + .panel-collapse > .topics-resources-body,
 .panel-info > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .panel-info > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -7126,6 +7534,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-info > .panel-heading + .panel-collapse > .presentations-content-body,
 .panel-info > .chat-header + .panel-collapse > .presentations-content-body,
 .panel-info > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-info > .topics-content-header + .panel-collapse > .presentations-content-body,
 .panel-info > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .panel-info > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -7133,6 +7542,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-info > .panel-heading + .panel-collapse > .presentations-resources-body,
 .panel-info > .chat-header + .panel-collapse > .presentations-resources-body,
 .panel-info > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-info > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-info > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .panel-info > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .panel-info > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -7141,6 +7551,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body, .panel-info > .panel-footer + .panel-collapse > .chat-body,
 .panel-info > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-info > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-info > .panel-footer + .panel-collapse > .topics-content-body,
 .panel-info > .panel-footer + .panel-collapse > .topics-resources-body,
 .panel-info > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -7153,6 +7564,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-warning > .panel-heading, .panel-warning > .chat-header,
 .panel-warning > .topics-rep-header,
+.panel-warning > .presentations-rep-header,
 .panel-warning > .topics-content-header,
 .panel-warning > .topics-resources-header,
 .panel-warning > .presentations-content-header,
@@ -7163,11 +7575,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-warning > .panel-heading + .panel-collapse > .panel-body, .panel-warning > .chat-header + .panel-collapse > .panel-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-warning > .topics-content-header + .panel-collapse > .panel-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .panel-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .panel-body,
 .panel-warning > .presentations-resources-header + .panel-collapse > .panel-body, .panel-warning > .panel-heading + .panel-collapse > .chat-body, .panel-warning > .chat-header + .panel-collapse > .chat-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-warning > .topics-content-header + .panel-collapse > .chat-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .chat-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .chat-body,
@@ -7175,13 +7589,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-warning > .panel-heading + .panel-collapse > .topics-rep-body,
 .panel-warning > .chat-header + .panel-collapse > .topics-rep-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-warning > .topics-content-header + .panel-collapse > .topics-rep-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .panel-warning > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-warning > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-warning > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-warning > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-warning > .panel-heading + .panel-collapse > .topics-content-body,
 .panel-warning > .chat-header + .panel-collapse > .topics-content-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-warning > .topics-content-header + .panel-collapse > .topics-content-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .topics-content-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -7189,6 +7613,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-warning > .panel-heading + .panel-collapse > .topics-resources-body,
 .panel-warning > .chat-header + .panel-collapse > .topics-resources-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-warning > .topics-content-header + .panel-collapse > .topics-resources-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -7196,6 +7621,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-warning > .panel-heading + .panel-collapse > .presentations-content-body,
 .panel-warning > .chat-header + .panel-collapse > .presentations-content-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-warning > .topics-content-header + .panel-collapse > .presentations-content-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -7203,6 +7629,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-warning > .panel-heading + .panel-collapse > .presentations-resources-body,
 .panel-warning > .chat-header + .panel-collapse > .presentations-resources-body,
 .panel-warning > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-warning > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-warning > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .panel-warning > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .panel-warning > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -7211,6 +7638,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-warning > .panel-footer + .panel-collapse > .panel-body, .panel-warning > .panel-footer + .panel-collapse > .chat-body,
 .panel-warning > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-warning > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-warning > .panel-footer + .panel-collapse > .topics-content-body,
 .panel-warning > .panel-footer + .panel-collapse > .topics-resources-body,
 .panel-warning > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -7223,6 +7651,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-danger > .panel-heading, .panel-danger > .chat-header,
 .panel-danger > .topics-rep-header,
+.panel-danger > .presentations-rep-header,
 .panel-danger > .topics-content-header,
 .panel-danger > .topics-resources-header,
 .panel-danger > .presentations-content-header,
@@ -7233,11 +7662,13 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-danger > .panel-heading + .panel-collapse > .panel-body, .panel-danger > .chat-header + .panel-collapse > .panel-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .panel-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .panel-body,
 .panel-danger > .topics-content-header + .panel-collapse > .panel-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .panel-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .panel-body,
 .panel-danger > .presentations-resources-header + .panel-collapse > .panel-body, .panel-danger > .panel-heading + .panel-collapse > .chat-body, .panel-danger > .chat-header + .panel-collapse > .chat-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .chat-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .chat-body,
 .panel-danger > .topics-content-header + .panel-collapse > .chat-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .chat-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .chat-body,
@@ -7245,13 +7676,23 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-danger > .panel-heading + .panel-collapse > .topics-rep-body,
 .panel-danger > .chat-header + .panel-collapse > .topics-rep-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .topics-rep-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .topics-rep-body,
 .panel-danger > .topics-content-header + .panel-collapse > .topics-rep-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .topics-rep-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .topics-rep-body,
 .panel-danger > .presentations-resources-header + .panel-collapse > .topics-rep-body,
+.panel-danger > .panel-heading + .panel-collapse > .presentations-rep-body,
+.panel-danger > .chat-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .topics-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .topics-content-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .topics-resources-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .presentations-content-header + .panel-collapse > .presentations-rep-body,
+.panel-danger > .presentations-resources-header + .panel-collapse > .presentations-rep-body,
 .panel-danger > .panel-heading + .panel-collapse > .topics-content-body,
 .panel-danger > .chat-header + .panel-collapse > .topics-content-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .topics-content-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .topics-content-body,
 .panel-danger > .topics-content-header + .panel-collapse > .topics-content-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .topics-content-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .topics-content-body,
@@ -7259,6 +7700,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-danger > .panel-heading + .panel-collapse > .topics-resources-body,
 .panel-danger > .chat-header + .panel-collapse > .topics-resources-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .topics-resources-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .topics-resources-body,
 .panel-danger > .topics-content-header + .panel-collapse > .topics-resources-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .topics-resources-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .topics-resources-body,
@@ -7266,6 +7708,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-danger > .panel-heading + .panel-collapse > .presentations-content-body,
 .panel-danger > .chat-header + .panel-collapse > .presentations-content-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .presentations-content-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .presentations-content-body,
 .panel-danger > .topics-content-header + .panel-collapse > .presentations-content-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .presentations-content-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .presentations-content-body,
@@ -7273,6 +7716,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-danger > .panel-heading + .panel-collapse > .presentations-resources-body,
 .panel-danger > .chat-header + .panel-collapse > .presentations-resources-body,
 .panel-danger > .topics-rep-header + .panel-collapse > .presentations-resources-body,
+.panel-danger > .presentations-rep-header + .panel-collapse > .presentations-resources-body,
 .panel-danger > .topics-content-header + .panel-collapse > .presentations-resources-body,
 .panel-danger > .topics-resources-header + .panel-collapse > .presentations-resources-body,
 .panel-danger > .presentations-content-header + .panel-collapse > .presentations-resources-body,
@@ -7281,6 +7725,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-danger > .panel-footer + .panel-collapse > .panel-body, .panel-danger > .panel-footer + .panel-collapse > .chat-body,
 .panel-danger > .panel-footer + .panel-collapse > .topics-rep-body,
+.panel-danger > .panel-footer + .panel-collapse > .presentations-rep-body,
 .panel-danger > .panel-footer + .panel-collapse > .topics-content-body,
 .panel-danger > .panel-footer + .panel-collapse > .topics-resources-body,
 .panel-danger > .panel-footer + .panel-collapse > .presentations-content-body,
@@ -8149,7 +8594,7 @@ button.close {
 }
 
 @media (max-width: 767px) {
-  .hidden-xs {
+  .hidden-xs, .survey-link-wrapper {
     display: none !important;
   }
 }
@@ -8223,15 +8668,15 @@ button.close {
   }
 }
 /*!
- *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../vendor/fontawesome/fonts/fontawesome-webfont.eot?v=4.0.3");
-  src: url("../vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../vendor/fontawesome/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../vendor/fontawesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  src: url("../vendor/fontawesome/fonts/fontawesome-webfont.eot?v=4.1.0");
+  src: url("../vendor/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("../vendor/fontawesome/fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("../vendor/fontawesome/fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("../vendor/fontawesome/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -8348,26 +8793,19 @@ button.close {
     -o-transform: rotate(359deg);
   }
 }
-@-ms-keyframes spin {
-  0% {
-    -ms-transform: rotate(0deg);
-  }
-
-  100% {
-    -ms-transform: rotate(359deg);
-  }
-}
 @keyframes spin {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   100% {
+    -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
   }
 }
 .fa-rotate-90 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -8376,7 +8814,7 @@ button.close {
 }
 
 .fa-rotate-180 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -8385,7 +8823,7 @@ button.close {
 }
 
 .fa-rotate-270 {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -8394,7 +8832,7 @@ button.close {
 }
 
 .fa-flip-horizontal {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
   -moz-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
@@ -8403,7 +8841,7 @@ button.close {
 }
 
 .fa-flip-vertical {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
   -moz-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
@@ -8680,6 +9118,8 @@ button.close {
   content: "\f03d";
 }
 
+.fa-photo:before,
+.fa-image:before,
 .fa-picture-o:before {
   content: "\f03e";
 }
@@ -9161,6 +9601,8 @@ button.close {
   content: "\f0c8";
 }
 
+.fa-navicon:before,
+.fa-reorder:before,
 .fa-bars:before {
   content: "\f0c9";
 }
@@ -9239,12 +9681,12 @@ button.close {
 }
 
 .fa-sort-down:before,
-.fa-sort-asc:before {
+.fa-sort-desc:before {
   content: "\f0dd";
 }
 
 .fa-sort-up:before,
-.fa-sort-desc:before {
+.fa-sort-asc:before {
   content: "\f0de";
 }
 
@@ -9495,11 +9937,8 @@ button.close {
   content: "\f121";
 }
 
+.fa-mail-reply-all:before,
 .fa-reply-all:before {
-  content: "\f122";
-}
-
-.fa-mail-reply-all:before {
   content: "\f122";
 }
 
@@ -9957,6 +10396,309 @@ button.close {
   content: "\f196";
 }
 
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+
+.fa-slack:before {
+  content: "\f198";
+}
+
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
+.fa-wordpress:before {
+  content: "\f19a";
+}
+
+.fa-openid:before {
+  content: "\f19b";
+}
+
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+
+.fa-yahoo:before {
+  content: "\f19e";
+}
+
+.fa-google:before {
+  content: "\f1a0";
+}
+
+.fa-reddit:before {
+  content: "\f1a1";
+}
+
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+
+.fa-delicious:before {
+  content: "\f1a5";
+}
+
+.fa-digg:before {
+  content: "\f1a6";
+}
+
+.fa-pied-piper-square:before,
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+
+.fa-drupal:before {
+  content: "\f1a9";
+}
+
+.fa-joomla:before {
+  content: "\f1aa";
+}
+
+.fa-language:before {
+  content: "\f1ab";
+}
+
+.fa-fax:before {
+  content: "\f1ac";
+}
+
+.fa-building:before {
+  content: "\f1ad";
+}
+
+.fa-child:before {
+  content: "\f1ae";
+}
+
+.fa-paw:before {
+  content: "\f1b0";
+}
+
+.fa-spoon:before {
+  content: "\f1b1";
+}
+
+.fa-cube:before {
+  content: "\f1b2";
+}
+
+.fa-cubes:before {
+  content: "\f1b3";
+}
+
+.fa-behance:before {
+  content: "\f1b4";
+}
+
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+
+.fa-steam:before {
+  content: "\f1b6";
+}
+
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+
+.fa-recycle:before {
+  content: "\f1b8";
+}
+
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+.fa-spotify:before {
+  content: "\f1bc";
+}
+
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+
+.fa-database:before {
+  content: "\f1c0";
+}
+
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+
+.fa-vine:before {
+  content: "\f1ca";
+}
+
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+
+.fa-life-bouy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+
+.fa-git-square:before {
+  content: "\f1d2";
+}
+
+.fa-git:before {
+  content: "\f1d3";
+}
+
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+
+.fa-history:before {
+  content: "\f1da";
+}
+
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+
+.fa-header:before {
+  content: "\f1dc";
+}
+
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+
+.fa-bomb:before {
+  content: "\f1e2";
+}
+
 html {
   -webkit-font-smoothing: antialiased;
 }
@@ -10043,7 +10785,7 @@ b, em {
 
 .footer-inner {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .footer-branding {
@@ -10087,10 +10829,14 @@ b, em {
   margin-right: 20px;
 }
 
-.main-navigation {
-  margin-left: -15px;
-  margin-right: -15px;
+.nav-pills .dropdown-menu a, .main-navigation-list .dropdown-menu a {
+  background-color: #fff;
 }
+
+.nav-pills .dropdown-menu > .active > a, .main-navigation-list .dropdown-menu > .active > a {
+  background-color: #0066cc;
+}
+
 .main-navigation:before, .main-navigation:after {
   content: " ";
   display: table;
@@ -10099,22 +10845,14 @@ b, em {
   clear: both;
 }
 .main-navigation .menu {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-bottom: 10px;
 }
-@media (min-width: 768px) {
-  .main-navigation .menu {
-    float: left;
-    width: 50%;
-  }
+.main-navigation .menu:before, .main-navigation .menu:after {
+  content: " ";
+  display: table;
 }
-@media (min-width: 768px) {
-  .main-navigation .menu {
-    margin-left: 50%;
-  }
+.main-navigation .menu:after {
+  clear: both;
 }
 
 .main-navigation-list a {
@@ -10341,6 +11079,119 @@ body #buddypress button, body #buddypress a.button, body #buddypress input[type=
   font-size: inherit;
 }
 
+.survey-link-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+  z-index: 10;
+}
+
+.survey-link {
+  color: white;
+  background-color: #104277;
+  border-color: #0d3661;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.survey-link:hover, .survey-link:focus, .survey-link:active, .survey-link.active, .open > .survey-link.dropdown-toggle {
+  color: white;
+  background-color: #0a294a;
+  border-color: #06182b;
+}
+.survey-link:active, .survey-link.active, .open > .survey-link.dropdown-toggle {
+  background-image: none;
+}
+.survey-link.disabled, .survey-link.disabled:hover, .survey-link.disabled:focus, .survey-link.disabled:active, .survey-link.disabled.active, .survey-link[disabled], .survey-link[disabled]:hover, .survey-link[disabled]:focus, .survey-link[disabled]:active, .survey-link[disabled].active, fieldset[disabled] .survey-link, fieldset[disabled] .survey-link:hover, fieldset[disabled] .survey-link:focus, fieldset[disabled] .survey-link:active, fieldset[disabled] .survey-link.active {
+  background-color: #104277;
+  border-color: #0d3661;
+}
+.survey-link .badge {
+  color: #104277;
+  background-color: white;
+}
+
+body #wpadminbar,
+body #wpadminbar .quicklinks .menupop ul.ab-sub-secondary,
+body #wpadminbar .quicklinks .menupop ul.ab-sub-secondary .ab-submenu {
+  color: #fff;
+  background-color: #104277;
+}
+body #wpadminbar .ab-top-menu > li.hover > .ab-item,
+body #wpadminbar .ab-top-menu > li:hover > .ab-item,
+body #wpadminbar .ab-top-menu > li > .ab-item:focus,
+body #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+body #wpadminbar .menupop .ab-sub-wrapper,
+body #wpadminbar .shortlink-input {
+  background-color: #134e8d;
+}
+body #wpadminbar #adminbarsearch:before,
+body #wpadminbar .ab-icon:before,
+body #wpadminbar .ab-item:before,
+body #wpadminbar a.ab-item,
+body #wpadminbar > #wp-toolbar span.ab-label,
+body #wpadminbar > #wp-toolbar span.noticon {
+  color: #fff;
+}
+body #wpadminbar #wp-admin-bar-user-info .username,
+body #wpadminbar .quicklinks .menupop ul li a:focus,
+body #wpadminbar .quicklinks .menupop ul li a:focus strong,
+body #wpadminbar .quicklinks .menupop ul li a:hover,
+body #wpadminbar .quicklinks .menupop ul li a:hover strong,
+body #wpadminbar .quicklinks .menupop.hover ul li a:focus,
+body #wpadminbar .quicklinks .menupop.hover ul li a:hover,
+body #wpadminbar li .ab-item:focus:before,
+body #wpadminbar li a:focus .ab-icon:before,
+body #wpadminbar li.hover .ab-icon:before,
+body #wpadminbar li.hover .ab-item:before,
+body #wpadminbar li:hover #adminbarsearch:before,
+body #wpadminbar li:hover .ab-icon:before,
+body #wpadminbar li:hover .ab-item:before,
+body #wpadminbar.nojs .quicklinks .menupop:hover ul li a:focus,
+body #wpadminbar.nojs .quicklinks .menupop:hover ul li a:hover,
+body #wpadminbar .ab-top-menu > li.hover > .ab-item,
+body #wpadminbar .ab-top-menu > li:hover > .ab-item,
+body #wpadminbar .ab-top-menu > li > .ab-item:focus,
+body #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+body #wpadminbar > #wp-toolbar a:focus span.ab-label,
+body #wpadminbar > #wp-toolbar li.hover span.ab-label,
+body #wpadminbar > #wp-toolbar li:hover span.ab-label {
+  color: #ccc;
+}
+body #wpadminbar .quicklinks li#wp-admin-bar-bp-notifications #ab-pending-notifications,
+body #wpadminbar .quicklinks li#wp-admin-bar-my-account a span.count,
+body #wpadminbar .quicklinks li#wp-admin-bar-my-account-with-avatar a span.count {
+  background: #fff;
+  color: #104277;
+  margin: 0;
+}
+body #wpadminbar .quicklinks li#wp-admin-bar-bp-notifications #ab-pending-notifications.alert, body #wpadminbar .quicklinks li#wp-admin-bar-bp-notifications #ab-pending-notifications.validation_error {
+  color: #fff;
+  background: #157ab3;
+}
+body #wpadminbar #wp-admin-bar-comments .count-0 {
+  opacity: .9;
+}
+
+.profile-fields td.label, .profile-fields td.validation_message {
+  display: table-cell;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: right;
+  white-space: nowrap;
+  border-radius: 0;
+}
+
 .entry-header .subtitle {
   font-style: italic;
   margin-top: 5px;
@@ -10500,4 +11351,140 @@ body #buddypress button, body #buddypress a.button, body #buddypress input[type=
 }
 .presentation-question-inner:after {
   clear: both;
+}
+
+.library-resources-panel .panel-body, .library-resources-panel .chat-body,
+.library-resources-panel .topics-rep-body,
+.library-resources-panel .presentations-rep-body,
+.library-resources-panel .topics-content-body,
+.library-resources-panel .topics-resources-body,
+.library-resources-panel .presentations-content-body,
+.library-resources-panel .presentations-resources-body {
+  height: 300px;
+  overflow: auto;
+}
+
+.library-type-heading {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 19.2px;
+}
+
+.video-page-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.video-page-wrapper:before, .video-page-wrapper:after {
+  content: " ";
+  display: table;
+}
+.video-page-wrapper:after {
+  clear: both;
+}
+
+.library-video {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .library-video {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 1200px) {
+  .library-video {
+    margin-left: 16.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .library-video {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 992px) {
+  .library-video {
+    margin-left: 8.33333%;
+  }
+}
+
+.library-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.topics-listing-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.topics-listing-wrapper:before, .topics-listing-wrapper:after {
+  content: " ";
+  display: table;
+}
+.topics-listing-wrapper:after {
+  clear: both;
+}
+
+.topics-listing {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: table;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .topics-listing {
+    float: left;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 1200px) {
+  .topics-listing {
+    margin-left: 16.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .topics-listing {
+    float: left;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 992px) {
+  .topics-listing {
+    margin-left: 8.33333%;
+  }
+}
+
+.topic {
+  display: table-row;
+}
+.topic:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.topic-heading,
+.topic-description {
+  display: table-cell;
+  padding: 10px 20px;
+  vertical-align: middle;
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999;
+}
+
+.topic-listing-title {
+  margin: 0;
 }

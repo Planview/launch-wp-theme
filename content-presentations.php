@@ -67,6 +67,35 @@
 								</div>
 							</div>
 						<?php endif; ?>
+
+					<?php if ( have_rows( 'pv_event_speakers' ) ) : $launch_count = 0; ?>
+						<div class="presentations-rep-inner">
+							<div class="presentations-rep-header">
+								<h2 class="presentations-rep-title"><?php _ex( 'Speakers', 'Heading', 'launch'); ?></h2>
+							</div>
+							<div class="presentations-rep-body">
+							<ul class="media-list">
+							<?php while ( have_rows( 'pv_event_speakers' ) ) : the_row(); $launch_count += 1; ?>
+								<li class="media">
+									<?php if ( $launch_speaker_photo = get_sub_field('photo') ) {
+										printf(
+											'<img src="%1$s" alt="%2$s" height="%3$s" width="%4$s" class="media-object pull-left img-rounded" />',
+											launch_maybe_https($launch_speaker_photo['sizes']['thumbnail']),
+											esc_attr( $launch_speaker_photo['alt'] ),
+											esc_attr( $launch_speaker_photo['sizes']['thumbnail-height'] * 0.33 ),
+											esc_attr( $launch_speaker_photo['sizes']['thumbnail-width'] * 0.33 )
+										);
+									} ?>
+									<div class="media-body">
+										<h4 class="media-heading"><?php the_sub_field( 'name' ); ?></h4>
+										<h4 class="presentations-rep-job-title"><small><?php the_sub_field( 'title' ); ?></small></h4>
+									</div>
+								</li>
+							<?php endwhile; ?>
+							</ul>
+							</div>
+						</div>
+					<?php endif; ?>
 				</div>
 			</div>
 		<?php endif; //User logged in ?>

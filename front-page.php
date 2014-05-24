@@ -4,6 +4,9 @@
  *
  * Template Name: Front Page
  */
+if ( is_user_logged_in() && $launch_redirect_home = get_field( 'launch_logged_in_home', $post->ID ) ) {
+	wp_safe_redirect( $launch_redirect_home , 302 );
+}
 
 get_header(); ?>
 

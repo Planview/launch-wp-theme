@@ -4,6 +4,17 @@
 		'title' => 'Front Page Fields',
 		'fields' => array (
 			array (
+				'key' => 'field_537ea93051caf',
+				'label' => 'Redirect Logged in Users to New page',
+				'name' => 'launch_logged_in_home',
+				'type' => 'page_link',
+				'post_type' => array (
+					0 => 'all',
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+			),
+			array (
 				'key' => 'field_5363f4f8e415c',
 				'label' => 'Jumbotron',
 				'name' => 'launch_front_jumbtron',

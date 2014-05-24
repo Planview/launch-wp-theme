@@ -36,9 +36,9 @@ add_filter( 'login_headertitle', 'launch_login_logo_url_title' );
  * Only show the admin bar for people that can edit posts
  */
 function launch_hide_admin_bar( $show_admin_bar ) {
-    if ( !current_user_can( 'edit_posts' ) ) {
-        return false;
-    }
+    // if ( !current_user_can( 'edit_posts' ) ) {
+    //     return false;
+    // }
     return $show_admin_bar;
 }
 add_filter( 'show_admin_bar', 'launch_hide_admin_bar' );
@@ -47,7 +47,7 @@ add_filter( 'show_admin_bar', 'launch_hide_admin_bar' );
  * Redirect subscribers to the homepage if they try to access the dashboard
  */
 function launch_hide_dashboard() {
-    if ( is_admin() && !current_user_can( 'edit_posts' ) ) {
+    if ( is_admin() && !current_user_can( 'edit_posts' ) && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
         wp_safe_redirect( home_url( '/' ) );
     }
 }
@@ -63,3 +63,32 @@ function launch_login_message( $message ) {
     return $message;
 }
 add_filter( 'login_message', 'launch_login_message' );
+
+/**
+ * Remove other menus from admin bar for subscribers
+ */
+function launch_custom_admin_bar() {
+    remove_action( 'admin_bar_menu', 'wp_admin_bar_wp_menu' );
+    if ( current_user_can( 'edit_posts' ) )
+        return;
+
+    remove_action( 'admin_bar_menu', 'wp_admin_bar_sidebar_toggle' );
+    remove_action( 'admin_bar_menu', 'wp_admin_bar_my_sites_menu' );
+    remove_action( 'admin_bar_menu', 'wp_admin_bar_site_menu', 30 );
+    remove_action( 'admin_bar_menu', 'wp_admin_bar_updates_menu' );
+    // remove_action( 'admin_bar_menu', 'wp_admin_bar_search_menu' );
+}
+add_action( 'add_admin_bar_menus', 'launch_custom_admin_bar' );
+
+/**
+ * Replace the "Howdy" verbage in the admin bar
+ */
+function launch_replace_howdy( $wp_admin_bar ) {
+    $my_account=$wp_admin_bar->get_node('my-account');
+    $newtitle = str_replace( 'Howdy,', 'Welcome,', $my_account->title );
+    $wp_admin_bar->add_node( array(
+        'id' => 'my-account',
+        'title' => $newtitle,
+    ) );
+}
+add_filter( 'admin_bar_menu', 'launch_replace_howdy',25 );

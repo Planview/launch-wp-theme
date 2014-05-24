@@ -39,7 +39,7 @@
 				<a class="skip-link sr-only" href="#content"><?php _e( 'Skip to content', 'launch' ); ?></a>
 
 				<?php wp_nav_menu( array( 
-					'theme_location' => 'primary',
+					'theme_location' => ( is_user_logged_in() ? 'primary_logged_in' : 'primary' ),
 					'container_class' => 'menu',
 					'fallback_cb' => false,
 					'menu_class' => 'main-navigation-list',

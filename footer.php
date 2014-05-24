@@ -9,7 +9,18 @@
 ?>
 
 	</div><!-- #content -->
-
+	<?php if ( is_user_logged_in() && get_field( 'launch_survey_url', 'option' ) ) : ?>
+	<div class="survey-link-wrapper">
+		<?php printf(
+			'<a href="%1$s" class="survey-link%3$s"%4$s>%5$s</a>',
+			esc_url( get_field( 'launch_survey_url', 'option' ) ),
+			null,
+			( get_field( 'launch_survey_class', 'option' ) ? ' ' . esc_attr( 'launch_survey_class', 'option' ) : '' ),
+			( get_field( 'launch_survey_target', 'option' ) ? ' target="_blank"' : '' ),
+			get_field( 'launch_survey_text', 'option' )
+		); ?>
+	</div>
+	<?php endif; ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footer-inner">
 			<?php    /**
@@ -17,7 +28,7 @@
 				* @param array $args Arguments
 				*/
 				$launch_footer_menu_args = array(
-					'theme_location' => 'footer',
+					'theme_location' => ( is_user_logged_in() ? 'footer_logged_in' : 'footer' ),
 					'container' => 'div',
 					'container_class' => 'menu-footer-container',
 					'menu_class' => 'menu-footer-list',

@@ -51,3 +51,71 @@ register_field_group(array (
     ),
     'menu_order' => 0,
 ));
+register_field_group(array (
+    'id' => 'acf_survey-button',
+    'title' => 'Survey Button',
+    'fields' => array (
+        array (
+            'key' => 'field_5380e4e08bace',
+            'label' => 'Link Text',
+            'name' => 'launch_survey_text',
+            'type' => 'text',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+        ),
+        array (
+            'key' => 'field_5380e5028bacf',
+            'label' => 'Link Target URL',
+            'name' => 'launch_survey_url',
+            'type' => 'text',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+        ),
+        array (
+            'key' => 'field_5380e5228bad0',
+            'label' => 'Link Class',
+            'name' => 'launch_survey_class',
+            'type' => 'text',
+            'default_value' => '',
+            'placeholder' => '',
+            'prepend' => '',
+            'append' => '',
+            'formatting' => 'html',
+            'maxlength' => '',
+        ),
+        array (
+            'key' => 'field_5380e57d8bad1',
+            'label' => 'Open Link in a New Window',
+            'name' => 'launch_survey_target',
+            'type' => 'true_false',
+            'message' => '',
+            'default_value' => 0,
+        ),
+    ),
+    'location' => array (
+        array (
+            array (
+                'param' => 'options_page',
+                'operator' => '==',
+                'value' => 'launch-theme-options',
+                'order_no' => 0,
+                'group_no' => 0,
+            ),
+        ),
+    ),
+    'options' => array (
+        'position' => 'side',
+        'layout' => 'default',
+        'hide_on_screen' => array (
+        ),
+    ),
+    'menu_order' => 0,
+));

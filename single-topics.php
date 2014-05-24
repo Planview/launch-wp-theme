@@ -14,8 +14,6 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'topics' ); ?>
 
-			<?php launch_post_nav(); ?>
-
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->

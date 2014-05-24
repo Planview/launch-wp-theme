@@ -69,7 +69,7 @@
 					<?php if ( have_rows( 'pv_event_speakers' ) ) : $launch_count = 0; ?>
 						<div class="topics-rep-inner">
 							<div class="topics-rep-header">
-								<h2 class="topics-rep-title"><?php _ex( 'Representatives', 'Heading', 'launch'); ?></h2>
+								<h2 class="topics-rep-title"><?php _ex( 'Experts', 'Heading', 'launch'); ?></h2>
 							</div>
 							<div class="topics-rep-body">
 							<ul class="media-list">
@@ -107,12 +107,5 @@
 				</div>
 			</div>
 		<?php endif; //User logged in ?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'launch' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
