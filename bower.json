@@ -23,6 +23,6 @@
     "webshim": "~1.12.5",
     "background-size-polyfill": "~0.2.0",
     "fancybox": "~2.1.5",
-    "fontawesome": "~4.0.3"
+    "fontawesome": "4.1.x"
   }
 }
