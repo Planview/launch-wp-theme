@@ -36,9 +36,9 @@ add_filter( 'login_headertitle', 'launch_login_logo_url_title' );
  * Only show the admin bar for people that can edit posts
  */
 function launch_hide_admin_bar( $show_admin_bar ) {
-    // if ( !current_user_can( 'edit_posts' ) ) {
-    //     return false;
-    // }
+    if ( !current_user_can( 'edit_posts' ) ) {
+        return false;
+    }
     return $show_admin_bar;
 }
 add_filter( 'show_admin_bar', 'launch_hide_admin_bar' );

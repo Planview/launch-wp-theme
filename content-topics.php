@@ -41,7 +41,7 @@
 										<?php foreach ( $launch_topic_resources as $post ) : setup_postdata( $post ); ?>
 											<li>
 												<?php printf(
-													'<a href="%1$s" title="%2$s"><span class="fa %4$s"></span> %3$s</a>',
+													'<a href="%1$s" title="%2$s" target="_blank"><span class="fa %4$s"></span> %3$s</a>',
 													esc_url( get_permalink() ),
 													esc_attr( get_the_title() ),
 													get_the_title(),

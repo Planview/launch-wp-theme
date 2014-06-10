@@ -45,6 +45,7 @@ function launch_library_sort() {
 	}
 
 	uksort( $sorted_list, 'strcasecmp' );
+	$sorted_list = array_reverse( $sorted_list );
 
 	foreach ( $sorted_list as $release_name => $release_array ) {
 		uksort( $release_array, 'strcasecmp' );

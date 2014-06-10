@@ -1,7 +1,10 @@
 .site-content {
 	@extend .container;
 }
-.page .content-area {
+.page .content-area,
+.search .content-area,
+.blog .content-area,
+.error404 .content-area {
 	background-color: white;
 	margin: {
 		top: 40px;

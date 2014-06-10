@@ -11,7 +11,7 @@
 				'post_type' => array (
 					0 => 'all',
 				),
-				'allow_null' => 0,
+				'allow_null' => 1,
 				'multiple' => 0,
 			),
 			array (

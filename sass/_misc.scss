@@ -6,22 +6,30 @@ body {
 
 .survey-link-wrapper {
 	position: fixed;
-	bottom: 0;
-	left: 0;
+	top: 0;
+	right: 0;
 	padding: {
-		left: 50px;
-		right: 50px;
-		bottom: $padding-large-vertical - 5px;
+		top: 240px;
 	}
 	z-index: 10;
 	@extend .hidden-xs;
 }
 .survey-link {
+	display: block;
 	@include button-variant($btn-primary-color, #104277, darken(#104277, 5%));
-	@include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-base, $border-radius-large);
-	@include border-bottom-radius(0);
+	@include button-size($padding-large-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $border-radius-large);
+	@include border-right-radius(0);
 	border-bottom: 0;
 	@include box-shadow(0 0 10px rgba(0,0,0,0.4));
+	span {
+		display: block;
+		background: {
+			image: url('../img/take-the-survey-vertical.png');
+			repeat: no-repeat;
+		}
+		height: 137px;
+		width: 23px;
+	}
 }
 
 body {
@@ -98,4 +106,46 @@ body {
 		white-space: nowrap;
 		border-radius: 0;
 	}
+}
+.search-results-inner {
+	@include make-lg-column(6);
+	@include make-md-column(8);
+	@include make-sm-column(10);
+	@include make-lg-column-offset(3);
+	@include make-md-column-offset(2);
+	@include make-sm-column-offset(1);
+}
+.search-type {
+	display: block;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+.search-result {
+	padding: {
+		top: 10px;
+		bottom: 10px;
+	}
+	border-bottom: 1px solid $page-header-border-color;
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
+#buddypress div.dir-search {
+	margin: {
+		top: 0;
+		bottom: -39px;
+	}
+}
+#buddypress div.dir-search input[type=text],
+#buddypress li.groups-members-search input[type=text] {
+	font-size: inherit;
+	padding: {
+		top: 4px;
+		bottom: 4px;
+	}
+}
+
+.btn-orange {
+	@include button-variant( #ffffff, #ec8922, darken(#ec8922, 5%) );
 }

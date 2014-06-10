@@ -15,13 +15,18 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'launch' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
+			<?php if ( is_user_logged_in() ) : ?>
+			<div class="row">
+				<div class="search-results-inner">
+					<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'content', 'search' ); ?>
 
-				<?php get_template_part( 'content', 'search' ); ?>
-
-			<?php endwhile; ?>
+					<?php endwhile; ?>
+				</div>
+			</div>
+			<?php endif; ?>
 
 			<?php launch_paging_nav(); ?>
 
@@ -34,5 +39,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

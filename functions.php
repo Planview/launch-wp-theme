@@ -102,7 +102,8 @@ function launch_scripts() {
 		wp_enqueue_style( 'launch-style', get_stylesheet_uri() );
 
 	if ( ! is_admin() ) {
-		wp_enqueue_style( 'launch-style', get_template_directory_uri() . '/css/style.css', array(), $launch_version );
+		wp_enqueue_style( 'launch-style', get_template_directory_uri() . '/css/style.css', array( 'launch-style-blessed1' ), $launch_version );
+		wp_enqueue_style( 'launch-style-blessed1', get_template_directory_uri() . '/css/style-blessed1.css', array(), $launch_version );
 		wp_enqueue_style( 'launch-style-ie8', get_template_directory_uri() . '/css/ie8.css', array( 'launch-style-ie8-blessed1' ), $launch_version );
 		wp_enqueue_style( 'launch-style-ie8-blessed1', get_template_directory_uri() . '/css/ie8-blessed1.css', array(), $launch_version );
 		wp_enqueue_style( 'bxslider', get_template_directory_uri() . '/vendor/bxslider-4/jquery.bxslider.css', array(), '4.1.2' );
@@ -173,3 +174,19 @@ require get_template_directory() . '/inc/admin-login.php';
  * Load the functionality for the library
  */
 require get_template_directory() . '/inc/library.php';
+
+/**
+ * Load the functionality for the topic areas
+ */
+require get_template_directory() . '/inc/topics.php';
+
+/**
+ * Load the functionality for the topic areas
+ */
+require get_template_directory() . '/inc/presentations.php';
+
+/**
+ * Load the functionality for the search results
+ */
+require get_template_directory() . '/inc/search.php';
+

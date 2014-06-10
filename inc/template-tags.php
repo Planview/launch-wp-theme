@@ -19,17 +19,17 @@ function launch_paging_nav() {
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
 		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'launch' ); ?></h1>
-		<div class="nav-links">
-
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'launch' ) ); ?></div>
-			<?php endif; ?>
+		<ul class="nav-links">
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'launch' ) ); ?></div>
+			<li class="previous"><?php previous_posts_link( __( '<span class="meta-nav fa fa-chevron-left"></span> Previous Page', 'launch' ) ); ?></li>
 			<?php endif; ?>
 
-		</div><!-- .nav-links -->
+			<?php if ( get_next_posts_link() ) : ?>
+			<li class="next"><?php next_posts_link( __( 'Next Page <span class="meta-nav fa fa-chevron-right"></span>', 'launch' ) ); ?></li>
+			<?php endif; ?>
+
+		</ul><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
 }
@@ -137,7 +137,8 @@ add_action( 'save_post',     'launch_category_transient_flusher' );
  * Conditional Tag for gt IE8 on our style
  */
 function launch_ie_style_conditional($output, $handle) {
-    if ( $handle != 'launch-style' ) return $output;
+    if ( $handle !== 'launch-style' && $handle !== 'launch-style-blessed1' )
+    	return $output;
 
     return "<!--[if gt IE 8]><!-->\n" . $output . "<!--<![endif]-->\n";
 }

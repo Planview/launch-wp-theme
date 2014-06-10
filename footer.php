@@ -12,7 +12,7 @@
 	<?php if ( is_user_logged_in() && get_field( 'launch_survey_url', 'option' ) ) : ?>
 	<div class="survey-link-wrapper">
 		<?php printf(
-			'<a href="%1$s" class="survey-link%3$s"%4$s>%5$s</a>',
+			'<a href="%1$s" class="survey-link%3$s"%4$s><span class="text-hide">%5$s</span></a>',
 			esc_url( get_field( 'launch_survey_url', 'option' ) ),
 			null,
 			( get_field( 'launch_survey_class', 'option' ) ? ' ' . esc_attr( 'launch_survey_class', 'option' ) : '' ),

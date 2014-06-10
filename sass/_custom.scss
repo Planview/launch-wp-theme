@@ -153,7 +153,8 @@
 	}
 }
 .topic-heading,
-.topic-description {
+.topic-description,
+.topic-thumbnail {
 	display: table-cell;
 	padding: 10px 20px;
 	vertical-align: middle;
@@ -162,4 +163,17 @@
 }
 .topic-listing-title {
 	margin: 0;
+}
+.library-listing ul.list-unstyled li,
+.presentations-resources-list li,
+.topics-resources-list li {
+	padding: {
+		top: 4px;
+		bottom: 4px;
+	}
+}
+body {
+	#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
+		font-size: inherit;
+	}
 }

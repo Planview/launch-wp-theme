@@ -79,15 +79,6 @@
 	}
 	li {
 		height: 20px;
-		&:last-child {
-			padding-left: 8px;
-			border: {
-				left: 1px solid white;
-			}
-		}
-		&:first-child {
-			border: 0;
-		}
 		&.linkedin a {
 			background-position: 0px top;
 			&:hover, &:active {
@@ -125,5 +116,17 @@
 				background-position: right bottom;
 			}
 		}
+	}
+}
+
+.nav-links {
+	@extend .pager;
+}
+
+.main-navigation-list .bp-login-nav a {
+	background-color: #ec8922;
+	color: #fff;
+	&:hover, &:focus, &:active {
+		background-color: darken(#ec8922, 5%);
 	}
 }
