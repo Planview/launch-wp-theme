@@ -154,3 +154,4 @@ function launch_ie_polyfills() { ?>
 <![endif]-->
 <?php }
 add_action( 'wp_head', 'launch_ie_polyfills', 60 );
+

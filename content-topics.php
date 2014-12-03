@@ -19,6 +19,14 @@
 					<div class="topics-video-wrapper limelight-video-respond"<?php echo ( ( $launch_vid_controls_height = get_field( 'pv_event_vid_controls_height' ) ) ? ' data-controls-height="' . $launch_vid_controls_height . '"' : '' ) ?><?php echo ( ( $launch_vid_controls_width = get_field( 'pv_event_vid_controls_width' ) ) ? ' data-controls-width="' . $launch_vid_controls_width . '"' : '' ) ?>>
 						<?php the_field( 'pv_event_topic_playlist'); ?>
 					</div>
+					<?php if ( $launch_question_form = get_field( 'pv_event_topic_qa_form' ) ) : ?>
+						<div class="presentation-question-wrapper">
+							<h2 class="presentation-question-title"><?php _ex( 'Ask A Question', 'Heading', 'launch' ); ?></h2>
+							<div class="presentation-question-inner">
+								<?php gravity_form( $launch_question_form->id, false, false, false, '', true, 1 ); ?>
+							</div>
+						</div>
+					<?php endif; ?>
 					<div class="topics-below-video">
 						<div class="topics-content-wrapper">
 							<div class="topics-content-inner">
@@ -58,14 +66,6 @@
 				</div>
 
 				<div class="chat-wrapper">
-					<div class="chat-inner">
-						<div class="chat-header">
-							<h2 class="chat-title"><?php _ex('Chat', 'Heading', 'launch'); ?></h2>
-						</div>
-						<div class="chat-body">
-							<?php echo do_shortcode( get_field( 'pv_event_topic_chat' ) ); ?>
-						</div>
-					</div>
 					<?php if ( have_rows( 'pv_event_speakers' ) ) : $launch_count = 0; ?>
 						<div class="topics-rep-inner">
 							<div class="topics-rep-header">
@@ -104,6 +104,23 @@
 							</div>
 						</div>
 					<?php endif; ?>
+					<div class="chat-inner">
+						<?php if ( get_field( 'pv_event_topic_faq' ) ) : ?>
+							<div class="chat-header">
+								<h2 class="chat-title"><?php _ex('Frequently Asked Questions', 'Heading', 'launch'); ?></h2>
+							</div>
+							<div class="chat-body faq">
+								<?php echo do_shortcode( get_field( 'pv_event_topic_faq' ) ); ?>
+							</div>
+						<?php else : ?>
+							<div class="chat-header">
+								<h2 class="chat-title"><?php _ex('Chat', 'Heading', 'launch'); ?></h2>
+							</div>
+							<div class="chat-body">
+								<?php echo do_shortcode( get_field( 'pv_event_topic_chat' ) ); ?>
+							</div>
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
 		<?php endif; //User logged in ?>

@@ -53,7 +53,7 @@
 .presentations-resources-body {
 	@extend .panel-body;
 }
-.topics-rep-body, .topics-content-body {
+.topics-rep-body, .topics-content-body, .faq {
 	max-height: 500px;
 	overflow: auto;
 }
@@ -81,7 +81,7 @@
 	@include make-md-column-pull(9);
 }
 .presentation-question-wrapper {
-	padding: {
+	margin: {
 		top: 20px;
 		bottom: 20px;
 	}
@@ -175,5 +175,15 @@
 body {
 	#buddypress button, #buddypress a.button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress ul.button-nav li a, #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button {
 		font-size: inherit;
+	}
+}
+.topics-video-wrapper,
+.presentations-video-wrapper {
+	margin-bottom: 20px;
+}
+.single-topics .faq dt {
+	margin: {
+		top: 10px;
+		bottom: 5px;
 	}
 }
